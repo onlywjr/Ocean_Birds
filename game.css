@@ -1,0 +1,92 @@
+* { box-sizing: border-box; }
+html, body { min-height: 100%; margin: 0; background: #255f8a; }
+body { display: grid; min-height: 100svh; place-items: center; font-family: "Microsoft JhengHei", "PMingLiU", serif; }
+.game-stage {
+  position: relative;
+  width: min(100vw, 150svh, 900px);
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  container-type: inline-size;
+  color: white;
+  background: linear-gradient(116deg, #78aaca 0, #1c5b8c 42%, #064579 100%);
+  isolation: isolate;
+}
+.game-stage::before {
+  position: absolute;
+  z-index: -1;
+  inset: 2.7%;
+  border: .3cqw solid rgb(255 255 255 / 25%);
+  border-radius: 2.7cqw;
+  content: "";
+}
+.home-button {
+  position: absolute;
+  z-index: 2;
+  top: 10.5%;
+  left: 7.2%;
+  display: grid;
+  width: 13.4%;
+  height: 7.2%;
+  place-items: center;
+  border: .28cqw solid #c9f08b;
+  border-radius: .9cqw;
+  background: linear-gradient(#8dbd39, #4d791a);
+  color: white;
+  font-size: 2.5cqw;
+  font-weight: 700;
+  text-decoration: none;
+  text-shadow: 0 1px 2px #425a25;
+  box-shadow: 0 .3cqw .5cqw rgb(0 0 0 / 38%), inset 0 1px 1px rgb(255 255 255 / 50%);
+}
+.vertical-title {
+  position: absolute;
+  top: 33%;
+  left: 5%;
+  margin: 0;
+  color: #38e8eb;
+  font-size: 8.5cqw;
+  font-weight: 900;
+  letter-spacing: .08em;
+  white-space: nowrap;
+  text-shadow: .5cqw .7cqw #14415c, .8cqw 1cqw #143345;
+  transform: rotate(-52deg);
+}
+.modes { position: absolute; inset: 0; }
+.mode {
+  position: absolute;
+  display: grid;
+  justify-items: center;
+  gap: 1cqw;
+  width: 32%;
+  color: #192a36;
+  font-size: 3.1cqw;
+  font-weight: 800;
+  text-decoration: none;
+  text-shadow: 0 1px rgb(255 255 255 / 70%);
+}
+.mode img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 360 / 239;
+  border: .4cqw solid rgb(188 211 224 / 75%);
+  border-radius: .8cqw;
+  object-fit: cover;
+  box-shadow: 0 .4cqw .8cqw rgb(0 0 0 / 30%);
+}
+.mode span {
+  display: grid;
+  min-width: 68%;
+  min-height: 6cqw;
+  padding: .25cqw 1cqw;
+  place-items: center;
+  border: .32cqw solid #fff1d0;
+  border-radius: 1.2cqw;
+  background: linear-gradient(#ffe5a6, #eca74e);
+  box-shadow: 0 .35cqw .6cqw rgb(0 0 0 / 28%), inset 0 0 0 .2cqw #d48433;
+}
+.mode:hover img, .mode:focus-visible img { filter: brightness(1.08); }
+.mode:focus-visible { outline: .4cqw solid white; outline-offset: .4cqw; }
+.mode-food { top: 4.5%; left: 45%; }
+.mode-guess { top: 52%; left: 26.5%; }
+.mode-match { top: 52%; left: 63.5%; }
+@media (max-aspect-ratio: 3 / 2) { .game-stage { width: 100vw; } }

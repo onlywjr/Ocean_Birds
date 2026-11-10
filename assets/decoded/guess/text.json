@@ -1,0 +1,350 @@
+[
+  {
+    "id": 101,
+    "variable": "name0",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"20\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 102,
+    "variable": "name1",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"20\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 103,
+    "variable": "name2",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"20\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 104,
+    "variable": "name3",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"20\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 106,
+    "variable": "show_name",
+    "html": false,
+    "text": "0"
+  },
+  {
+    "id": 108,
+    "variable": "s_times",
+    "html": false,
+    "text": "0"
+  },
+  {
+    "id": 111,
+    "variable": "p_no",
+    "html": false,
+    "text": "0"
+  },
+  {
+    "id": 114,
+    "variable": "show_name",
+    "html": false,
+    "text": "0"
+  },
+  {
+    "id": 116,
+    "variable": "name0",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"20\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 117,
+    "variable": "name1",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"20\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 118,
+    "variable": "name2",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"20\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 119,
+    "variable": "name3",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"20\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 120,
+    "variable": "name4",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"20\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 121,
+    "variable": "name5",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"20\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 122,
+    "variable": "show_name",
+    "html": false,
+    "text": "0"
+  },
+  {
+    "id": 123,
+    "variable": "s_times",
+    "html": false,
+    "text": "0"
+  },
+  {
+    "id": 124,
+    "variable": "p_no",
+    "html": false,
+    "text": "0"
+  },
+  {
+    "id": 125,
+    "variable": "name0",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"16\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 126,
+    "variable": "name1",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"16\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 127,
+    "variable": "name2",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"16\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 128,
+    "variable": "name3",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"16\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 129,
+    "variable": "name4",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"16\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 130,
+    "variable": "name5",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"16\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 131,
+    "variable": "name6",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"16\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 132,
+    "variable": "name7",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"16\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 133,
+    "variable": "show_name",
+    "html": false,
+    "text": "0"
+  },
+  {
+    "id": 134,
+    "variable": "s_times",
+    "html": false,
+    "text": "0"
+  },
+  {
+    "id": 135,
+    "variable": "p_no",
+    "html": false,
+    "text": "0"
+  },
+  {
+    "id": 136,
+    "variable": "show_name",
+    "html": false,
+    "text": "0"
+  },
+  {
+    "id": 137,
+    "variable": "s_times",
+    "html": false,
+    "text": "0"
+  },
+  {
+    "id": 139,
+    "variable": "p_no",
+    "html": false,
+    "text": "0"
+  },
+  {
+    "id": 140,
+    "variable": "name0",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"16\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 141,
+    "variable": "name1",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"16\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 142,
+    "variable": "name2",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"16\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 143,
+    "variable": "name3",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"16\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 144,
+    "variable": "name4",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"16\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 145,
+    "variable": "name5",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"16\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 146,
+    "variable": "name6",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"16\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 147,
+    "variable": "name7",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"16\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 148,
+    "variable": "name8",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"16\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 149,
+    "variable": "name9",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"16\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 150,
+    "variable": "name0",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"16\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 151,
+    "variable": "name1",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"16\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 152,
+    "variable": "name2",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"16\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 153,
+    "variable": "name3",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"16\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 154,
+    "variable": "name4",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"16\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 155,
+    "variable": "name5",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"16\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 156,
+    "variable": "name6",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"16\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 157,
+    "variable": "name7",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"16\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 158,
+    "variable": "name8",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"16\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 159,
+    "variable": "name9",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"16\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 160,
+    "variable": "name10",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"16\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 161,
+    "variable": "name11",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"新細明體\" size=\"16\" color=\"#990000\" letterSpacing=\"5.000000\" kerning=\"0\">猜猜我是誰</font></p>"
+  },
+  {
+    "id": 162,
+    "variable": "show_name",
+    "html": false,
+    "text": "0"
+  },
+  {
+    "id": 163,
+    "variable": "s_times",
+    "html": false,
+    "text": "0"
+  },
+  {
+    "id": 164,
+    "variable": "p_no",
+    "html": false,
+    "text": "0"
+  },
+  {
+    "id": 166,
+    "variable": "show_name",
+    "html": false,
+    "text": "0"
+  },
+  {
+    "id": 169,
+    "variable": "",
+    "html": true,
+    "text": "<p align=\"center\"><font face=\"華康中圓體\" size=\"96\" color=\"#33ccff\" letterSpacing=\"5.000000\" kerning=\"0\">遊戲</font></p><p align=\"center\"><font face=\"華康中圓體\" size=\"96\" color=\"#33ccff\" letterSpacing=\"5.000000\" kerning=\"0\">結束</font></p>"
+  }
+]

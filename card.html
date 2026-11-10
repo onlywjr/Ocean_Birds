@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>配對大進擊｜在海邊躍動的精靈</title>
+  <link rel="stylesheet" href="card.css">
+</head>
+<body>
+  <main class="memory-stage">
+    <header class="toolbar">
+      <output class="clock" id="timer" aria-label="經過時間">00:00.0</output>
+      <strong class="score">配對成功：<span id="matches">0</span></strong>
+      <button class="tool start" id="new-game" type="button">開始新遊戲</button>
+      <button class="tool pause" id="pause" type="button" aria-pressed="false">休息一下</button>
+      <a class="back" href="game.html">◉ 回選單</a>
+    </header>
+
+    <section class="welcome" id="welcome">
+      <p>一年一度的鳥兒雙胞胎大會就要開始了，可是不知道發生了什麼事，所有的鳥兒好像都跟自己的雙胞胎走失了，這可怎麼辦才好？大會快開始了，聰明的你趕快來幫幫忙，要在大會開始前找到所有的配對才行。時間只有「兩分鐘」，得加快腳步才行。</p>
+      <div class="bird-cards" id="bird-cards" aria-hidden="true"></div>
+      <button class="primary" id="begin" type="button">開始配對</button>
+    </section>
+
+    <section class="board" id="board" role="grid" aria-label="海鳥配對卡片" hidden></section>
+
+    <div class="result" id="result" role="dialog" aria-modal="true" hidden>
+      <div class="result-card">
+        <h1 id="result-title">配對完成</h1>
+        <p id="result-message"></p>
+        <button class="primary" id="again" type="button">再玩一次</button>
+      </div>
+    </div>
+  </main>
+  <script src="card.js"></script>
+</body>
+</html>

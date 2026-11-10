@@ -1,0 +1,5822 @@
+[
+  {
+    "id": 28,
+    "bounds": {
+      "left": -0.15,
+      "right": 304.15,
+      "top": -1.7,
+      "bottom": 27.95
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "Made by WJR @ 建議解析度 1024 X 768本頁面需使用 Flash Player 8 以上版本才可正常播放。",
+    "records": [
+      {
+        "text": "Made by WJR",
+        "fontId": 26,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#333333",
+        "xOffset": 0,
+        "yOffset": 10,
+        "advance": 77.25
+      },
+      {
+        "text": " @ ",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#333333",
+        "xOffset": 77.25,
+        "yOffset": 10,
+        "advance": 19.75
+      },
+      {
+        "text": "建議解析度",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#333333",
+        "xOffset": 97,
+        "yOffset": 10,
+        "advance": 65.25
+      },
+      {
+        "text": " 1024 X 768",
+        "fontId": 26,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#333333",
+        "xOffset": 162.25,
+        "yOffset": 10,
+        "advance": 68.55
+      },
+      {
+        "text": "本頁面需使用",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#333333",
+        "xOffset": 0,
+        "yOffset": 25,
+        "advance": 78.3
+      },
+      {
+        "text": " ",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#333333",
+        "xOffset": 78.3,
+        "yOffset": 25,
+        "advance": 4.15
+      },
+      {
+        "text": "Flash Player 8",
+        "fontId": 26,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#333333",
+        "xOffset": 82.45,
+        "yOffset": 25,
+        "advance": 79.80000000000001
+      },
+      {
+        "text": " ",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#333333",
+        "xOffset": 162.25,
+        "yOffset": 25,
+        "advance": 4.15
+      },
+      {
+        "text": "以上版本才可正常播放。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#333333",
+        "xOffset": 166.4,
+        "yOffset": 25,
+        "advance": 143.55
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "bounds": {
+      "left": -0.15,
+      "right": 304.15,
+      "top": -1.7,
+      "bottom": 27.95
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "Made by WJR @ 建議解析度 1024 X 768本頁面需使用 Flash Player 8 以上版本才可正常播放。",
+    "records": [
+      {
+        "text": "Made by WJR",
+        "fontId": 26,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#ffff99",
+        "xOffset": 0,
+        "yOffset": 10,
+        "advance": 77.25
+      },
+      {
+        "text": " @ ",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#ffffcc",
+        "xOffset": 77.25,
+        "yOffset": 10,
+        "advance": 19.75
+      },
+      {
+        "text": "建議解析度",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#ffffcc",
+        "xOffset": 97,
+        "yOffset": 10,
+        "advance": 65.25
+      },
+      {
+        "text": " ",
+        "fontId": 26,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#ffffcc",
+        "xOffset": 162.25,
+        "yOffset": 10,
+        "advance": 4.15
+      },
+      {
+        "text": "1024 X 768",
+        "fontId": 26,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#ffff99",
+        "xOffset": 166.4,
+        "yOffset": 10,
+        "advance": 64.4
+      },
+      {
+        "text": "本頁面需使用",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#ffffcc",
+        "xOffset": 0,
+        "yOffset": 25,
+        "advance": 78.3
+      },
+      {
+        "text": " ",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#ffffcc",
+        "xOffset": 78.3,
+        "yOffset": 25,
+        "advance": 4.15
+      },
+      {
+        "text": "Flash Player 8",
+        "fontId": 26,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#ffff99",
+        "xOffset": 82.45,
+        "yOffset": 25,
+        "advance": 79.80000000000001
+      },
+      {
+        "text": " ",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#ffffcc",
+        "xOffset": 162.25,
+        "yOffset": 25,
+        "advance": 4.15
+      },
+      {
+        "text": "以上版本才可正常播放。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#ffffcc",
+        "xOffset": 166.4,
+        "yOffset": 25,
+        "advance": 143.55
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "bounds": {
+      "left": 8.45,
+      "right": 55.55,
+      "top": 1,
+      "bottom": 61.8
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "躍",
+    "records": [
+      {
+        "text": "躍",
+        "fontId": 30,
+        "fontName": "文鼎海報體",
+        "fontSize": 64,
+        "color": "#333333",
+        "xOffset": 0,
+        "yOffset": 51,
+        "advance": 64.05
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "bounds": {
+      "left": 7.2,
+      "right": 56.05,
+      "top": 1.45,
+      "bottom": 61.9
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "動",
+    "records": [
+      {
+        "text": "動",
+        "fontId": 30,
+        "fontName": "文鼎海報體",
+        "fontSize": 64,
+        "color": "#333333",
+        "xOffset": 0,
+        "yOffset": 51,
+        "advance": 64.05
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "bounds": {
+      "left": 3.65,
+      "right": 480.6,
+      "top": 0.5,
+      "bottom": 97.8
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "在海濱       的精靈              台灣海邊常見的鳥類",
+    "records": [
+      {
+        "text": "在海濱",
+        "fontId": 30,
+        "fontName": "文鼎海報體",
+        "fontSize": 36,
+        "color": "#333333",
+        "xOffset": 0,
+        "yOffset": 38,
+        "advance": 108.14999999999999
+      },
+      {
+        "text": "       ",
+        "fontId": 30,
+        "fontName": "文鼎海報體",
+        "fontSize": 36,
+        "color": "#333333",
+        "xOffset": 108.14999999999999,
+        "yOffset": 38,
+        "advance": 126.35
+      },
+      {
+        "text": "的",
+        "fontId": 30,
+        "fontName": "文鼎海報體",
+        "fontSize": 36,
+        "color": "#333333",
+        "xOffset": 234.5,
+        "yOffset": 38,
+        "advance": 36.05
+      },
+      {
+        "text": "精靈",
+        "fontId": 30,
+        "fontName": "文鼎海報體",
+        "fontSize": 48,
+        "color": "#333333",
+        "xOffset": 270.55,
+        "yOffset": 38,
+        "advance": 96.1
+      },
+      {
+        "text": "              ",
+        "fontId": 30,
+        "fontName": "文鼎海報體",
+        "fontSize": 28,
+        "color": "#333333",
+        "xOffset": 0,
+        "yOffset": 92,
+        "advance": 196.70000000000005
+      },
+      {
+        "text": "台灣海邊常見的鳥類",
+        "fontId": 30,
+        "fontName": "文鼎海報體",
+        "fontSize": 32,
+        "color": "#333333",
+        "xOffset": 196.70000000000005,
+        "yOffset": 92,
+        "advance": 288.45000000000005
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "bounds": {
+      "left": 8.65,
+      "right": 55.4,
+      "top": 1.25,
+      "bottom": 62
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "躍",
+    "records": [
+      {
+        "text": "躍",
+        "fontId": 34,
+        "fontName": "文鼎海報體",
+        "fontSize": 64,
+        "color": "#cccccc",
+        "xOffset": 0,
+        "yOffset": 51,
+        "advance": 64
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "bounds": {
+      "left": 7.3,
+      "right": 55.9,
+      "top": 1.75,
+      "bottom": 62.05
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "動",
+    "records": [
+      {
+        "text": "動",
+        "fontId": 34,
+        "fontName": "文鼎海報體",
+        "fontSize": 64,
+        "color": "#cccccc",
+        "xOffset": 0,
+        "yOffset": 51,
+        "advance": 64
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "bounds": {
+      "left": 3.75,
+      "right": 479.4,
+      "top": 0.7,
+      "bottom": 97.9
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "在海濱       的精靈              台灣海邊常見的鳥類",
+    "records": [
+      {
+        "text": "在海濱",
+        "fontId": 34,
+        "fontName": "文鼎海報體",
+        "fontSize": 36,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 38,
+        "advance": 108
+      },
+      {
+        "text": "       ",
+        "fontId": 34,
+        "fontName": "文鼎海報體",
+        "fontSize": 36,
+        "color": "#ffffff",
+        "xOffset": 108,
+        "yOffset": 38,
+        "advance": 126
+      },
+      {
+        "text": "的",
+        "fontId": 34,
+        "fontName": "文鼎海報體",
+        "fontSize": 36,
+        "color": "#ffffff",
+        "xOffset": 234,
+        "yOffset": 38,
+        "advance": 36
+      },
+      {
+        "text": "精靈",
+        "fontId": 34,
+        "fontName": "文鼎海報體",
+        "fontSize": 48,
+        "color": "#ffffff",
+        "xOffset": 270,
+        "yOffset": 38,
+        "advance": 96
+      },
+      {
+        "text": "              ",
+        "fontId": 34,
+        "fontName": "文鼎海報體",
+        "fontSize": 28,
+        "color": "#ffcc66",
+        "xOffset": 0,
+        "yOffset": 92,
+        "advance": 196
+      },
+      {
+        "text": "台灣海邊常見的鳥類",
+        "fontId": 34,
+        "fontName": "文鼎海報體",
+        "fontSize": 32,
+        "color": "#fde4ac",
+        "xOffset": 196,
+        "yOffset": 92,
+        "advance": 288
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "bounds": {
+      "left": 1.25,
+      "right": 62.25,
+      "top": 1.3,
+      "bottom": 63.5
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "躍",
+    "records": [
+      {
+        "text": "躍",
+        "fontId": 38,
+        "fontName": "文鼎新藝體",
+        "fontSize": 64,
+        "color": "#333333",
+        "xOffset": 0,
+        "yOffset": 51,
+        "advance": 64
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "bounds": {
+      "left": 1.75,
+      "right": 61.25,
+      "top": 0.25,
+      "bottom": 63.5
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "動",
+    "records": [
+      {
+        "text": "動",
+        "fontId": 38,
+        "fontName": "文鼎新藝體",
+        "fontSize": 64,
+        "color": "#333333",
+        "xOffset": 0,
+        "yOffset": 51,
+        "advance": 64
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "bounds": {
+      "left": 1.25,
+      "right": 62.25,
+      "top": 1.3,
+      "bottom": 63.5
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "躍",
+    "records": [
+      {
+        "text": "躍",
+        "fontId": 38,
+        "fontName": "文鼎新藝體",
+        "fontSize": 64,
+        "color": "#cccccc",
+        "xOffset": 0,
+        "yOffset": 51,
+        "advance": 64
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "bounds": {
+      "left": 1.75,
+      "right": 61.25,
+      "top": 0.25,
+      "bottom": 63.5
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "動",
+    "records": [
+      {
+        "text": "動",
+        "fontId": 38,
+        "fontName": "文鼎新藝體",
+        "fontSize": 64,
+        "color": "#cccccc",
+        "xOffset": 0,
+        "yOffset": 51,
+        "advance": 64
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "bounds": {
+      "left": 0.85,
+      "right": 97.1,
+      "top": -1.65,
+      "bottom": 18.35
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "導引&簡介",
+    "records": [
+      {
+        "text": "導引",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 42.1
+      },
+      {
+        "text": "&",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffff",
+        "xOffset": 42.1,
+        "yOffset": 14,
+        "advance": 16.2
+      },
+      {
+        "text": "簡介",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffff",
+        "xOffset": 58.3,
+        "yOffset": 14,
+        "advance": 42.1
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "bounds": {
+      "left": 0.35,
+      "right": 101.8,
+      "top": -1.4,
+      "bottom": 18.25
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "躍動的精靈",
+    "records": [
+      {
+        "text": "躍動的精靈",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 105.25
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "bounds": {
+      "left": 0.4,
+      "right": 80.6,
+      "top": -1.4,
+      "bottom": 18.25
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "展翅基隆",
+    "records": [
+      {
+        "text": "展翅基隆",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 84.2
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "bounds": {
+      "left": 0.55,
+      "right": 80.7,
+      "top": -1.4,
+      "bottom": 18.3
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "生態浩劫",
+    "records": [
+      {
+        "text": "生態浩劫",
+        "fontId": 58,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 84
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "bounds": {
+      "left": 0.35,
+      "right": 80.3,
+      "top": -1.3,
+      "bottom": 18.3
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "輕鬆一下",
+    "records": [
+      {
+        "text": "輕鬆一下",
+        "fontId": 58,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 84
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "bounds": {
+      "left": 0.55,
+      "right": 80.6,
+      "top": -1.3,
+      "bottom": 18.4
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "成果驗收",
+    "records": [
+      {
+        "text": "成果驗收",
+        "fontId": 58,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 84
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "bounds": {
+      "left": 1.45,
+      "right": 53.6,
+      "top": -1.4,
+      "bottom": 18.2
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "回首頁",
+    "records": [
+      {
+        "text": "回首頁",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 54.150000000000006
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "bounds": {
+      "left": 0.3,
+      "right": 216.05,
+      "top": -1.35,
+      "bottom": 248.1
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "台灣四面環海，海洋可說與我們生活習習相關，人們靠海維生，不僅僅人類如此，許多的動物們也離不開海洋，綿長的海岸線為我們帶來了無與倫比的豐富生態。",
+    "records": [
+      {
+        "text": "台灣四面環海，海洋",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 24,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 19,
+        "advance": 216.45000000000005
+      },
+      {
+        "text": "可說與我們生活習習",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 24,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 51,
+        "advance": 216.45000000000005
+      },
+      {
+        "text": "相關，人們靠海維生",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 24,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 83,
+        "advance": 216.45000000000005
+      },
+      {
+        "text": "，不僅僅人類如此，",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 24,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 115,
+        "advance": 216.45000000000005
+      },
+      {
+        "text": "許多的動物們也離不",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 24,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 147,
+        "advance": 216.45000000000005
+      },
+      {
+        "text": "開海洋，綿長的海岸",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 24,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 179,
+        "advance": 216.45000000000005
+      },
+      {
+        "text": "線為我們帶來了無與",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 24,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 211,
+        "advance": 216.45000000000005
+      },
+      {
+        "text": "倫比的豐富生態。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 24,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 243,
+        "advance": 192.40000000000003
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "bounds": {
+      "left": 0.3,
+      "right": 216.05,
+      "top": -1.35,
+      "bottom": 248.1
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "台灣四面環海，海洋可說與我們生活習習相關，人們靠海維生，不僅僅人類如此，許多的動物們也離不開海洋，綿長的海岸線為我們帶來了無與倫比的豐富生態。",
+    "records": [
+      {
+        "text": "台灣四面環海，海洋",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 24,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 19,
+        "advance": 216.45000000000005
+      },
+      {
+        "text": "可說與我們生活習習",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 24,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 51,
+        "advance": 216.45000000000005
+      },
+      {
+        "text": "相關，人們靠海維生",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 24,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 83,
+        "advance": 216.45000000000005
+      },
+      {
+        "text": "，不僅僅人類如此，",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 24,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 115,
+        "advance": 216.45000000000005
+      },
+      {
+        "text": "許多的動物們也離不",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 24,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 147,
+        "advance": 216.45000000000005
+      },
+      {
+        "text": "開海洋，綿長的海岸",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 24,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 179,
+        "advance": 216.45000000000005
+      },
+      {
+        "text": "線為我們帶來了無與",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 24,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 211,
+        "advance": 216.45000000000005
+      },
+      {
+        "text": "倫比的豐富生態。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 24,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 243,
+        "advance": 192.40000000000003
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "bounds": {
+      "left": 1.45,
+      "right": 151.15,
+      "top": -1.35,
+      "bottom": 31.9
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "導引&簡介",
+    "records": [
+      {
+        "text": "導引",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 32,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 26,
+        "advance": 64.1
+      },
+      {
+        "text": "&",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 32,
+        "color": "#000000",
+        "xOffset": 64.1,
+        "yOffset": 26,
+        "advance": 23.45
+      },
+      {
+        "text": "簡介",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 32,
+        "color": "#000000",
+        "xOffset": 87.55,
+        "yOffset": 26,
+        "advance": 64.1
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "bounds": {
+      "left": 1.5,
+      "right": 151.2,
+      "top": -1.35,
+      "bottom": 31.9
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "導引&簡介",
+    "records": [
+      {
+        "text": "導引",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 32,
+        "color": "#f8e267",
+        "xOffset": 0,
+        "yOffset": 26,
+        "advance": 64.1
+      },
+      {
+        "text": "&",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 32,
+        "color": "#f8e267",
+        "xOffset": 64.1,
+        "yOffset": 26,
+        "advance": 23.45
+      },
+      {
+        "text": "簡介",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 32,
+        "color": "#f8e267",
+        "xOffset": 87.55,
+        "yOffset": 26,
+        "advance": 64.1
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "bounds": {
+      "left": 0.3,
+      "right": 216.2,
+      "top": -1.2,
+      "bottom": 184.1
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "海濱沿岸的食物鏈因此孕育而生，大量的魚類及潮間帶的各種螃蟹、寄居蟹、軟體動物，為鳥群們提供了極佳的生存環境。",
+    "records": [
+      {
+        "text": "海濱沿岸的食物鏈因",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 24,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 19,
+        "advance": 216.45000000000005
+      },
+      {
+        "text": "此孕育而生，大量的",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 24,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 51,
+        "advance": 216.45000000000005
+      },
+      {
+        "text": "魚類及潮間帶的各種",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 24,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 83,
+        "advance": 216.45000000000005
+      },
+      {
+        "text": "螃蟹、寄居蟹、軟體",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 24,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 115,
+        "advance": 216.45000000000005
+      },
+      {
+        "text": "動物，為鳥群們提供",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 24,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 147,
+        "advance": 216.45000000000005
+      },
+      {
+        "text": "了極佳的生存環境。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 24,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 179,
+        "advance": 216.45000000000005
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "bounds": {
+      "left": 0.3,
+      "right": 216.2,
+      "top": -1.2,
+      "bottom": 184.1
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "海濱沿岸的食物鏈因此孕育而生，大量的魚類及潮間帶的各種螃蟹、寄居蟹、軟體動物，為鳥群們提供了極佳的生存環境。",
+    "records": [
+      {
+        "text": "海濱沿岸的食物鏈因",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 24,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 19,
+        "advance": 216.45000000000005
+      },
+      {
+        "text": "此孕育而生，大量的",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 24,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 51,
+        "advance": 216.45000000000005
+      },
+      {
+        "text": "魚類及潮間帶的各種",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 24,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 83,
+        "advance": 216.45000000000005
+      },
+      {
+        "text": "螃蟹、寄居蟹、軟體",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 24,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 115,
+        "advance": 216.45000000000005
+      },
+      {
+        "text": "動物，為鳥群們提供",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 24,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 147,
+        "advance": 216.45000000000005
+      },
+      {
+        "text": "了極佳的生存環境。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 24,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 179,
+        "advance": 216.45000000000005
+      }
+    ]
+  },
+  {
+    "id": 104,
+    "bounds": {
+      "left": 0.45,
+      "right": 59.9,
+      "top": -1.65,
+      "bottom": 20.15
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "小白鷺",
+    "records": [
+      {
+        "text": "小白鷺",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 16,
+        "advance": 60.150000000000006
+      }
+    ]
+  },
+  {
+    "id": 105,
+    "bounds": {
+      "left": 0.45,
+      "right": 39,
+      "top": -1.35,
+      "bottom": 20.05
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "黑鳶",
+    "records": [
+      {
+        "text": "黑鳶",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 16,
+        "advance": 40.1
+      }
+    ]
+  },
+  {
+    "id": 106,
+    "bounds": {
+      "left": 0.45,
+      "right": 79.5,
+      "top": -1.35,
+      "bottom": 20.1
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "小環頸鴴",
+    "records": [
+      {
+        "text": "小環頸鴴",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 16,
+        "advance": 80.2
+      }
+    ]
+  },
+  {
+    "id": 109,
+    "bounds": {
+      "left": 0.45,
+      "right": 59.55,
+      "top": -1.35,
+      "bottom": 20.3
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "黑脊鷗",
+    "records": [
+      {
+        "text": "黑脊鷗",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 16,
+        "advance": 60.150000000000006
+      }
+    ]
+  },
+  {
+    "id": 114,
+    "bounds": {
+      "left": 0.45,
+      "right": 79.8,
+      "top": -1.4,
+      "bottom": 20.3
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "小青足鷸",
+    "records": [
+      {
+        "text": "小青足鷸",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 16,
+        "advance": 80.2
+      }
+    ]
+  },
+  {
+    "id": 115,
+    "bounds": {
+      "left": 0.25,
+      "right": 59.75,
+      "top": -1.35,
+      "bottom": 20.15
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "翻石鷸",
+    "records": [
+      {
+        "text": "翻石鷸",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 16,
+        "advance": 60.150000000000006
+      }
+    ]
+  },
+  {
+    "id": 117,
+    "bounds": {
+      "left": 0.1,
+      "right": 220.2,
+      "top": -1.5,
+      "bottom": 244.2
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "台灣得天獨厚的海洋環境使得鳥的種類特別多，有些就在此地長住下來了，就像是：小白鷺、小環頸鴴、黑鳶，有些則只是短暫且美麗的訪客，像是：小青足鷸、翻石鷸、黑脊鷗。我們依海而生，怎能對這些好鄰居一無所知呢",
+    "records": [
+      {
+        "text": "台灣得天獨厚的海洋環境",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 16,
+        "advance": 220.55000000000004
+      },
+      {
+        "text": "使得鳥的種類特別多，有",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 44,
+        "advance": 220.55000000000004
+      },
+      {
+        "text": "些就在此地長住下來了，",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 72,
+        "advance": 220.55000000000004
+      },
+      {
+        "text": "就像是：小白鷺、小環頸",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 100,
+        "advance": 220.55000000000004
+      },
+      {
+        "text": "鴴、黑鳶，有些則只是短",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 128,
+        "advance": 220.55000000000004
+      },
+      {
+        "text": "暫且美麗的訪客，像是：",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 156,
+        "advance": 220.55000000000004
+      },
+      {
+        "text": "小青足鷸、翻石鷸、黑脊",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 184,
+        "advance": 220.55000000000004
+      },
+      {
+        "text": "鷗。我們依海而生，怎能",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 212,
+        "advance": 220.55000000000004
+      },
+      {
+        "text": "對這些好鄰居一無所知呢",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 240,
+        "advance": 220.55000000000004
+      }
+    ]
+  },
+  {
+    "id": 118,
+    "bounds": {
+      "left": 0.1,
+      "right": 220.2,
+      "top": -1.5,
+      "bottom": 244.2
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "台灣得天獨厚的海洋環境使得鳥的種類特別多，有些就在此地長住下來了，就像是：小白鷺、小環頸鴴、黑鳶，有些則只是短暫且美麗的訪客，像是：小青足鷸、翻石鷸、黑脊鷗。我們依海而生，怎能對這些好鄰居一無所知呢",
+    "records": [
+      {
+        "text": "台灣得天獨厚的海洋環境",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 16,
+        "advance": 220.55000000000004
+      },
+      {
+        "text": "使得鳥的種類特別多，有",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 44,
+        "advance": 220.55000000000004
+      },
+      {
+        "text": "些就在此地長住下來了，",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 72,
+        "advance": 220.55000000000004
+      },
+      {
+        "text": "就像是：小白鷺、小環頸",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 100,
+        "advance": 220.55000000000004
+      },
+      {
+        "text": "鴴、黑鳶，有些則只是短",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 128,
+        "advance": 220.55000000000004
+      },
+      {
+        "text": "暫且美麗的訪客，像是：",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 156,
+        "advance": 220.55000000000004
+      },
+      {
+        "text": "小青足鷸、翻石鷸、黑脊",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 184,
+        "advance": 220.55000000000004
+      },
+      {
+        "text": "鷗。我們依海而生，怎能",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 212,
+        "advance": 220.55000000000004
+      },
+      {
+        "text": "對這些好鄰居一無所知呢",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 240,
+        "advance": 220.55000000000004
+      }
+    ]
+  },
+  {
+    "id": 123,
+    "bounds": {
+      "left": 0.45,
+      "right": 139.9,
+      "top": -1.4,
+      "bottom": 20.35
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "原本美麗的沙灘",
+    "records": [
+      {
+        "text": "原本美麗的沙灘",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 16,
+        "advance": 140.35
+      }
+    ]
+  },
+  {
+    "id": 126,
+    "bounds": {
+      "left": 0.55,
+      "right": 119.35,
+      "top": -1.35,
+      "bottom": 20.15
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "沙灘嚴重流失",
+    "records": [
+      {
+        "text": "沙灘嚴重流失",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 16,
+        "advance": 120.3
+      }
+    ]
+  },
+  {
+    "id": 127,
+    "bounds": {
+      "left": 0.4,
+      "right": 767.45,
+      "top": -1.65,
+      "bottom": 132.3
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "近年來海岸環境的破壞，迫使鳥群們搬離原來的棲地，更甚者，有些鳥群有滅絕的危機，貢寮核四廠的興建便是最好的例子，為了使物料得以方便輸運，在福隆-澳底間蓋了一座新碼頭，而原本位在澳底的一段白淨沙灘，短短幾年間消失殆盡，沙灘沒入水中或是流失，使得依此為生的鳥群，不得不遷移，豐富的潮間生態及各式各樣、形形色色的鳥群，再也不復見，只剩下卸貨碼頭與水泥河堤，遙遙相望。",
+    "records": [
+      {
+        "text": "近年來海岸環境的破壞，迫使鳥群們搬離原來的棲地，更甚者，有些鳥群有滅絕的危機",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 16,
+        "advance": 761.8999999999996
+      },
+      {
+        "text": "，貢寮核四廠的興建便是最好的例子，為了使物料得以方便輸運，在福隆",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 44,
+        "advance": 641.5999999999999
+      },
+      {
+        "text": "-",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#ffffff",
+        "xOffset": 641.5999999999999,
+        "yOffset": 44,
+        "advance": 6.3
+      },
+      {
+        "text": "澳底間蓋了一",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#ffffff",
+        "xOffset": 647.8999999999999,
+        "yOffset": 44,
+        "advance": 120.3
+      },
+      {
+        "text": "座新碼頭，而原本位在澳底的一段白淨沙灘，短短幾年間消失殆盡，沙灘沒入水中或是",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 72,
+        "advance": 761.8999999999996
+      },
+      {
+        "text": "流失，使得依此為生的鳥群，不得不遷移，豐富的潮間生態及各式各樣、形形色色的鳥",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 100,
+        "advance": 761.8999999999996
+      },
+      {
+        "text": "群，再也不復見，只剩下卸貨碼頭與水泥河堤，遙遙相望。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 128,
+        "advance": 521.3000000000002
+      }
+    ]
+  },
+  {
+    "id": 131,
+    "bounds": {
+      "left": 53.15,
+      "right": 582.2,
+      "top": -1.65,
+      "bottom": 76.25
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 52.8,
+      "y": 0
+    },
+    "text": "住在台灣的我們是否應該思考在海洋環境中所應扮演的角色?我們希望能藉由認識台灣海濱常見的鳥類生態，進而引導人們取得與大自然共存的一個平衡點。",
+    "records": [
+      {
+        "text": "住在台灣的我們是否應該思考在海洋環境中所應扮演的角色",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 16,
+        "advance": 521.3000000000002
+      },
+      {
+        "text": "?",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#ffffff",
+        "xOffset": 521.3000000000002,
+        "yOffset": 16,
+        "advance": 8.4
+      },
+      {
+        "text": "我們希望能藉由認識台灣海濱常見的鳥類生態，進而引導人",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#ffffff",
+        "xOffset": 4,
+        "yOffset": 44,
+        "advance": 521.3000000000002
+      },
+      {
+        "text": "們取得與大自然共存的一個平衡點。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#ffffff",
+        "xOffset": 105,
+        "yOffset": 72,
+        "advance": 320.80000000000007
+      }
+    ]
+  },
+  {
+    "id": 149,
+    "bounds": {
+      "left": 0.4,
+      "right": 31.75,
+      "top": -1.4,
+      "bottom": 16.35
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "鷺科",
+    "records": [
+      {
+        "text": "鷺科",
+        "fontId": 58,
+        "fontName": "新細明體",
+        "fontSize": 16,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 13,
+        "advance": 32
+      }
+    ]
+  },
+  {
+    "id": 150,
+    "bounds": {
+      "left": 0.25,
+      "right": 31.75,
+      "top": -1.4,
+      "bottom": 16.35
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "鶚科",
+    "records": [
+      {
+        "text": "鶚科",
+        "fontId": 58,
+        "fontName": "新細明體",
+        "fontSize": 16,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 13,
+        "advance": 32
+      }
+    ]
+  },
+  {
+    "id": 151,
+    "bounds": {
+      "left": 0.4,
+      "right": 47.75,
+      "top": -1.4,
+      "bottom": 16.35
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "彩鷸科",
+    "records": [
+      {
+        "text": "彩鷸科",
+        "fontId": 58,
+        "fontName": "新細明體",
+        "fontSize": 16,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 13,
+        "advance": 48
+      }
+    ]
+  },
+  {
+    "id": 152,
+    "bounds": {
+      "left": 0.5,
+      "right": 31.75,
+      "top": -1.4,
+      "bottom": 16.25
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "鴴科",
+    "records": [
+      {
+        "text": "鴴科",
+        "fontId": 58,
+        "fontName": "新細明體",
+        "fontSize": 16,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 13,
+        "advance": 32
+      }
+    ]
+  },
+  {
+    "id": 153,
+    "bounds": {
+      "left": 0.75,
+      "right": 31.75,
+      "top": -1.4,
+      "bottom": 16.35
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "鷸科",
+    "records": [
+      {
+        "text": "鷸科",
+        "fontId": 58,
+        "fontName": "新細明體",
+        "fontSize": 16,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 13,
+        "advance": 32
+      }
+    ]
+  },
+  {
+    "id": 154,
+    "bounds": {
+      "left": 1,
+      "right": 31.75,
+      "top": -1.25,
+      "bottom": 16.35
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "鷗科",
+    "records": [
+      {
+        "text": "鷗科",
+        "fontId": 58,
+        "fontName": "新細明體",
+        "fontSize": 16,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 13,
+        "advance": 32
+      }
+    ]
+  },
+  {
+    "id": 155,
+    "bounds": {
+      "left": 0.55,
+      "right": 47.75,
+      "top": -1.4,
+      "bottom": 16.5
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "翡翠科",
+    "records": [
+      {
+        "text": "翡翠科",
+        "fontId": 58,
+        "fontName": "新細明體",
+        "fontSize": 16,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 13,
+        "advance": 48
+      }
+    ]
+  },
+  {
+    "id": 156,
+    "bounds": {
+      "left": 0.2,
+      "right": 47.75,
+      "top": -1.3,
+      "bottom": 16.45
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "鶺鴒科",
+    "records": [
+      {
+        "text": "鶺鴒科",
+        "fontId": 58,
+        "fontName": "新細明體",
+        "fontSize": 16,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 13,
+        "advance": 48
+      }
+    ]
+  },
+  {
+    "id": 157,
+    "bounds": {
+      "left": -7.55,
+      "right": 151.3,
+      "top": -0.9,
+      "bottom": 31.7
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": -8.2,
+      "y": 0
+    },
+    "text": "躍動的精靈",
+    "records": [
+      {
+        "text": "躍動的精靈",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 32,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 26,
+        "advance": 160.25
+      }
+    ]
+  },
+  {
+    "id": 158,
+    "bounds": {
+      "left": -7.55,
+      "right": 151.3,
+      "top": -0.9,
+      "bottom": 31.7
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": -8.2,
+      "y": 0
+    },
+    "text": "躍動的精靈",
+    "records": [
+      {
+        "text": "躍動的精靈",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 32,
+        "color": "#f8e267",
+        "xOffset": 0,
+        "yOffset": 26,
+        "advance": 160.25
+      }
+    ]
+  },
+  {
+    "id": 172,
+    "bounds": {
+      "left": 51.95,
+      "right": 92.65,
+      "top": -1.4,
+      "bottom": 14.5
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 50.85,
+      "y": 0
+    },
+    "text": "回選單",
+    "records": [
+      {
+        "text": "回選單",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 14,
+        "color": "#660000",
+        "xOffset": 0,
+        "yOffset": 11,
+        "advance": 42.150000000000006
+      }
+    ]
+  },
+  {
+    "id": 175,
+    "bounds": {
+      "left": 2.15,
+      "right": 55.9,
+      "top": -1.55,
+      "bottom": 14.4
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "自動播放",
+    "records": [
+      {
+        "text": "自動播放",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 14,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 11,
+        "advance": 56.2
+      }
+    ]
+  },
+  {
+    "id": 181,
+    "bounds": {
+      "left": 0.15,
+      "right": 55.9,
+      "top": -1.55,
+      "bottom": 14.45
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "停止播放",
+    "records": [
+      {
+        "text": "停止播放",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 14,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 11,
+        "advance": 56.2
+      }
+    ]
+  },
+  {
+    "id": 190,
+    "bounds": {
+      "left": 0.35,
+      "right": 486.75,
+      "top": -1.65,
+      "bottom": 38.35
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "大家好，我叫白腹鰹鳥，是屬於鰹鳥家族中的一份子，我可是個大塊頭，體長約有73公分呢!",
+    "records": [
+      {
+        "text": "大家好，我叫白腹鰹鳥，是屬於鰹鳥家族中的一份子，我可是",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 487.3500000000002
+      },
+      {
+        "text": "個大塊頭，體長約有",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 34,
+        "advance": 162.45000000000002
+      },
+      {
+        "text": "73",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 162.45000000000002,
+        "yOffset": 34,
+        "advance": 17
+      },
+      {
+        "text": "公分呢",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 179.45000000000002,
+        "yOffset": 34,
+        "advance": 54.150000000000006
+      },
+      {
+        "text": "!",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 233.60000000000002,
+        "yOffset": 34,
+        "advance": 5.7
+      }
+    ]
+  },
+  {
+    "id": 194,
+    "bounds": {
+      "left": 0.25,
+      "right": 559.25,
+      "top": -1.65,
+      "bottom": 38.4
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "許多人喜歡叫我海雞母，因為我的腳上有蹼，嘴卻為長圓錐形，跟雞嘴一樣。我全身披著黑褐色的外衣，配上肚子上的白西裝，帥氣極了。",
+    "records": [
+      {
+        "text": "許多人喜歡叫我海雞母，因為我的腳上有蹼，嘴卻為長圓錐形，跟雞嘴",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 559.5500000000001
+      },
+      {
+        "text": "一樣。我全身披著黑褐色的外衣，配上肚子上的白西裝，帥氣極了。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 34,
+        "advance": 541.5000000000001
+      }
+    ]
+  },
+  {
+    "id": 198,
+    "bounds": {
+      "left": 0.15,
+      "right": 534.35,
+      "top": -1.55,
+      "bottom": 38.35
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "像我這樣的大個頭，總是被說像是個粗勇的猛漢，其實還蠻開心的。看!我的兩翼張開來是不是相當威風呢?",
+    "records": [
+      {
+        "text": "像我這樣的大個頭，總是被說像是個粗勇的猛漢，其實還蠻開心的。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 541.5000000000001
+      },
+      {
+        "text": "看",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 34,
+        "advance": 18.05
+      },
+      {
+        "text": "!",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 18.05,
+        "yOffset": 34,
+        "advance": 5.7
+      },
+      {
+        "text": "我的兩翼張開來是不是相當威風呢",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 23.75,
+        "yOffset": 34,
+        "advance": 270.75000000000006
+      },
+      {
+        "text": "?",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 294.50000000000006,
+        "yOffset": 34,
+        "advance": 7.55
+      }
+    ]
+  },
+  {
+    "id": 201,
+    "bounds": {
+      "left": 0.35,
+      "right": 335.25,
+      "top": -1.65,
+      "bottom": 38.5
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "大翅膀有個好處，在空中飛行時又快又穩，有時懶得動還可以借助風力在空中滑行。",
+    "records": [
+      {
+        "text": "大翅膀有個好處，在空中飛行時又快又穩，",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 342.9500000000001
+      },
+      {
+        "text": "有時懶得動還可以借助風力在空中滑行。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 34,
+        "advance": 324.9000000000001
+      }
+    ]
+  },
+  {
+    "id": 204,
+    "bounds": {
+      "left": 0.35,
+      "right": 514.55,
+      "top": -1.55,
+      "bottom": 38.3
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "基隆港附近及台灣東北部沿海可是我常去的美食街; 我喜歡貼著海面飛行，因為這樣美味的魚看得比較清楚。",
+    "records": [
+      {
+        "text": "基隆港附近及台灣東北部沿海可是我常去的美食街",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 397.10000000000014
+      },
+      {
+        "text": "; ",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 397.10000000000014,
+        "yOffset": 14,
+        "advance": 9.5
+      },
+      {
+        "text": "我喜歡貼著海",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 406.60000000000014,
+        "yOffset": 14,
+        "advance": 108.3
+      },
+      {
+        "text": "面飛行，因為這樣美味的魚看得比較清楚。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 34,
+        "advance": 342.9500000000001
+      }
+    ]
+  },
+  {
+    "id": 207,
+    "bounds": {
+      "left": 0.25,
+      "right": 556.95,
+      "top": -1.65,
+      "bottom": 58.3
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "說到抓魚，還真是一門學問，你要在15～27公尺空中就開始俯衝，在淺水處以45度衝進海中2～3公尺深，然後在水中經6～8秒後浮出。媽媽跟我說這樣抓到的魚比較好吃。",
+    "records": [
+      {
+        "text": "說到抓魚，還真是一門學問，你要在",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 288.80000000000007
+      },
+      {
+        "text": "15",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 288.80000000000007,
+        "yOffset": 14,
+        "advance": 17
+      },
+      {
+        "text": "～",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 305.80000000000007,
+        "yOffset": 14,
+        "advance": 18.05
+      },
+      {
+        "text": "27",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 323.8500000000001,
+        "yOffset": 14,
+        "advance": 17
+      },
+      {
+        "text": "公尺空中就開始俯衝，在淺",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 340.8500000000001,
+        "yOffset": 14,
+        "advance": 216.60000000000005
+      },
+      {
+        "text": "水處以",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 34,
+        "advance": 54.150000000000006
+      },
+      {
+        "text": "45",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 54.150000000000006,
+        "yOffset": 34,
+        "advance": 17
+      },
+      {
+        "text": "度衝進海中",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 71.15,
+        "yOffset": 34,
+        "advance": 90.25
+      },
+      {
+        "text": "2",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 161.4,
+        "yOffset": 34,
+        "advance": 8.5
+      },
+      {
+        "text": "～",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 169.9,
+        "yOffset": 34,
+        "advance": 18.05
+      },
+      {
+        "text": "3",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 187.95000000000002,
+        "yOffset": 34,
+        "advance": 8.5
+      },
+      {
+        "text": "公尺深，然後在水中經",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 196.45000000000002,
+        "yOffset": 34,
+        "advance": 180.50000000000003
+      },
+      {
+        "text": "6",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 376.95000000000005,
+        "yOffset": 34,
+        "advance": 8.5
+      },
+      {
+        "text": "～",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 385.45000000000005,
+        "yOffset": 34,
+        "advance": 18.05
+      },
+      {
+        "text": "8",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 403.50000000000006,
+        "yOffset": 34,
+        "advance": 8.5
+      },
+      {
+        "text": "秒後浮出。媽媽跟",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 412.00000000000006,
+        "yOffset": 34,
+        "advance": 144.4
+      },
+      {
+        "text": "我說這樣抓到的魚比較好吃。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 54,
+        "advance": 234.65000000000006
+      }
+    ]
+  },
+  {
+    "id": 209,
+    "bounds": {
+      "left": 51.45,
+      "right": 92.85,
+      "top": -1.75,
+      "bottom": 14.4
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 50.85,
+      "y": 0
+    },
+    "text": "大白鷺",
+    "records": [
+      {
+        "text": "大白鷺",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 14,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 11,
+        "advance": 42.150000000000006
+      }
+    ]
+  },
+  {
+    "id": 211,
+    "bounds": {
+      "left": 51.2,
+      "right": 92.85,
+      "top": -1.75,
+      "bottom": 14.4
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 50.85,
+      "y": 0
+    },
+    "text": "小白鷺",
+    "records": [
+      {
+        "text": "小白鷺",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 14,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 11,
+        "advance": 42.150000000000006
+      }
+    ]
+  },
+  {
+    "id": 213,
+    "bounds": {
+      "left": 58.2,
+      "right": 85.85,
+      "top": -1.55,
+      "bottom": 14.45
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 57.85,
+      "y": 0
+    },
+    "text": "蒼鷺",
+    "records": [
+      {
+        "text": "蒼鷺",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 14,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 11,
+        "advance": 28.1
+      }
+    ]
+  },
+  {
+    "id": 215,
+    "bounds": {
+      "left": 58.25,
+      "right": 85.85,
+      "top": -1.55,
+      "bottom": 14.4
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 57.85,
+      "y": 0
+    },
+    "text": "岩鷺",
+    "records": [
+      {
+        "text": "岩鷺",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 14,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 11,
+        "advance": 28.1
+      }
+    ]
+  },
+  {
+    "id": 222,
+    "bounds": {
+      "left": -218.25,
+      "right": 248.65,
+      "top": -1.65,
+      "bottom": 38.25
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": -218.8,
+      "y": 0
+    },
+    "text": "咳咳，我是大白鷺，是鷺科家族中的老大，身高約90公分的壯碩體型，到哪都很顯眼。",
+    "records": [
+      {
+        "text": "咳咳，我是大白鷺，是鷺科家族中的老大，身高約",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 397.10000000000014
+      },
+      {
+        "text": "90",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 397.10000000000014,
+        "yOffset": 14,
+        "advance": 17
+      },
+      {
+        "text": "公分的",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 414.10000000000014,
+        "yOffset": 14,
+        "advance": 54.150000000000006
+      },
+      {
+        "text": "壯碩體型，到哪都很顯眼。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 34,
+        "advance": 216.60000000000005
+      }
+    ]
+  },
+  {
+    "id": 225,
+    "bounds": {
+      "left": 0.4,
+      "right": 527.65,
+      "top": -1.6,
+      "bottom": 38.4
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "看!高尚優雅的跳躍，我跳!我平常喜歡到海邊、河口、沼澤、沙洲、湖泊等水域地帶去閒逛，看看有沒有什麼新鮮的事",
+    "records": [
+      {
+        "text": "看",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 18.05
+      },
+      {
+        "text": "!",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 18.05,
+        "yOffset": 14,
+        "advance": 5.7
+      },
+      {
+        "text": "高尚優雅的跳躍，我跳",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 23.75,
+        "yOffset": 14,
+        "advance": 180.50000000000003
+      },
+      {
+        "text": "!",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 204.25000000000003,
+        "yOffset": 14,
+        "advance": 5.7
+      },
+      {
+        "text": "我平常喜歡到海邊、河口、沼澤、沙洲、",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 209.95000000000002,
+        "yOffset": 14,
+        "advance": 324.9000000000001
+      },
+      {
+        "text": "湖泊等水域地帶去閒逛，看看有沒有什麼新鮮的事",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 34,
+        "advance": 397.10000000000014
+      }
+    ]
+  },
+  {
+    "id": 228,
+    "bounds": {
+      "left": 0.85,
+      "right": 220.9,
+      "top": -1.35,
+      "bottom": 18.25
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "喂喂喂，大哥，別搶鏡頭啊!",
+    "records": [
+      {
+        "text": "喂喂喂，大哥，別搶鏡頭啊",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 216.60000000000005
+      },
+      {
+        "text": "!",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 216.60000000000005,
+        "yOffset": 14,
+        "advance": 5.7
+      }
+    ]
+  },
+  {
+    "id": 231,
+    "bounds": {
+      "left": 8.8,
+      "right": 498.25,
+      "top": -1.85,
+      "bottom": 18.65
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "「借人家上一下鏡頭又不會怎樣。」可惡，再不走我要生氣了。",
+    "records": [
+      {
+        "text": "「借人家上一下鏡頭又不會怎樣。」可惡，再不走我要生氣了。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 505.4000000000002
+      }
+    ]
+  },
+  {
+    "id": 234,
+    "bounds": {
+      "left": 8.8,
+      "right": 334.1,
+      "top": -1.8,
+      "bottom": 18.65
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "「好嘛，好嘛，走就是了，那麼兇幹嘛。」",
+    "records": [
+      {
+        "text": "「好嘛，好嘛，走就是了，那麼兇幹嘛。」",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 342.9500000000001
+      }
+    ]
+  },
+  {
+    "id": 237,
+    "bounds": {
+      "left": 0.55,
+      "right": 252.2,
+      "top": -1.5,
+      "bottom": 18.35
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "不識相的傢伙，下次別再來搗亂",
+    "records": [
+      {
+        "text": "不識相的傢伙，下次別再來搗亂",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 252.70000000000007
+      }
+    ]
+  },
+  {
+    "id": 240,
+    "bounds": {
+      "left": 0.55,
+      "right": 509.1,
+      "top": -1.6,
+      "bottom": 38.35
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "呃，講到哪了，啊!對了，今天的健康操還沒跳呢!總是要動一下，不然脖子一直維持S型，也是很累人的。",
+    "records": [
+      {
+        "text": "呃，講到哪了，啊",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 144.4
+      },
+      {
+        "text": "!",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 144.4,
+        "yOffset": 14,
+        "advance": 5.7
+      },
+      {
+        "text": "對了，今天的健康操還沒跳呢",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 150.1,
+        "yOffset": 14,
+        "advance": 234.65000000000006
+      },
+      {
+        "text": "!",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 384.75000000000006,
+        "yOffset": 14,
+        "advance": 5.7
+      },
+      {
+        "text": "總是要動一下，",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 390.45000000000005,
+        "yOffset": 14,
+        "advance": 126.35
+      },
+      {
+        "text": "不然脖子一直維持",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 34,
+        "advance": 144.4
+      },
+      {
+        "text": "S",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 144.4,
+        "yOffset": 34,
+        "advance": 9.45
+      },
+      {
+        "text": "型，也是很累人的。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 153.85,
+        "yOffset": 34,
+        "advance": 162.45000000000002
+      }
+    ]
+  },
+  {
+    "id": 243,
+    "bounds": {
+      "left": 0.35,
+      "right": 559.15,
+      "top": -1.6,
+      "bottom": 78.25
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "邊跳健康操邊來閒聊一下好了，我平常嘴巴明明是黃色的，可是不知道為什麼到了繁殖季節，看到好多女生，總不自覺的緊張了起來，緊張到嘴巴都發黑，這樣一來腳也黑嘴也黑，很容易被誤認成我的小老弟-小白鷺。",
+    "records": [
+      {
+        "text": "邊跳健康操邊來閒聊一下好了，我平常嘴巴明明是黃色的，可是不知道",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 559.5500000000001
+      },
+      {
+        "text": "為什麼到了繁殖季節，看到好多女生，總不自覺的緊張了起來，緊張到",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 34,
+        "advance": 559.5500000000001
+      },
+      {
+        "text": "嘴巴都發黑，這樣一來腳也黑嘴也黑，很容易被誤認成我的小老弟",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 54,
+        "advance": 523.4500000000002
+      },
+      {
+        "text": "-",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 523.4500000000002,
+        "yOffset": 54,
+        "advance": 5.7
+      },
+      {
+        "text": "小",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 529.1500000000002,
+        "yOffset": 54,
+        "advance": 18.05
+      },
+      {
+        "text": "白鷺。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 74,
+        "advance": 54.150000000000006
+      }
+    ]
+  },
+  {
+    "id": 246,
+    "bounds": {
+      "left": 0.4,
+      "right": 541.1,
+      "top": -1.65,
+      "bottom": 38.5
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "說到我的小老弟小白鷺，平常都跟他們在一起，因為這樣看起來才有帶頭大哥的感覺，當然啦，我是不會跟他們收保護費的。",
+    "records": [
+      {
+        "text": "說到我的小老弟小白鷺，平常都跟他們在一起，因為這樣看起來才有",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 541.5000000000001
+      },
+      {
+        "text": "帶頭大哥的感覺，當然啦，我是不會跟他們收保護費的。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 34,
+        "advance": 451.25000000000017
+      }
+    ]
+  },
+  {
+    "id": 249,
+    "bounds": {
+      "left": 0.4,
+      "right": 413.45,
+      "top": -1.65,
+      "bottom": 18.45
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "說了這麼多，肚子也餓了，今天到海邊吃點海產好了",
+    "records": [
+      {
+        "text": "說了這麼多，肚子也餓了，今天到海邊吃點海產好了",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 415.15000000000015
+      }
+    ]
+  },
+  {
+    "id": 252,
+    "bounds": {
+      "left": 0.7,
+      "right": 522.8,
+      "top": -1.65,
+      "bottom": 38.35
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "唉，想不到經濟這麼不景氣，站了半天連個魚影都沒有，我想今天可能是魚兒的國定假日吧!還是回我的濕地去找找吧!",
+    "records": [
+      {
+        "text": "唉，想不到經濟這麼不景氣，站了半天連個魚影都沒有，我想今天",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 523.4500000000002
+      },
+      {
+        "text": "可能是魚兒的國定假日吧",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 34,
+        "advance": 198.55000000000004
+      },
+      {
+        "text": "!",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 198.55000000000004,
+        "yOffset": 34,
+        "advance": 5.7
+      },
+      {
+        "text": "還是回我的濕地去找找吧",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 204.25000000000003,
+        "yOffset": 34,
+        "advance": 198.55000000000004
+      },
+      {
+        "text": "!",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 402.80000000000007,
+        "yOffset": 34,
+        "advance": 5.7
+      }
+    ]
+  },
+  {
+    "id": 255,
+    "bounds": {
+      "left": 0.55,
+      "right": 287.1,
+      "top": -1.65,
+      "bottom": 18.45
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "果然還是這裡食物多，一下就找到了",
+    "records": [
+      {
+        "text": "果然還是這裡食物多，一下就找到了",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 288.80000000000007
+      }
+    ]
+  },
+  {
+    "id": 258,
+    "bounds": {
+      "left": 0.35,
+      "right": 497.7,
+      "top": -1.65,
+      "bottom": 38.35
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "吃飽了，來到這邊排排站，順便消化一下，我要順便睡個午覺，就先這樣囉，拜拜。",
+    "records": [
+      {
+        "text": "吃飽了，來到這邊排排站，順便消化一下，我要順便睡個午覺，",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 505.4000000000002
+      },
+      {
+        "text": "就先這樣囉，拜拜。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 34,
+        "advance": 162.45000000000002
+      }
+    ]
+  },
+  {
+    "id": 263,
+    "bounds": {
+      "left": 0.35,
+      "right": 507.8,
+      "top": -1.45,
+      "bottom": 38.35
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "攝影師大哥，好像怪怪的，只照到我的頭耶，啥?要拍証件照!啥?耳朵要露出來才行!可是我找不到耳朵啊!",
+    "records": [
+      {
+        "text": "攝影師大哥，好像怪怪的，只照到我的頭耶，啥",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 379.0500000000001
+      },
+      {
+        "text": "?",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 379.0500000000001,
+        "yOffset": 14,
+        "advance": 7.55
+      },
+      {
+        "text": "要拍証件照",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 386.60000000000014,
+        "yOffset": 14,
+        "advance": 90.25
+      },
+      {
+        "text": "!",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 476.85000000000014,
+        "yOffset": 14,
+        "advance": 5.7
+      },
+      {
+        "text": "啥",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 482.5500000000001,
+        "yOffset": 14,
+        "advance": 18.05
+      },
+      {
+        "text": "?",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 500.60000000000014,
+        "yOffset": 14,
+        "advance": 7.55
+      },
+      {
+        "text": "耳朵要露出來才行",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 34,
+        "advance": 144.4
+      },
+      {
+        "text": "!",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 144.4,
+        "yOffset": 34,
+        "advance": 5.7
+      },
+      {
+        "text": "可是我找不到耳朵啊",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 150.1,
+        "yOffset": 34,
+        "advance": 162.45000000000002
+      },
+      {
+        "text": "!",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 312.55,
+        "yOffset": 34,
+        "advance": 5.7
+      }
+    ]
+  },
+  {
+    "id": 266,
+    "bounds": {
+      "left": 0.25,
+      "right": 520.25,
+      "top": -1.65,
+      "bottom": 58.45
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "啥?跟我開玩笑的!嚇死我。咳咳，回到正題，大家好我是小白鷺，也是屬於鷺科家族的一員，體長約只有61公分，跟我的老大哥大白鷺比起來真是差太多，要張開翅膀才有90幾公分。",
+    "records": [
+      {
+        "text": "啥",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 18.05
+      },
+      {
+        "text": "?",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 18.05,
+        "yOffset": 14,
+        "advance": 7.55
+      },
+      {
+        "text": "跟我開玩笑的",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 25.6,
+        "yOffset": 14,
+        "advance": 108.3
+      },
+      {
+        "text": "!",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 133.9,
+        "yOffset": 14,
+        "advance": 5.7
+      },
+      {
+        "text": "嚇死我。咳咳，回到正題，大家好我是小白鷺，",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 139.6,
+        "yOffset": 14,
+        "advance": 379.0500000000001
+      },
+      {
+        "text": "也是屬於鷺科家族的一員，體長約只有",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 34,
+        "advance": 306.8500000000001
+      },
+      {
+        "text": "61",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 306.8500000000001,
+        "yOffset": 34,
+        "advance": 17
+      },
+      {
+        "text": "公分，跟我的老大哥大白",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 323.8500000000001,
+        "yOffset": 34,
+        "advance": 198.55000000000004
+      },
+      {
+        "text": "鷺比起來真是差太多，要張開翅膀才有",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 54,
+        "advance": 306.8500000000001
+      },
+      {
+        "text": "90",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 306.8500000000001,
+        "yOffset": 54,
+        "advance": 17
+      },
+      {
+        "text": "幾公分。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 323.8500000000001,
+        "yOffset": 54,
+        "advance": 72.2
+      }
+    ]
+  },
+  {
+    "id": 269,
+    "bounds": {
+      "left": 0.4,
+      "right": 540.75,
+      "top": -1.55,
+      "bottom": 58.4
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "平常喜歡在海灘、河川、湖泊、溪澗、沼澤或池塘等地覓食魚蝦。我全身白色，但嘴跟腳是黑色，腳趾黃綠色，這樣的黑白配帶點黃綠，讓我看起來高貴又優雅。",
+    "records": [
+      {
+        "text": "平常喜歡在海灘、河川、湖泊、溪澗、沼澤或池塘等地覓食魚蝦。我",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 541.5000000000001
+      },
+      {
+        "text": "全身白色，但嘴跟腳是黑色，腳趾黃綠色，這樣的黑白配帶點黃綠，",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 34,
+        "advance": 541.5000000000001
+      },
+      {
+        "text": "讓我看起來高貴又優雅。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 54,
+        "advance": 198.55000000000004
+      }
+    ]
+  },
+  {
+    "id": 272,
+    "bounds": {
+      "left": 0.4,
+      "right": 426.05,
+      "top": -1.4,
+      "bottom": 18.4
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "你看沒騙你吧，我飛行的英姿，帥到連我自己都著迷。",
+    "records": [
+      {
+        "text": "你看沒騙你吧，我飛行的英姿，帥到連我自己都著迷。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 433.20000000000016
+      }
+    ]
+  },
+  {
+    "id": 275,
+    "bounds": {
+      "left": 0.55,
+      "right": 325.3,
+      "top": -1.6,
+      "bottom": 18.3
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "咦?前方好像有狀況，我得先停下來再說。",
+    "records": [
+      {
+        "text": "咦",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 18.05
+      },
+      {
+        "text": "?",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 18.05,
+        "yOffset": 14,
+        "advance": 7.55
+      },
+      {
+        "text": "前方好像有狀況，我得先停下來再說。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 25.6,
+        "yOffset": 14,
+        "advance": 306.8500000000001
+      }
+    ]
+  },
+  {
+    "id": 278,
+    "bounds": {
+      "left": 0.15,
+      "right": 281.65,
+      "top": -1.6,
+      "bottom": 18.35
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "倒底發生了什麼事，趕快過去看看。",
+    "records": [
+      {
+        "text": "倒底發生了什麼事，趕快過去看看。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 288.80000000000007
+      }
+    ]
+  },
+  {
+    "id": 281,
+    "bounds": {
+      "left": 0.2,
+      "right": 522,
+      "top": -1.65,
+      "bottom": 18.4
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "什麼有人搶我地盤，這怎麼可以!看我三步併二步，去把他給趕走。",
+    "records": [
+      {
+        "text": "什麼有人搶我地盤，這怎麼可以",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 252.70000000000007
+      },
+      {
+        "text": "!",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 252.70000000000007,
+        "yOffset": 14,
+        "advance": 5.7
+      },
+      {
+        "text": "看我三步併二步，去把他給趕走。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 258.4000000000001,
+        "yOffset": 14,
+        "advance": 270.75000000000006
+      }
+    ]
+  },
+  {
+    "id": 284,
+    "bounds": {
+      "left": 0.4,
+      "right": 523,
+      "top": -1.65,
+      "bottom": 38.25
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "快走快走，你這個不速之客，這是我的地盤，下次再來就要跟你收過路費了。趕人趕到我都累了，去海邊找找食物吧!",
+    "records": [
+      {
+        "text": "快走快走，你這個不速之客，這是我的地盤，下次再來就要跟你收",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 523.4500000000002
+      },
+      {
+        "text": "過路費了。趕人趕到我都累了，去海邊找找食物吧",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 34,
+        "advance": 397.10000000000014
+      },
+      {
+        "text": "!",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 397.10000000000014,
+        "yOffset": 34,
+        "advance": 5.7
+      }
+    ]
+  },
+  {
+    "id": 287,
+    "bounds": {
+      "left": 0.25,
+      "right": 504.95,
+      "top": -1.65,
+      "bottom": 38.25
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "聽說我的老大哥大白鷺兄，剛剛在這一無所獲，我想一定是他技術不好。",
+    "records": [
+      {
+        "text": "聽說我的老大哥大白鷺兄，剛剛在這一無所獲，我想一定是他技",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 505.4000000000002
+      },
+      {
+        "text": "術不好。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 34,
+        "advance": 72.2
+      }
+    ]
+  },
+  {
+    "id": 290,
+    "bounds": {
+      "left": 0.35,
+      "right": 533.8,
+      "top": -1.65,
+      "bottom": 38.2
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "看喔，就說嘛，還是我厲害，哈哈，我要回去跟大白鷺兄炫耀一下，就此別過，再見。",
+    "records": [
+      {
+        "text": "看喔，就說嘛，還是我厲害，哈哈，我要回去跟大白鷺兄炫耀一下，",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 541.5000000000001
+      },
+      {
+        "text": "就此別過，再見。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 34,
+        "advance": 144.4
+      }
+    ]
+  },
+  {
+    "id": 373,
+    "bounds": {
+      "left": 44.2,
+      "right": 99.6,
+      "top": -1.55,
+      "bottom": 14.35
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 43.8,
+      "y": 0
+    },
+    "text": "小環頸鴴",
+    "records": [
+      {
+        "text": "小環頸鴴",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 14,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 11,
+        "advance": 56.2
+      }
+    ]
+  },
+  {
+    "id": 375,
+    "bounds": {
+      "left": 37.3,
+      "right": 106.6,
+      "top": -1.65,
+      "bottom": 14.4
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 36.8,
+      "y": 0
+    },
+    "text": "東方環頸鴴",
+    "records": [
+      {
+        "text": "東方環頸鴴",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 14,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 11,
+        "advance": 70.25
+      }
+    ]
+  },
+  {
+    "id": 377,
+    "bounds": {
+      "left": 51.1,
+      "right": 92.55,
+      "top": -1.55,
+      "bottom": 14.3
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 50.85,
+      "y": 0
+    },
+    "text": "金斑鴴",
+    "records": [
+      {
+        "text": "金斑鴴",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 14,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 11,
+        "advance": 42.150000000000006
+      }
+    ]
+  },
+  {
+    "id": 379,
+    "bounds": {
+      "left": 51.1,
+      "right": 92.55,
+      "top": -1.55,
+      "bottom": 14.35
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 50.85,
+      "y": 0
+    },
+    "text": "鐵嘴鴴",
+    "records": [
+      {
+        "text": "鐵嘴鴴",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 14,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 11,
+        "advance": 42.150000000000006
+      }
+    ]
+  },
+  {
+    "id": 382,
+    "bounds": {
+      "left": 51.1,
+      "right": 92.55,
+      "top": -1.55,
+      "bottom": 14.35
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 50.85,
+      "y": 0
+    },
+    "text": "灰斑鴴",
+    "records": [
+      {
+        "text": "灰斑鴴",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 14,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 11,
+        "advance": 42.150000000000006
+      }
+    ]
+  },
+  {
+    "id": 429,
+    "bounds": {
+      "left": 44.2,
+      "right": 99.8,
+      "top": -1.6,
+      "bottom": 14.5
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 43.8,
+      "y": 0
+    },
+    "text": "小青足鷸",
+    "records": [
+      {
+        "text": "小青足鷸",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 14,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 11,
+        "advance": 56.2
+      }
+    ]
+  },
+  {
+    "id": 431,
+    "bounds": {
+      "left": 52.3,
+      "right": 92.75,
+      "top": -1.75,
+      "bottom": 14.6
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 50.85,
+      "y": 0
+    },
+    "text": "中杓鷸",
+    "records": [
+      {
+        "text": "中杓鷸",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 14,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 11,
+        "advance": 42.150000000000006
+      }
+    ]
+  },
+  {
+    "id": 433,
+    "bounds": {
+      "left": 51.5,
+      "right": 92.75,
+      "top": -1.7,
+      "bottom": 14.5
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 50.85,
+      "y": 0
+    },
+    "text": "半蹼鷸",
+    "records": [
+      {
+        "text": "半蹼鷸",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 14,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 11,
+        "advance": 42.150000000000006
+      }
+    ]
+  },
+  {
+    "id": 435,
+    "bounds": {
+      "left": 44.3,
+      "right": 99.8,
+      "top": -1.55,
+      "bottom": 14.4
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 43.8,
+      "y": 0
+    },
+    "text": "紅胸濱鷸",
+    "records": [
+      {
+        "text": "紅胸濱鷸",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 14,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 11,
+        "advance": 56.2
+      }
+    ]
+  },
+  {
+    "id": 438,
+    "bounds": {
+      "left": 58.05,
+      "right": 85.75,
+      "top": -1.55,
+      "bottom": 14.4
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 57.85,
+      "y": 0
+    },
+    "text": "磯鷸",
+    "records": [
+      {
+        "text": "磯鷸",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 14,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 11,
+        "advance": 28.1
+      }
+    ]
+  },
+  {
+    "id": 439,
+    "bounds": {
+      "left": 51.05,
+      "right": 92.75,
+      "top": -1.55,
+      "bottom": 14.4
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 50.85,
+      "y": 0
+    },
+    "text": "翻石鷸",
+    "records": [
+      {
+        "text": "翻石鷸",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 14,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 11,
+        "advance": 42.150000000000006
+      }
+    ]
+  },
+  {
+    "id": 444,
+    "bounds": {
+      "left": -198.1,
+      "right": 334.45,
+      "top": -1.6,
+      "bottom": 38.3
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": -198.3,
+      "y": 0
+    },
+    "text": "我是半蹼鷸，屬於鷸科，體長約35公分，我喜歡繁殖息於淺水沼澤，在水面用枯草築巢",
+    "records": [
+      {
+        "text": "我是半蹼鷸，屬於鷸科，體長約",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 252.70000000000007
+      },
+      {
+        "text": "35",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 252.70000000000007,
+        "yOffset": 14,
+        "advance": 17
+      },
+      {
+        "text": "公分，我喜歡繁殖息於淺水沼澤，",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 269.70000000000005,
+        "yOffset": 14,
+        "advance": 270.75000000000006
+      },
+      {
+        "text": "在水面用枯草築巢",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 34,
+        "advance": 144.4
+      }
+    ]
+  },
+  {
+    "id": 447,
+    "bounds": {
+      "left": -207.6,
+      "right": 297,
+      "top": -1.6,
+      "bottom": 38.35
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": -207.85,
+      "y": 0
+    },
+    "text": "我的嘴筆直、粗黑，夏天時全身大致成紅褐色。冬天時頭至後頸轉成淡黃褐色、腹部以下呈白色。",
+    "records": [
+      {
+        "text": "我的嘴筆直、粗黑，夏天時全身大致成紅褐色。冬天時頭至後頸",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 505.4000000000002
+      },
+      {
+        "text": "轉成淡黃褐色、腹部以下呈白色。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 34,
+        "advance": 270.75000000000006
+      }
+    ]
+  },
+  {
+    "id": 450,
+    "bounds": {
+      "left": 0.25,
+      "right": 522.85,
+      "top": -1.65,
+      "bottom": 38.5
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "我喜歡在泥士裡找食物，每走一步把嘴扎入泥土一次，因為這樣才不會有疏漏，搞不好哪天還會讓我挖到寶也說不定。",
+    "records": [
+      {
+        "text": "我喜歡在泥士裡找食物，每走一步把嘴扎入泥土一次，因為這樣才",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 523.4500000000002
+      },
+      {
+        "text": "不會有疏漏，搞不好哪天還會讓我挖到寶也說不定。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 34,
+        "advance": 415.15000000000015
+      }
+    ]
+  },
+  {
+    "id": 453,
+    "bounds": {
+      "left": 0.55,
+      "right": 504.4,
+      "top": -1.8,
+      "bottom": 38.65
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "「我是半蹼鷸之神，謝謝你從泥土中救了我，有什麼願望我可以幫你實現?」哇，真的挖到寶了",
+    "records": [
+      {
+        "text": "「我是半蹼鷸之神，謝謝你從泥土中救了我，有什麼願望我可以",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 505.4000000000002
+      },
+      {
+        "text": "幫你實現",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 34,
+        "advance": 72.2
+      },
+      {
+        "text": "?",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 72.2,
+        "yOffset": 34,
+        "advance": 7.55
+      },
+      {
+        "text": "」哇，真的挖到寶了",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 79.75,
+        "yOffset": 34,
+        "advance": 162.45000000000002
+      }
+    ]
+  },
+  {
+    "id": 456,
+    "bounds": {
+      "left": 0.55,
+      "right": 440.95,
+      "top": -1.6,
+      "bottom": 38.65
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "太棒了，什麼都可以說嗎? 好緊張!我希望...我...我...我...，「沒問題，你的願望即將被實現。」",
+    "records": [
+      {
+        "text": "太棒了，什麼都可以說嗎",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 198.55000000000004
+      },
+      {
+        "text": "? ",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 198.55000000000004,
+        "yOffset": 14,
+        "advance": 12.3
+      },
+      {
+        "text": "好緊張",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 210.85000000000005,
+        "yOffset": 14,
+        "advance": 54.150000000000006
+      },
+      {
+        "text": "!",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 265.00000000000006,
+        "yOffset": 14,
+        "advance": 5.7
+      },
+      {
+        "text": "我希望",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 270.70000000000005,
+        "yOffset": 14,
+        "advance": 54.150000000000006
+      },
+      {
+        "text": "...",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 324.85,
+        "yOffset": 14,
+        "advance": 12.899999999999999
+      },
+      {
+        "text": "我",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 337.75,
+        "yOffset": 14,
+        "advance": 18.05
+      },
+      {
+        "text": "...",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 355.8,
+        "yOffset": 14,
+        "advance": 12.899999999999999
+      },
+      {
+        "text": "我",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 368.7,
+        "yOffset": 14,
+        "advance": 18.05
+      },
+      {
+        "text": "...",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 386.75,
+        "yOffset": 14,
+        "advance": 12.899999999999999
+      },
+      {
+        "text": "我",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 399.65,
+        "yOffset": 14,
+        "advance": 18.05
+      },
+      {
+        "text": "...",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 417.7,
+        "yOffset": 14,
+        "advance": 12.899999999999999
+      },
+      {
+        "text": "，",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 430.59999999999997,
+        "yOffset": 14,
+        "advance": 18.05
+      },
+      {
+        "text": "「沒問題，你的願望即將被實現。」",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 34,
+        "advance": 288.80000000000007
+      }
+    ]
+  },
+  {
+    "id": 459,
+    "bounds": {
+      "left": 0.55,
+      "right": 178.5,
+      "top": -1.55,
+      "bottom": 18.35
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "怎麼變成了三個我 @@ ",
+    "records": [
+      {
+        "text": "怎麼變成了三個我",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 144.4
+      },
+      {
+        "text": " @@ ",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 144.4,
+        "yOffset": 14,
+        "advance": 40.7
+      }
+    ]
+  },
+  {
+    "id": 521,
+    "bounds": {
+      "left": 51.2,
+      "right": 92.6,
+      "top": -1.55,
+      "bottom": 14.4
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 50.85,
+      "y": 0
+    },
+    "text": "小燕鷗",
+    "records": [
+      {
+        "text": "小燕鷗",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 14,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 11,
+        "advance": 42.150000000000006
+      }
+    ]
+  },
+  {
+    "id": 523,
+    "bounds": {
+      "left": 51.2,
+      "right": 92.6,
+      "top": -1.45,
+      "bottom": 14.4
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 50.85,
+      "y": 0
+    },
+    "text": "黑嘴鷗",
+    "records": [
+      {
+        "text": "黑嘴鷗",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 14,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 11,
+        "advance": 42.150000000000006
+      }
+    ]
+  },
+  {
+    "id": 525,
+    "bounds": {
+      "left": 51.2,
+      "right": 92.6,
+      "top": -1.55,
+      "bottom": 14.5
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 50.85,
+      "y": 0
+    },
+    "text": "黑脊鷗",
+    "records": [
+      {
+        "text": "黑脊鷗",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 14,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 11,
+        "advance": 42.150000000000006
+      }
+    ]
+  },
+  {
+    "id": 570,
+    "bounds": {
+      "left": 0.25,
+      "right": 522.2,
+      "top": -1.55,
+      "bottom": 38.35
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "我是黑脊鷗，屬鷗科，體長約55公分，喜歡結群或是與黑嘴鷗混棲於河口的高處沙洲，吃海邊泥沙灘之貝類和招潮蟹。",
+    "records": [
+      {
+        "text": "我是黑脊鷗，屬鷗科，體長約",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 234.65000000000006
+      },
+      {
+        "text": "55",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 234.65000000000006,
+        "yOffset": 14,
+        "advance": 17
+      },
+      {
+        "text": "公分，喜歡結群或是與黑嘴鷗混棲",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 251.65000000000006,
+        "yOffset": 14,
+        "advance": 270.75000000000006
+      },
+      {
+        "text": "於河口的高處沙洲，吃海邊泥沙灘之貝類和招潮蟹。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 34,
+        "advance": 415.15000000000015
+      }
+    ]
+  },
+  {
+    "id": 573,
+    "bounds": {
+      "left": 0.25,
+      "right": 522.85,
+      "top": -1.55,
+      "bottom": 38.35
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "我的嘴粗厚，能咬碎堅硬的貝類或蟹之外殼。除此之外，我善於利用空氣飛行，可說是十分敏捷。",
+    "records": [
+      {
+        "text": "我的嘴粗厚，能咬碎堅硬的貝類或蟹之外殼。除此之外，我善於利",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 523.4500000000002
+      },
+      {
+        "text": "用空氣飛行，可說是十分敏捷。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 34,
+        "advance": 252.70000000000007
+      }
+    ]
+  },
+  {
+    "id": 576,
+    "bounds": {
+      "left": 0.7,
+      "right": 498.25,
+      "top": -1.65,
+      "bottom": 18.35
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "翼背面為藍灰色，翼尖黑色有白斑，嘴巴是黃綠色，腳是紅色。",
+    "records": [
+      {
+        "text": "翼背面為藍灰色，翼尖黑色有白斑，嘴巴是黃綠色，腳是紅色。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 505.4000000000002
+      }
+    ]
+  },
+  {
+    "id": 579,
+    "bounds": {
+      "left": 0.55,
+      "right": 540.05,
+      "top": -1.65,
+      "bottom": 18.45
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "咦!這裡怎麼這麼多人在排隊，不知道在排什麼，管它的，先排再說。",
+    "records": [
+      {
+        "text": "咦",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 18.05
+      },
+      {
+        "text": "!",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 18.05,
+        "yOffset": 14,
+        "advance": 5.7
+      },
+      {
+        "text": "這裡怎麼這麼多人在排隊，不知道在排什麼，管它的，先排再說。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 23.75,
+        "yOffset": 14,
+        "advance": 523.4500000000002
+      }
+    ]
+  },
+  {
+    "id": 582,
+    "bounds": {
+      "left": 0.5,
+      "right": 476.05,
+      "top": -1.8,
+      "bottom": 38.65
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "隔壁的，你知不知道在排什麼?「我也不曉得耶，我看到很多人在排，所以就來了。」",
+    "records": [
+      {
+        "text": "隔壁的，你知不知道在排什麼",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 234.65000000000006
+      },
+      {
+        "text": "?",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 234.65000000000006,
+        "yOffset": 14,
+        "advance": 7.55
+      },
+      {
+        "text": "「我也不曉得耶，我看到很多",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 242.20000000000007,
+        "yOffset": 14,
+        "advance": 234.65000000000006
+      },
+      {
+        "text": "人在排，所以就來了。」",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 34,
+        "advance": 198.55000000000004
+      }
+    ]
+  },
+  {
+    "id": 585,
+    "bounds": {
+      "left": 0.4,
+      "right": 353.85,
+      "top": -1.65,
+      "bottom": 18.45
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "越來越多人了，我想一定是很有價值的東西。",
+    "records": [
+      {
+        "text": "越來越多人了，我想一定是很有價值的東西。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 361.0000000000001
+      }
+    ]
+  },
+  {
+    "id": 731,
+    "bounds": {
+      "left": 0.25,
+      "right": 540,
+      "top": -1.65,
+      "bottom": 38.3
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "我是中杓鷸，是鷸科當中的金城武，身高大小約42公分，正好是帥哥的高度，我這個姿勢還不錯吧!",
+    "records": [
+      {
+        "text": "我是中杓鷸，是鷸科當中的金城武，身高大小約",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 379.0500000000001
+      },
+      {
+        "text": "42",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 379.0500000000001,
+        "yOffset": 14,
+        "advance": 17
+      },
+      {
+        "text": "公分，正好是帥哥",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 396.0500000000001,
+        "yOffset": 14,
+        "advance": 144.4
+      },
+      {
+        "text": "的高度，我這個姿勢還不錯吧",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 34,
+        "advance": 234.65000000000006
+      },
+      {
+        "text": "!",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 234.65000000000006,
+        "yOffset": 34,
+        "advance": 5.7
+      }
+    ]
+  },
+  {
+    "id": 734,
+    "bounds": {
+      "left": 0.2,
+      "right": 523.15,
+      "top": -1.55,
+      "bottom": 38.3
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "我整體看起來淡褐色，嘴為黑色而且很長，約頭長的兩倍，距嘴基部約三分之二處向下彎，另外還有黑色眉線。",
+    "records": [
+      {
+        "text": "我整體看起來淡褐色，嘴為黑色而且很長，約頭長的兩倍，距嘴基",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 523.4500000000002
+      },
+      {
+        "text": "部約三分之二處向下彎，另外還有黑色眉線。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 34,
+        "advance": 361.0000000000001
+      }
+    ]
+  },
+  {
+    "id": 737,
+    "bounds": {
+      "left": 0.25,
+      "right": 461.6,
+      "top": -1.45,
+      "bottom": 38.35
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "我通常出現在潮間帶、及海岸附近之草原、沼澤、沙洲等，主要以蟹類為主食。",
+    "records": [
+      {
+        "text": "我通常出現在潮間帶、及海岸附近之草原、沼澤、沙洲等，",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 469.3000000000002
+      },
+      {
+        "text": "主要以蟹類為主食。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 34,
+        "advance": 162.45000000000002
+      }
+    ]
+  },
+  {
+    "id": 740,
+    "bounds": {
+      "left": 0.4,
+      "right": 408,
+      "top": -1.65,
+      "bottom": 18.35
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "等一下要去參加萬人泳度的比賽，得先吃個飽才行。",
+    "records": [
+      {
+        "text": "等一下要去參加萬人泳度的比賽，得先吃個飽才行。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 415.15000000000015
+      }
+    ]
+  },
+  {
+    "id": 743,
+    "bounds": {
+      "left": 0.55,
+      "right": 371.9,
+      "top": -1.65,
+      "bottom": 18.45
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "哇，參加的選手真是多，我得趕緊搶個好位置。",
+    "records": [
+      {
+        "text": "哇，參加的選手真是多，我得趕緊搶個好位置。",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 379.0500000000001
+      }
+    ]
+  },
+  {
+    "id": 746,
+    "bounds": {
+      "left": 0.85,
+      "right": 184.8,
+      "top": -1.45,
+      "bottom": 18.3
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "喂喂喂，用飛的作弊啦!",
+    "records": [
+      {
+        "text": "喂喂喂，用飛的作弊啦",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 180.50000000000003
+      },
+      {
+        "text": "!",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 180.50000000000003,
+        "yOffset": 14,
+        "advance": 5.7
+      }
+    ]
+  },
+  {
+    "id": 749,
+    "bounds": {
+      "left": 0.85,
+      "right": 515.4,
+      "top": -1.65,
+      "bottom": 18.35
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "呼!好不容易到了終點，真是累人。雖然沒得名，不過志在參加嘛!",
+    "records": [
+      {
+        "text": "呼",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 14,
+        "advance": 18.05
+      },
+      {
+        "text": "!",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 18.05,
+        "yOffset": 14,
+        "advance": 5.7
+      },
+      {
+        "text": "好不容易到了終點，真是累人。雖然沒得名，不過志在參加嘛",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 23.75,
+        "yOffset": 14,
+        "advance": 487.3500000000002
+      },
+      {
+        "text": "!",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 18,
+        "color": "#ffffe6",
+        "xOffset": 511.1000000000002,
+        "yOffset": 14,
+        "advance": 5.7
+      }
+    ]
+  },
+  {
+    "id": 810,
+    "bounds": {
+      "left": 8.65,
+      "right": 135.1,
+      "top": -0.9,
+      "bottom": 31.7
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 7.8,
+      "y": 0
+    },
+    "text": "展翅基隆",
+    "records": [
+      {
+        "text": "展翅基隆",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 32,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 26,
+        "advance": 128.2
+      }
+    ]
+  },
+  {
+    "id": 811,
+    "bounds": {
+      "left": 8.65,
+      "right": 135.1,
+      "top": -0.9,
+      "bottom": 31.7
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 7.8,
+      "y": 0
+    },
+    "text": "展翅基隆",
+    "records": [
+      {
+        "text": "展翅基隆",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 32,
+        "color": "#f8e267",
+        "xOffset": 0,
+        "yOffset": 26,
+        "advance": 128.2
+      }
+    ]
+  },
+  {
+    "id": 815,
+    "bounds": {
+      "left": 0.35,
+      "right": 31.2,
+      "top": -1.45,
+      "bottom": 16.25
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "黑鳶",
+    "records": [
+      {
+        "text": "黑鳶",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 16,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 13,
+        "advance": 32.1
+      }
+    ]
+  },
+  {
+    "id": 817,
+    "bounds": {
+      "left": 0.45,
+      "right": 63.7,
+      "top": -1.35,
+      "bottom": 16.3
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "鳳頭燕鷗",
+    "records": [
+      {
+        "text": "鳳頭燕鷗",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 16,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 13,
+        "advance": 64.2
+      }
+    ]
+  },
+  {
+    "id": 819,
+    "bounds": {
+      "left": 2.35,
+      "right": 63.65,
+      "top": -1.7,
+      "bottom": 16.3
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "白腹鰹鳥",
+    "records": [
+      {
+        "text": "白腹鰹鳥",
+        "fontId": 27,
+        "fontName": "新細明體",
+        "fontSize": 16,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 13,
+        "advance": 64.2
+      }
+    ]
+  },
+  {
+    "id": 821,
+    "bounds": {
+      "left": 1,
+      "right": 781,
+      "top": -1.2,
+      "bottom": 95.35
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "    黑鳶、鳳頭燕鷗及白腹鰹鳥是基隆港常見的三種鳥類，牠們被稱為基隆三寶，其中黑鳶更是基隆市的市鳥，偶爾站在港區抬頭一望，就可以發現他們在上空盤旋，尋找食物，如果有機會不仿停下你的腳步，好好的觀察牠們一番，當然你得先學會如何分辦牠們才行，就讓我們一起來好好的認識一下\"基隆三寶\"。",
+    "records": [
+      {
+        "text": "    ",
+        "fontId": 820,
+        "fontName": "標楷體",
+        "fontSize": 20,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 16,
+        "advance": 40.2
+      },
+      {
+        "text": "黑鳶、鳳頭燕鷗及白腹鰹鳥是基隆港常見的三種鳥類，牠們被稱為基隆三寶，其中黑",
+        "fontId": 820,
+        "fontName": "標楷體",
+        "fontSize": 20,
+        "color": "#ffffe6",
+        "xOffset": 40.2,
+        "yOffset": 16,
+        "advance": 741.8499999999997
+      },
+      {
+        "text": "鳶更是基隆市的市鳥，偶爾站在港區抬頭一望，就可以發現他們在上空盤旋，尋找食物，",
+        "fontId": 820,
+        "fontName": "標楷體",
+        "fontSize": 20,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 41,
+        "advance": 781.9499999999996
+      },
+      {
+        "text": "如果有機會不仿停下你的腳步，好好的觀察牠們一番，當然你得先學會如何分辦牠們才行",
+        "fontId": 820,
+        "fontName": "標楷體",
+        "fontSize": 20,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 66,
+        "advance": 781.9499999999996
+      },
+      {
+        "text": "，就讓我們一起來好好的認識一下",
+        "fontId": 820,
+        "fontName": "標楷體",
+        "fontSize": 20,
+        "color": "#ffffe6",
+        "xOffset": 0,
+        "yOffset": 91,
+        "advance": 300.75000000000006
+      },
+      {
+        "text": "\"",
+        "fontId": 820,
+        "fontName": "標楷體",
+        "fontSize": 20,
+        "color": "#ffffe6",
+        "xOffset": 300.75000000000006,
+        "yOffset": 91,
+        "advance": 10.05
+      },
+      {
+        "text": "基隆三寶",
+        "fontId": 820,
+        "fontName": "標楷體",
+        "fontSize": 20,
+        "color": "#ffffe6",
+        "xOffset": 310.80000000000007,
+        "yOffset": 91,
+        "advance": 80.2
+      },
+      {
+        "text": "\"",
+        "fontId": 820,
+        "fontName": "標楷體",
+        "fontSize": 20,
+        "color": "#ffffe6",
+        "xOffset": 391.00000000000006,
+        "yOffset": 91,
+        "advance": 10.05
+      },
+      {
+        "text": "。",
+        "fontId": 820,
+        "fontName": "標楷體",
+        "fontSize": 20,
+        "color": "#ffffe6",
+        "xOffset": 401.05000000000007,
+        "yOffset": 91,
+        "advance": 20.05
+      }
+    ]
+  }
+]

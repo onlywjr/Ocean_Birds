@@ -1,0 +1,1322 @@
+[
+  {
+    "id": 6,
+    "bounds": {
+      "left": -21.75,
+      "right": 166.75,
+      "top": 0.65,
+      "bottom": 46.8
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": -24.2,
+      "y": 0
+    },
+    "text": "遊戲載入",
+    "records": [
+      {
+        "text": "遊戲載入",
+        "fontId": 5,
+        "fontName": "華康中圓體",
+        "fontSize": 48,
+        "color": "#ffffcc",
+        "xOffset": 0,
+        "yOffset": 38,
+        "advance": 192.2
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "bounds": {
+      "left": 68.2,
+      "right": 75.65,
+      "top": 19.1,
+      "bottom": 28.6
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 47.9,
+      "y": 0
+    },
+    "text": "．",
+    "records": [
+      {
+        "text": "．",
+        "fontId": 5,
+        "fontName": "華康中圓體",
+        "fontSize": 48,
+        "color": "#ffffcc",
+        "xOffset": 0,
+        "yOffset": 38,
+        "advance": 48.05
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "bounds": {
+      "left": 4.05,
+      "right": 44.6,
+      "top": 9.05,
+      "bottom": 83.6
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "?",
+    "records": [
+      {
+        "text": "?",
+        "fontId": 5,
+        "fontName": "華康中圓體",
+        "fontSize": 96,
+        "color": "#ff0000",
+        "xOffset": 0,
+        "yOffset": 77,
+        "advance": 48.05
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "bounds": {
+      "left": 47.8,
+      "right": 94.9,
+      "top": -1.05,
+      "bottom": 24.05
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 45.85,
+      "y": 0
+    },
+    "text": "開始",
+    "records": [
+      {
+        "text": "開始",
+        "fontId": 5,
+        "fontName": "華康中圓體",
+        "fontSize": 24,
+        "color": "#ffffcc",
+        "xOffset": 0,
+        "yOffset": 19,
+        "advance": 52.1
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "bounds": {
+      "left": -68.85,
+      "right": 168.4,
+      "top": -0.7,
+      "bottom": 46.8
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": -70.2,
+      "y": 0
+    },
+    "text": "猜猜我是誰",
+    "records": [
+      {
+        "text": "猜猜我是誰",
+        "fontId": 5,
+        "fontName": "華康中圓體",
+        "fontSize": 48,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 38,
+        "advance": 240.25
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "bounds": {
+      "left": -68.7,
+      "right": 168.3,
+      "top": -0.5,
+      "bottom": 46.95
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": -70.1,
+      "y": 0
+    },
+    "text": "猜猜我是誰",
+    "records": [
+      {
+        "text": "猜猜我是誰",
+        "fontId": 80,
+        "fontName": "華康中圓體",
+        "fontSize": 48,
+        "color": "#ff9966",
+        "xOffset": 0,
+        "yOffset": 38,
+        "advance": 240
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "bounds": {
+      "left": 52,
+      "right": 92.55,
+      "top": 8.05,
+      "bottom": 83.6
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 47.9,
+      "y": 0
+    },
+    "text": "?",
+    "records": [
+      {
+        "text": "?",
+        "fontId": 5,
+        "fontName": "華康中圓體",
+        "fontSize": 96,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 77,
+        "advance": 48.05
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "bounds": {
+      "left": 52,
+      "right": 92.55,
+      "top": 8.05,
+      "bottom": 83.6
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 47.9,
+      "y": 0
+    },
+    "text": "?",
+    "records": [
+      {
+        "text": "?",
+        "fontId": 5,
+        "fontName": "華康中圓體",
+        "fontSize": 96,
+        "color": "#e952bf",
+        "xOffset": 0,
+        "yOffset": 77,
+        "advance": 48.05
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "bounds": {
+      "left": 52,
+      "right": 92.55,
+      "top": 8.05,
+      "bottom": 83.6
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 47.9,
+      "y": 0
+    },
+    "text": "?",
+    "records": [
+      {
+        "text": "?",
+        "fontId": 5,
+        "fontName": "華康中圓體",
+        "fontSize": 96,
+        "color": "#ffff8c",
+        "xOffset": 0,
+        "yOffset": 77,
+        "advance": 48.05
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "bounds": {
+      "left": 52,
+      "right": 92.55,
+      "top": 8.05,
+      "bottom": 83.6
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 47.9,
+      "y": 0
+    },
+    "text": "?",
+    "records": [
+      {
+        "text": "?",
+        "fontId": 5,
+        "fontName": "華康中圓體",
+        "fontSize": 96,
+        "color": "#a3d9fa",
+        "xOffset": 0,
+        "yOffset": 77,
+        "advance": 48.05
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "bounds": {
+      "left": 52,
+      "right": 92.55,
+      "top": 8.05,
+      "bottom": 83.6
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 47.9,
+      "y": 0
+    },
+    "text": "?",
+    "records": [
+      {
+        "text": "?",
+        "fontId": 5,
+        "fontName": "華康中圓體",
+        "fontSize": 96,
+        "color": "#9ef8cb",
+        "xOffset": 0,
+        "yOffset": 77,
+        "advance": 48.05
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "bounds": {
+      "left": 52,
+      "right": 92.55,
+      "top": 8.05,
+      "bottom": 83.6
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 47.9,
+      "y": 0
+    },
+    "text": "?",
+    "records": [
+      {
+        "text": "?",
+        "fontId": 5,
+        "fontName": "華康中圓體",
+        "fontSize": 96,
+        "color": "#f9d7d7",
+        "xOffset": 0,
+        "yOffset": 77,
+        "advance": 48.05
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "bounds": {
+      "left": -98.25,
+      "right": 262.3,
+      "top": -1.65,
+      "bottom": 220.55
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": -98.5,
+      "y": 0
+    },
+    "text": "一年一度的水鳥度度大會開始了大家本來都坐在自己的位子上沒想到剛剛一陣大地震大家都離開了原本的位子 逃難去了現在地震結束了為了避免造成混亂還得靠聰明的你幫幫忙安排鳥兒回到正的位置上",
+    "records": [
+      {
+        "text": "一年一度的水鳥度度大會開始了",
+        "fontId": 88,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 17,
+        "advance": 350.7000000000001
+      },
+      {
+        "text": "大家本來都坐在自己的位子上",
+        "fontId": 88,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 42,
+        "advance": 325.6500000000001
+      },
+      {
+        "text": "沒想到剛剛一陣大地震",
+        "fontId": 88,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 67,
+        "advance": 250.50000000000006
+      },
+      {
+        "text": "大家都離開了原本的位子",
+        "fontId": 88,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 92,
+        "advance": 275.55000000000007
+      },
+      {
+        "text": " ",
+        "fontId": 88,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#ffffff",
+        "xOffset": 275.55000000000007,
+        "yOffset": 92,
+        "advance": 9.9
+      },
+      {
+        "text": "逃難去了",
+        "fontId": 88,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 117,
+        "advance": 100.2
+      },
+      {
+        "text": "現在地震結束了",
+        "fontId": 88,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 142,
+        "advance": 175.35000000000002
+      },
+      {
+        "text": "為了避免造成混亂",
+        "fontId": 88,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 167,
+        "advance": 200.40000000000003
+      },
+      {
+        "text": "還得靠聰明的你幫幫忙",
+        "fontId": 88,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 192,
+        "advance": 250.50000000000006
+      },
+      {
+        "text": "安排鳥兒回到正的位置上",
+        "fontId": 88,
+        "fontName": "新細明體",
+        "fontSize": 20,
+        "color": "#ffffff",
+        "xOffset": 0,
+        "yOffset": 217,
+        "advance": 275.55000000000007
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "bounds": {
+      "left": 40.85,
+      "right": 104.05,
+      "top": 0.25,
+      "bottom": 21.95
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 38.9,
+      "y": 0
+    },
+    "text": "回選單",
+    "records": [
+      {
+        "text": "回選單",
+        "fontId": 80,
+        "fontName": "華康中圓體",
+        "fontSize": 22,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 18,
+        "advance": 66
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "bounds": {
+      "left": 40.85,
+      "right": 104.05,
+      "top": 0.25,
+      "bottom": 21.95
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 38.9,
+      "y": 0
+    },
+    "text": "回選單",
+    "records": [
+      {
+        "text": "回選單",
+        "fontId": 80,
+        "fontName": "華康中圓體",
+        "fontSize": 22,
+        "color": "#ff9999",
+        "xOffset": 0,
+        "yOffset": 18,
+        "advance": 66
+      }
+    ]
+  },
+  {
+    "id": 105,
+    "bounds": {
+      "left": 10.2,
+      "right": 128.6,
+      "top": -0.15,
+      "bottom": 24.15
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "您目前等級",
+    "records": [
+      {
+        "text": "您目前等級",
+        "fontId": 80,
+        "fontName": "華康中圓體",
+        "fontSize": 24,
+        "color": "#f4f5be",
+        "xOffset": 9,
+        "yOffset": 19,
+        "advance": 120
+      }
+    ]
+  },
+  {
+    "id": 109,
+    "bounds": {
+      "left": 0.95,
+      "right": 118.95,
+      "top": -0.45,
+      "bottom": 24.05
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "可移動次數",
+    "records": [
+      {
+        "text": "可移動次數",
+        "fontId": 80,
+        "fontName": "華康中圓體",
+        "fontSize": 24,
+        "color": "#f4f5be",
+        "xOffset": 0,
+        "yOffset": 19,
+        "advance": 120
+      }
+    ]
+  },
+  {
+    "id": 110,
+    "bounds": {
+      "left": 0.15,
+      "right": 205.8,
+      "top": -1.1,
+      "bottom": 213.7
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "遊戲說明：請用滑鼠拖曳圖形放至正確的格子中。你必需在\"可移動次數\"內完成，不然就無法到達下一關。注意，不要隨意點擊喔，看準了再下手，不然可是會扣\"可移動次數\"的唷!小提示：你只有兩次放錯的機會。",
+    "records": [
+      {
+        "text": "遊戲說明：",
+        "fontId": 80,
+        "fontName": "華康中圓體",
+        "fontSize": 24,
+        "color": "#f4f5be",
+        "xOffset": 0,
+        "yOffset": 19,
+        "advance": 145
+      },
+      {
+        "text": "請用滑鼠拖曳圖形放至正",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 16,
+        "color": "#c5f1fe",
+        "xOffset": 0,
+        "yOffset": 43,
+        "advance": 209
+      },
+      {
+        "text": "確的格子中。你必需在",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 16,
+        "color": "#c5f1fe",
+        "xOffset": 0,
+        "yOffset": 64,
+        "advance": 190
+      },
+      {
+        "text": "\"",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 16,
+        "color": "#c5f1fe",
+        "xOffset": 190,
+        "yOffset": 64,
+        "advance": 8.4
+      },
+      {
+        "text": "可移動次數",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 16,
+        "color": "#66ccff",
+        "xOffset": 0,
+        "yOffset": 85,
+        "advance": 95
+      },
+      {
+        "text": "\"",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 16,
+        "color": "#c5f1fe",
+        "xOffset": 95,
+        "yOffset": 85,
+        "advance": 8.4
+      },
+      {
+        "text": "內完成，不",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 16,
+        "color": "#c5f1fe",
+        "xOffset": 103.4,
+        "yOffset": 85,
+        "advance": 95
+      },
+      {
+        "text": "然就無法到達下一關。",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 16,
+        "color": "#c5f1fe",
+        "xOffset": 0,
+        "yOffset": 106,
+        "advance": 190
+      },
+      {
+        "text": "注",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 16,
+        "color": "#daf6ff",
+        "xOffset": 190,
+        "yOffset": 106,
+        "advance": 19
+      },
+      {
+        "text": "意，",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 16,
+        "color": "#daf6ff",
+        "xOffset": 0,
+        "yOffset": 127,
+        "advance": 38
+      },
+      {
+        "text": "不要隨意點擊",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 16,
+        "color": "#66ccff",
+        "xOffset": 38,
+        "yOffset": 127,
+        "advance": 114
+      },
+      {
+        "text": "喔，看",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 16,
+        "color": "#daf6ff",
+        "xOffset": 152,
+        "yOffset": 127,
+        "advance": 57
+      },
+      {
+        "text": "準了再下手，不然可是會",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 16,
+        "color": "#daf6ff",
+        "xOffset": 0,
+        "yOffset": 148,
+        "advance": 209
+      },
+      {
+        "text": "扣",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 16,
+        "color": "#daf6ff",
+        "xOffset": 0,
+        "yOffset": 169,
+        "advance": 19
+      },
+      {
+        "text": "\"",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 16,
+        "color": "#daf6ff",
+        "xOffset": 19,
+        "yOffset": 169,
+        "advance": 8.4
+      },
+      {
+        "text": "可移動次數",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 16,
+        "color": "#daf6ff",
+        "xOffset": 27.4,
+        "yOffset": 169,
+        "advance": 95
+      },
+      {
+        "text": "\"",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 16,
+        "color": "#daf6ff",
+        "xOffset": 122.4,
+        "yOffset": 169,
+        "advance": 8.4
+      },
+      {
+        "text": "的唷",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 16,
+        "color": "#daf6ff",
+        "xOffset": 130.8,
+        "yOffset": 169,
+        "advance": 38
+      },
+      {
+        "text": "!",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 16,
+        "color": "#daf6ff",
+        "xOffset": 168.8,
+        "yOffset": 169,
+        "advance": 6.65
+      },
+      {
+        "text": "小提示：你只有",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 16,
+        "color": "#c5f1fe",
+        "xOffset": 0,
+        "yOffset": 190,
+        "advance": 133
+      },
+      {
+        "text": "兩次",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 16,
+        "color": "#71d0ff",
+        "xOffset": 133,
+        "yOffset": 190,
+        "advance": 38
+      },
+      {
+        "text": "放錯",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 16,
+        "color": "#c5f1fe",
+        "xOffset": 171,
+        "yOffset": 190,
+        "advance": 38
+      },
+      {
+        "text": "的機會。",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 16,
+        "color": "#c5f1fe",
+        "xOffset": 0,
+        "yOffset": 211,
+        "advance": 76
+      }
+    ]
+  },
+  {
+    "id": 112,
+    "bounds": {
+      "left": 3.4,
+      "right": 143.35,
+      "top": -0.7,
+      "bottom": 36
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "第    關",
+    "records": [
+      {
+        "text": "第",
+        "fontId": 80,
+        "fontName": "華康中圓體",
+        "fontSize": 36,
+        "color": "#ffffff",
+        "xOffset": 2,
+        "yOffset": 29,
+        "advance": 36
+      },
+      {
+        "text": "    ",
+        "fontId": 80,
+        "fontName": "華康中圓體",
+        "fontSize": 36,
+        "color": "#ffffff",
+        "xOffset": 38,
+        "yOffset": 29,
+        "advance": 72
+      },
+      {
+        "text": "關",
+        "fontId": 80,
+        "fontName": "華康中圓體",
+        "fontSize": 36,
+        "color": "#ffffff",
+        "xOffset": 110,
+        "yOffset": 29,
+        "advance": 36
+      }
+    ]
+  },
+  {
+    "id": 113,
+    "bounds": {
+      "left": -100.85,
+      "right": 230.6,
+      "top": -0.5,
+      "bottom": 125.15
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": -102.25,
+      "y": 0
+    },
+    "text": "恭喜你答對了等級提升為",
+    "records": [
+      {
+        "text": "恭喜你答對了",
+        "fontId": 5,
+        "fontName": "華康中圓體",
+        "fontSize": 48,
+        "color": "#000000",
+        "xOffset": 0,
+        "yOffset": 38,
+        "advance": 348.3
+      },
+      {
+        "text": "等級提升為",
+        "fontId": 5,
+        "fontName": "華康中圓體",
+        "fontSize": 48,
+        "color": "#000000",
+        "xOffset": 29,
+        "yOffset": 116,
+        "advance": 290.25
+      }
+    ]
+  },
+  {
+    "id": 115,
+    "bounds": {
+      "left": -100.7,
+      "right": 230.4,
+      "top": -0.3,
+      "bottom": 125.35
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": -102.1,
+      "y": 0
+    },
+    "text": "恭喜你答對了等級提升為",
+    "records": [
+      {
+        "text": "恭喜你答對了",
+        "fontId": 80,
+        "fontName": "華康中圓體",
+        "fontSize": 48,
+        "color": "#66ffff",
+        "xOffset": 0,
+        "yOffset": 38,
+        "advance": 348
+      },
+      {
+        "text": "等級提升為",
+        "fontId": 80,
+        "fontName": "華康中圓體",
+        "fontSize": 48,
+        "color": "#3399ff",
+        "xOffset": 29,
+        "yOffset": 116,
+        "advance": 290
+      }
+    ]
+  },
+  {
+    "id": 138,
+    "bounds": {
+      "left": 0.05,
+      "right": 146.65,
+      "top": -1.4,
+      "bottom": 186.75
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "遊戲說明：請用滑鼠拖曳圖形放至正確的格子中。你必需在\"可移動次數\"內完成，不然就無法到達下一關。注意，不要隨意點擊喔，看準了再下手，不然可是會扣\"可移動次數\"的唷!小提示：你只有兩次放錯的機會。",
+    "records": [
+      {
+        "text": "遊戲說明：",
+        "fontId": 80,
+        "fontName": "華康中圓體",
+        "fontSize": 16,
+        "color": "#f4f5be",
+        "xOffset": 0,
+        "yOffset": 13,
+        "advance": 105
+      },
+      {
+        "text": "請用滑鼠拖曳圖形放至",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#c5f1fe",
+        "xOffset": 0,
+        "yOffset": 31,
+        "advance": 150
+      },
+      {
+        "text": "正確的格子中。你必需",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#c5f1fe",
+        "xOffset": 0,
+        "yOffset": 48,
+        "advance": 150
+      },
+      {
+        "text": "在",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#c5f1fe",
+        "xOffset": 0,
+        "yOffset": 65,
+        "advance": 15
+      },
+      {
+        "text": "\"",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#c5f1fe",
+        "xOffset": 15,
+        "yOffset": 65,
+        "advance": 7.05
+      },
+      {
+        "text": "可移動次數",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#66ccff",
+        "xOffset": 22.05,
+        "yOffset": 65,
+        "advance": 75
+      },
+      {
+        "text": "\"",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#c5f1fe",
+        "xOffset": 97.05,
+        "yOffset": 65,
+        "advance": 7.05
+      },
+      {
+        "text": "內完",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#c5f1fe",
+        "xOffset": 104.1,
+        "yOffset": 65,
+        "advance": 30
+      },
+      {
+        "text": "成，不然就無法到達下",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#c5f1fe",
+        "xOffset": 0,
+        "yOffset": 82,
+        "advance": 150
+      },
+      {
+        "text": "一關。",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#c5f1fe",
+        "xOffset": 0,
+        "yOffset": 99,
+        "advance": 45
+      },
+      {
+        "text": "注意，",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#daf6ff",
+        "xOffset": 45,
+        "yOffset": 99,
+        "advance": 45
+      },
+      {
+        "text": "不要隨意",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#66ccff",
+        "xOffset": 90,
+        "yOffset": 99,
+        "advance": 60
+      },
+      {
+        "text": "點擊",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#66ccff",
+        "xOffset": 0,
+        "yOffset": 116,
+        "advance": 30
+      },
+      {
+        "text": "喔，看準了再下",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#daf6ff",
+        "xOffset": 30,
+        "yOffset": 116,
+        "advance": 105
+      },
+      {
+        "text": "手，不然可是會扣",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#daf6ff",
+        "xOffset": 0,
+        "yOffset": 133,
+        "advance": 120
+      },
+      {
+        "text": "\"",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#daf6ff",
+        "xOffset": 120,
+        "yOffset": 133,
+        "advance": 7.05
+      },
+      {
+        "text": "可",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#daf6ff",
+        "xOffset": 127.05,
+        "yOffset": 133,
+        "advance": 15
+      },
+      {
+        "text": "移動次數",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#daf6ff",
+        "xOffset": 0,
+        "yOffset": 150,
+        "advance": 60
+      },
+      {
+        "text": "\"",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#daf6ff",
+        "xOffset": 60,
+        "yOffset": 150,
+        "advance": 7.05
+      },
+      {
+        "text": "的唷",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#daf6ff",
+        "xOffset": 67.05,
+        "yOffset": 150,
+        "advance": 30
+      },
+      {
+        "text": "!",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#daf6ff",
+        "xOffset": 97.05,
+        "yOffset": 150,
+        "advance": 5.7
+      },
+      {
+        "text": "小提示：你只有",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#c5f1fe",
+        "xOffset": 0,
+        "yOffset": 167,
+        "advance": 105
+      },
+      {
+        "text": "兩次",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#71d0ff",
+        "xOffset": 105,
+        "yOffset": 167,
+        "advance": 30
+      },
+      {
+        "text": "放",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#c5f1fe",
+        "xOffset": 135,
+        "yOffset": 167,
+        "advance": 15
+      },
+      {
+        "text": "錯的機會。",
+        "fontId": 100,
+        "fontName": "新細明體",
+        "fontSize": 12,
+        "color": "#c5f1fe",
+        "xOffset": 0,
+        "yOffset": 184,
+        "advance": 75
+      }
+    ]
+  },
+  {
+    "id": 165,
+    "bounds": {
+      "left": 27.05,
+      "right": 311.85,
+      "top": 0.7,
+      "bottom": 47.35
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 0,
+      "y": 0
+    },
+    "text": "您最後的等級",
+    "records": [
+      {
+        "text": "您最後的等級",
+        "fontId": 80,
+        "fontName": "華康中圓體",
+        "fontSize": 48,
+        "color": "#f4f5be",
+        "xOffset": 26,
+        "yOffset": 38,
+        "advance": 288
+      }
+    ]
+  },
+  {
+    "id": 168,
+    "bounds": {
+      "left": 51.6,
+      "right": 100.25,
+      "top": 0.9,
+      "bottom": 52.3
+    },
+    "matrix": {
+      "a": 1,
+      "b": 0,
+      "c": 0,
+      "d": 1,
+      "x": 50.75,
+      "y": 2.35
+    },
+    "text": "再次挑戰",
+    "records": [
+      {
+        "text": "再次",
+        "fontId": 80,
+        "fontName": "華康中圓體",
+        "fontSize": 24,
+        "color": "#ffffcc",
+        "xOffset": 0,
+        "yOffset": 19,
+        "advance": 52
+      },
+      {
+        "text": "挑戰",
+        "fontId": 80,
+        "fontName": "華康中圓體",
+        "fontSize": 24,
+        "color": "#ffffcc",
+        "xOffset": 0,
+        "yOffset": 45,
+        "advance": 52
+      }
+    ]
+  }
+]

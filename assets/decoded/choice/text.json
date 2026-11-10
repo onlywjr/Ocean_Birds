@@ -1,0 +1,20 @@
+[
+  {
+    "id": 203,
+    "variable": "score",
+    "html": false,
+    "text": "0"
+  },
+  {
+    "id": 204,
+    "variable": "err_num",
+    "html": false,
+    "text": "0"
+  },
+  {
+    "id": 205,
+    "variable": "right_num",
+    "html": false,
+    "text": "0"
+  }
+]

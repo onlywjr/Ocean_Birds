@@ -1,0 +1,27 @@
+* { box-sizing: border-box; }
+html, body { min-height: 100%; margin: 0; background: #255f8a; }
+body { display: grid; min-height: 100svh; place-items: center; padding: 20px; font-family: "Microsoft JhengHei", sans-serif; }
+.guide-shell { width: min(100%, 900px); color: #fff; }
+.guide-bar, .frame-nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.guide-bar { min-height: 52px; padding-bottom: 10px; }
+.guide-bar h1 { margin: 0; color: #f6d564; font-size: clamp(20px, 3vw, 28px); }
+.guide-bar > span, .frame-nav > span { color: #e0edf5; font-size: 14px; }
+.home-link, .frame-nav button { border: 1px solid rgb(255 255 255 / 65%); border-radius: 6px; background: #174e76; color: #fff; font: inherit; text-decoration: none; }
+.home-link { padding: 7px 14px; }
+#original-frame { display: block; width: 100%; aspect-ratio: 3 / 2; border: 0; background: #255f8a; }
+.frame-nav { min-height: 48px; padding-top: 10px; }
+.frame-nav button { min-width: 120px; padding: 8px 12px; cursor: pointer; }
+.frame-nav button:disabled { opacity: .45; cursor: default; }
+.home-link:focus-visible, .frame-nav button:focus-visible { outline: 3px solid #f6d564; outline-offset: 2px; }
+@media (max-width: 520px) { body { padding: 10px; } .guide-bar, .frame-nav { gap: 8px; } .frame-nav button { min-width: 0; } }
+.region-intro { padding: 12px 0 2px; }
+.region-intro h2 { margin: 0 0 10px; color: #f6d564; font-size: 18px; }
+.region-birds { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.region-bird { display: grid; grid-template-rows: 1fr auto; gap: 8px; min-width: 0; padding: 10px; border: 1px solid rgb(255 255 255 / 55%); border-radius: 10px; background: #174e76; color: white; cursor: pointer; font: inherit; font-size: 17px; }
+.region-bird img { width: 100%; height: clamp(100px, 18vw, 160px); object-fit: cover; border-radius: 6px; }
+.region-bird:hover, .region-bird:focus-visible { background: #24678f; }
+.region-bird:focus-visible { outline: 3px solid #f6d564; outline-offset: 2px; }
+.region-controls[hidden], .region-intro[hidden] { display: none; }
+.region-controls { justify-content: flex-start; flex-wrap: wrap; }
+.region-controls #region-progress { flex: 1; text-align: center; }
+@media (max-width: 520px) { .region-birds { gap: 8px; } .region-bird { padding: 6px; font-size: 14px; } .region-controls #region-progress { flex-basis: 100%; order: -1; } }

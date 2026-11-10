@@ -1,0 +1,557 @@
+[
+  {
+    "number": 1,
+    "prompt": "下面哪一種鳥類平時嘴巴是黃色的，繁殖季節會變黑色的?",
+    "choices": [
+      "大白鷺",
+      "小白鷺",
+      "蒼鷺"
+    ],
+    "correctOption": 1,
+    "swf": {
+      "frame": 2,
+      "promptId": 57,
+      "choicesId": 58
+    }
+  },
+  {
+    "number": 2,
+    "prompt": "看到野生鳥類應該怎麼做?",
+    "choices": [
+      "追逐牠們，讓牠們多運動",
+      "直接拿東西餵食",
+      "在遠處觀察即可"
+    ],
+    "correctOption": 3,
+    "swf": {
+      "frame": 3,
+      "promptId": 60,
+      "choicesId": 61
+    }
+  },
+  {
+    "number": 3,
+    "prompt": "最喜歡叫「苦啊!苦啊!」的是哪一種鳥類?",
+    "choices": [
+      "大白鷺",
+      "小白鷺",
+      "蒼鷺"
+    ],
+    "correctOption": 3,
+    "swf": {
+      "frame": 4,
+      "promptId": 63,
+      "choicesId": 58
+    }
+  },
+  {
+    "number": 4,
+    "prompt": "進行賞鳥活動時應該?",
+    "choices": [
+      "太遠了靠近一點看也沒關系",
+      "抓回家慢慢欣賞",
+      "在遠處利用望遠鏡欣賞即可"
+    ],
+    "correctOption": 3,
+    "swf": {
+      "frame": 5,
+      "promptId": 65,
+      "choicesId": 66
+    }
+  },
+  {
+    "number": 5,
+    "prompt": "下面哪一種鳥類不是鷸科的?",
+    "choices": [
+      "小青足鷸",
+      "彩鷸",
+      "磯鷸"
+    ],
+    "correctOption": 2,
+    "swf": {
+      "frame": 6,
+      "promptId": 68,
+      "choicesId": 69
+    }
+  },
+  {
+    "number": 6,
+    "prompt": "小青足鷸體長約幾公分?",
+    "choices": [
+      "24公分",
+      "48公分",
+      "72公分"
+    ],
+    "correctOption": 1,
+    "swf": {
+      "frame": 7,
+      "promptId": 71,
+      "choicesId": 72
+    }
+  },
+  {
+    "number": 7,
+    "prompt": "停棲時會不停上下擺動尾羽的是?",
+    "choices": [
+      "紅胸濱鷸",
+      "磯鷸",
+      "翻石鷸"
+    ],
+    "correctOption": 2,
+    "swf": {
+      "frame": 8,
+      "promptId": 74,
+      "choicesId": 75
+    }
+  },
+  {
+    "number": 8,
+    "prompt": "「整體看起來淡褐色，嘴為黑色而且很長，約頭長的兩倍，距嘴基部三分之二處向下彎，另外還有色眉線」請問是在形容?",
+    "choices": [
+      "中杓鷸",
+      "磯鷸",
+      "半蹼鷸"
+    ],
+    "correctOption": 1,
+    "swf": {
+      "frame": 9,
+      "promptId": 77,
+      "choicesId": 78
+    }
+  },
+  {
+    "number": 9,
+    "prompt": "翻石鷸翻動石頭是為了?",
+    "choices": [
+      "好玩",
+      "找食物",
+      "練體力"
+    ],
+    "correctOption": 2,
+    "swf": {
+      "frame": 10,
+      "promptId": 80,
+      "choicesId": 81
+    }
+  },
+  {
+    "number": 10,
+    "prompt": "下列何者喜歡在水面上用枯草築巢?",
+    "choices": [
+      "黑鳶",
+      "翻石鷸",
+      "半蹼鷸"
+    ],
+    "correctOption": 3,
+    "swf": {
+      "frame": 11,
+      "promptId": 83,
+      "choicesId": 84
+    }
+  },
+  {
+    "number": 11,
+    "prompt": "下列何者體型最小?",
+    "choices": [
+      "小青足鷸",
+      "半蹼鷸",
+      "紅胸濱鷸"
+    ],
+    "correctOption": 3,
+    "swf": {
+      "frame": 12,
+      "promptId": 86,
+      "choicesId": 87
+    }
+  },
+  {
+    "number": 12,
+    "prompt": "拍攝野生鳥類應注意?",
+    "choices": [
+      "太暗了，開閃光燈補光",
+      "愈近愈好",
+      "採自然光，不可開啟閃光燈"
+    ],
+    "correctOption": 3,
+    "swf": {
+      "frame": 13,
+      "promptId": 89,
+      "choicesId": 90
+    }
+  },
+  {
+    "number": 13,
+    "prompt": "有「清道伕」之稱的是?",
+    "choices": [
+      "魚鷹",
+      "黑鳶",
+      "獵鷹"
+    ],
+    "correctOption": 2,
+    "swf": {
+      "frame": 14,
+      "promptId": 92,
+      "choicesId": 93
+    }
+  },
+  {
+    "number": 14,
+    "prompt": "請問魚鷹是屬於?",
+    "choices": [
+      "鶚科",
+      "鷲鷹科",
+      "鷺科"
+    ],
+    "correctOption": 1,
+    "swf": {
+      "frame": 15,
+      "promptId": 95,
+      "choicesId": 96
+    }
+  },
+  {
+    "number": 15,
+    "prompt": "「關關雎鳩，在河之洲」這是在描述哪一種鳥類?",
+    "choices": [
+      "黑鳶",
+      "彩鷸",
+      "魚鷹"
+    ],
+    "correctOption": 3,
+    "swf": {
+      "frame": 16,
+      "promptId": 98,
+      "choicesId": 99
+    }
+  },
+  {
+    "number": 16,
+    "prompt": "會有一妻多夫的是下列哪一種鳥類?",
+    "choices": [
+      "彩鷸",
+      "翻石鷸",
+      "小青足鷸"
+    ],
+    "correctOption": 1,
+    "swf": {
+      "frame": 17,
+      "promptId": 101,
+      "choicesId": 102
+    }
+  },
+  {
+    "number": 17,
+    "prompt": "與小環頸鴴相似，但環頸較窄且不相連，在前頸中斷呈缺口狀的是?",
+    "choices": [
+      "鐵嘴鴴",
+      "灰班鴴",
+      "東方環頸鴴"
+    ],
+    "correctOption": 3,
+    "swf": {
+      "frame": 18,
+      "promptId": 104,
+      "choicesId": 105
+    }
+  },
+  {
+    "number": 18,
+    "prompt": "下列何者「身上遍佈金黃色斑點，夏天時，由臉頰至下腹間羽色都轉為黑色，所以又叫-黑胸鴴」",
+    "choices": [
+      "灰斑鴴",
+      "金斑鴴",
+      "鐵嘴鴴"
+    ],
+    "correctOption": 2,
+    "swf": {
+      "frame": 19,
+      "promptId": 107,
+      "choicesId": 108
+    }
+  },
+  {
+    "number": 19,
+    "prompt": "下翼基部要帶上有黑色塊斑是哪一種鳥的主要特徵?",
+    "choices": [
+      "灰斑鴴",
+      "金斑鴴",
+      "鐵嘴鴴"
+    ],
+    "correctOption": 1,
+    "swf": {
+      "frame": 20,
+      "promptId": 110,
+      "choicesId": 108
+    }
+  },
+  {
+    "number": 20,
+    "prompt": "「夏天時嘴呈黃色，前端黑色，腳是橙黃色，身體為灰白色，背部灰色，頭頂有一塊三角形白斑」是哪一種鳥類的主要特徵?",
+    "choices": [
+      "小燕鷗",
+      "黑嘴鷗",
+      "黑脊鷗"
+    ],
+    "correctOption": 1,
+    "swf": {
+      "frame": 21,
+      "promptId": 112,
+      "choicesId": 113
+    }
+  },
+  {
+    "number": 21,
+    "prompt": "下面哪一種鳥類會在水面上定點振翅，找尋食物?",
+    "choices": [
+      "金斑鴴",
+      "小青足鷸",
+      "小燕鷗"
+    ],
+    "correctOption": 3,
+    "swf": {
+      "frame": 22,
+      "promptId": 115,
+      "choicesId": 116
+    }
+  },
+  {
+    "number": 22,
+    "prompt": "下面哪一種鷺科鳥類的腳趾是黃綠色?",
+    "choices": [
+      "大白鷺",
+      "小白鷺",
+      "蒼鷺"
+    ],
+    "correctOption": 2,
+    "swf": {
+      "frame": 23,
+      "promptId": 118,
+      "choicesId": 58
+    }
+  },
+  {
+    "number": 23,
+    "prompt": "海站仔是指?",
+    "choices": [
+      "大白鷺",
+      "小白鷺",
+      "蒼鷺"
+    ],
+    "correctOption": 3,
+    "swf": {
+      "frame": 24,
+      "promptId": 120,
+      "choicesId": 58
+    }
+  },
+  {
+    "number": 24,
+    "prompt": "半蹼鷸找食物時會?",
+    "choices": [
+      "靜止不動，等食物自己上門",
+      "在空中原地振翅，看準後下手",
+      "每走一步把嘴扎入泥土一次"
+    ],
+    "correctOption": 3,
+    "swf": {
+      "frame": 25,
+      "promptId": 122,
+      "choicesId": 123
+    }
+  },
+  {
+    "number": 25,
+    "prompt": "魚鷹飛行時從正面看起來像是英文字母哪一個?",
+    "choices": [
+      "M",
+      "L",
+      "N"
+    ],
+    "correctOption": 1,
+    "swf": {
+      "frame": 26,
+      "promptId": 125,
+      "choicesId": 126
+    }
+  },
+  {
+    "number": 26,
+    "prompt": "「夏天時嘴、頭部大部份為黑色，冬天全身只有嘴為黑色。」這是哪一種鳥類的描述?",
+    "choices": [
+      "小燕鷗",
+      "黑嘴鷗",
+      "黑脊鷗"
+    ],
+    "correctOption": 2,
+    "swf": {
+      "frame": 27,
+      "promptId": 128,
+      "choicesId": 113
+    }
+  },
+  {
+    "number": 27,
+    "prompt": "對於黑脊鷗的主要描述，哪一項不正確?",
+    "choices": [
+      "嘴很細",
+      "善於利用空氣飛行",
+      "翼背面為藍灰色"
+    ],
+    "correctOption": 1,
+    "swf": {
+      "frame": 28,
+      "promptId": 130,
+      "choicesId": 131
+    }
+  },
+  {
+    "number": 28,
+    "prompt": "下面哪一個不是翠鳥的別稱?",
+    "choices": [
+      "魚狗",
+      "魚牛",
+      "魚獅"
+    ],
+    "correctOption": 2,
+    "swf": {
+      "frame": 29,
+      "promptId": 133,
+      "choicesId": 134
+    }
+  },
+  {
+    "number": 29,
+    "prompt": "白脊鴒又叫?",
+    "choices": [
+      "牛糞鳥仔",
+      "豬糞鳥仔",
+      "狗糞鳥仔"
+    ],
+    "correctOption": 1,
+    "swf": {
+      "frame": 30,
+      "promptId": 136,
+      "choicesId": 137
+    }
+  },
+  {
+    "number": 30,
+    "prompt": "「雞屎鷹、麻鷹、老雕」這些是哪一種鳥類的別稱?",
+    "choices": [
+      "魚鷹",
+      "黑鳶",
+      "獵鷹"
+    ],
+    "correctOption": 2,
+    "swf": {
+      "frame": 31,
+      "promptId": 139,
+      "choicesId": 93
+    }
+  },
+  {
+    "number": 31,
+    "prompt": "基隆市的市鳥是?",
+    "choices": [
+      "魚鷹",
+      "黑鳶",
+      "獵鷹"
+    ],
+    "correctOption": 2,
+    "swf": {
+      "frame": 32,
+      "promptId": 141,
+      "choicesId": 93
+    }
+  },
+  {
+    "number": 32,
+    "prompt": "下面對於鳳頭燕鷗的描述哪一項不正確?",
+    "choices": [
+      "頭部有黑色短羽冠",
+      "飛行時拍翅動作快",
+      "嘴鮮黃、腳是黑色"
+    ],
+    "correctOption": 2,
+    "swf": {
+      "frame": 33,
+      "promptId": 143,
+      "choicesId": 144
+    }
+  },
+  {
+    "number": 33,
+    "prompt": "白腹鰹鳥又叫?",
+    "choices": [
+      "海豬母",
+      "海狗母",
+      "海雞母"
+    ],
+    "correctOption": 3,
+    "swf": {
+      "frame": 34,
+      "promptId": 146,
+      "choicesId": 147
+    }
+  },
+  {
+    "number": 34,
+    "prompt": "下列對翻石鷸的形容何者正確?",
+    "choices": [
+      "嘴巴是黃色的",
+      "腳是黑色的",
+      "體色為紅白黑相間"
+    ],
+    "correctOption": 3,
+    "swf": {
+      "frame": 35,
+      "promptId": 149,
+      "choicesId": 150
+    }
+  },
+  {
+    "number": 35,
+    "prompt": "發現特別鳥種的棲地或育雛時應該?",
+    "choices": [
+      "告訴親朋好友",
+      "守口如瓶",
+      "透露給報社當獨家"
+    ],
+    "correctOption": 2,
+    "swf": {
+      "frame": 36,
+      "promptId": 152,
+      "choicesId": 153
+    }
+  },
+  {
+    "number": 36,
+    "prompt": "對於生性害羞，隱密不易觀察的鳥類應該?",
+    "choices": [
+      "播放鳥鳴錄音帶引誘",
+      "丟擲石頭等行為",
+      "順其自然"
+    ],
+    "correctOption": 3,
+    "swf": {
+      "frame": 37,
+      "promptId": 155,
+      "choicesId": 156
+    }
+  },
+  {
+    "number": 37,
+    "prompt": "看到野鳥蛋時應該?",
+    "choices": [
+      "拿回家烤，加菜",
+      "鳥媽媽真辛苦，我來幫牠孵",
+      "不要騷擾牠們"
+    ],
+    "correctOption": 3,
+    "swf": {
+      "frame": 38,
+      "promptId": 158,
+      "choicesId": 159
+    }
+  }
+]

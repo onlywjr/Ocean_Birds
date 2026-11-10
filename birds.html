@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>躍動的精靈｜在海邊躍動的精靈</title>
+  <link rel="stylesheet" href="birds.css">
+</head>
+<body>
+  <main class="birds-stage">
+    <header class="birds-heading"><h1>躍動的精靈</h1></header>
+    <a class="home-button" href="main-page.html">回首頁</a>
+    <section class="gallery" id="gallery" aria-label="鳥類分類">
+      <button class="family-card" data-family="鷺科"><img src="assets/decoded/bitmap_220.jpg" alt="大白鷺"><span>鷺科</span></button>
+      <button class="family-card" data-family="鶚科"><img src="assets/decoded/bitmap_588.jpg" alt="魚鷹"><span>鶚科</span></button>
+      <button class="family-card" data-family="鷸科"><img src="assets/decoded/bitmap_442.jpg" alt="半蹼鷸"><span>鷸科</span></button>
+      <button class="family-card" data-family="彩鷸科"><img src="assets/decoded/bitmap_614.jpg" alt="彩鷸"><span>彩鷸科</span></button>
+      <button class="family-card" data-family="鴴科"><img src="assets/decoded/bitmap_385.jpg" alt="小環頸鴴"><span>鴴科</span></button>
+      <button class="family-card" data-family="鷗科"><img src="assets/decoded/bitmap_528.jpg" alt="小燕鷗"><span>鷗科</span></button>
+      <button class="family-card" data-family="翡翠科"><img src="assets/decoded/bitmap_772.jpg" alt="翠鳥"><span>翡翠科</span></button>
+      <button class="family-card" data-family="鶺鴒科"><img src="assets/decoded/bitmap_792.jpg" alt="白鶺鴒"><span>鶺鴒科</span></button>
+    </section>
+
+    <section class="species-view" id="species-view" hidden aria-label="鳥類介紹">
+      <h2 id="family-title"></h2>
+      <div class="species-list" id="species-list"></div>
+      <figure class="species-photo"><img id="species-image" alt=""><figcaption id="species-name"></figcaption></figure>
+      <p class="species-copy" id="species-copy" aria-live="polite"></p>
+      <output class="slide-count" id="slide-count" aria-label="目前照片張數"></output>
+      <button class="list-button" id="back-to-list" type="button">回選單</button>
+      <button class="auto-button" id="auto-play" type="button" aria-pressed="false">自動播放</button>
+      <button class="auto-button stop-button" id="stop-play" type="button">停止</button>
+      <button class="photo-next" id="next-slide" type="button" aria-label="下一張圖片">➜</button>
+    </section>
+  </main>
+  <script src="bird-slides.js"></script>
+  <script src="birds.js"></script>
+</body>
+</html>

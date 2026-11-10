@@ -1,0 +1,33 @@
+* { box-sizing: border-box; }
+html, body { min-height: 100%; margin: 0; background: #255f8a; }
+body { display: grid; min-height: 100svh; place-items: center; font-family: "Microsoft JhengHei", "PMingLiU", serif; }
+.birds-stage { position: relative; width: min(100vw, 150svh, 900px); aspect-ratio: 3 / 2; overflow: hidden; container-type: inline-size; color: white; background: linear-gradient(120deg, #79a9c8, #1c5c8e 44%, #064579); isolation: isolate; }
+.birds-stage::before { position: absolute; z-index: -1; inset: 2.7%; border: .3cqw solid rgb(255 255 255 / 25%); border-radius: 2.7cqw; content: ""; }
+.birds-heading { position: absolute; top: 11%; left: 15%; color: #f6d564; text-shadow: .2cqw .2cqw #5f5437, .35cqw .4cqw #233646; }
+.birds-heading h1 { margin: 0; font-size: 4.4cqw; }
+.home-button { position: absolute; top: 11%; right: 7%; display: grid; width: 12%; height: 7%; place-items: center; border: .28cqw solid #c9f08b; border-radius: .9cqw; background: linear-gradient(#8dbd39, #4d791a); color: white; font-size: 2.5cqw; font-weight: 700; text-decoration: none; text-shadow: 0 1px 2px #425a25; box-shadow: 0 .3cqw .5cqw rgb(0 0 0 / 38%), inset 0 1px 1px rgb(255 255 255 / 50%); }
+.home-button[hidden] { display: none; }
+.gallery { position: absolute; inset: 23% 11% 12%; display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(2, minmax(0, 1fr)); gap: 1.2cqw 3.5cqw; }
+.gallery[hidden], .birds-heading[hidden] { display: none; }
+.family-card { display: grid; grid-template-rows: 1fr auto; min-width: 0; min-height: 0; padding: .8cqw; border: .24cqw solid #283e50; border-radius: 1.1cqw; background: linear-gradient(#90aec3, #416f90); color: #fff; cursor: pointer; box-shadow: 0 .3cqw .5cqw rgb(0 0 0 / 28%), inset 0 0 0 .2cqw rgb(255 255 255 / 18%); }
+.family-card img { width: 100%; height: 100%; min-height: 0; object-fit: cover; border-radius: .5cqw; }
+.family-card span { justify-self: center; min-width: 58%; margin-top: .4cqw; padding: .15cqw .8cqw; border: .25cqw solid #fff1d2; border-radius: .7cqw; background: linear-gradient(#ffedbd, #e7a348); color: #443d36; font-size: 2.25cqw; font-weight: 700; }
+.family-card:hover, .family-card:focus-visible { filter: brightness(1.12); }
+.family-card:focus-visible, .home-button:focus-visible, .list-button:focus-visible, .photo-next:focus-visible, .auto-button:focus-visible { outline: .35cqw solid white; outline-offset: .25cqw; }
+.species-view { position: absolute; inset: 0 5%; }
+.species-view[hidden] { display: none; }
+.species-view h2 { position: absolute; top: 17%; left: 0; width: 19%; margin: 0; font-size: 4.2cqw; text-align: center; text-shadow: .15cqw .2cqw #34485a; }
+.species-list { position: absolute; top: 36%; left: 3.5%; display: grid; gap: .55cqw; width: 10%; }
+.species-list button, .list-button { min-height: 2.7cqw; border: .25cqw solid #fff0bd; border-radius: .8cqw; background: linear-gradient(#ffe9a2, #eaaa40); color: #463e32; cursor: pointer; font: 700 1.6cqw "Microsoft JhengHei", sans-serif; }
+.species-photo { position: absolute; top: 5%; left: 20%; width: 83%; height: 76%; margin: 0; padding: 1cqw; border: .25cqw solid #173b53; border-radius: 2cqw; background: linear-gradient(#c3d7e1, #477493); box-shadow: 0 .4cqw .8cqw rgb(0 0 0 / 35%), inset 0 0 0 .2cqw rgb(255 255 255 / 28%); }
+.species-photo img { width: 100%; height: 100%; object-fit: cover; border-radius: 1cqw; }
+.species-photo figcaption { display: none; }
+.species-copy { position: absolute; top: 83%; right: 12%; bottom: 1.5%; left: 31%; overflow: auto; margin: 0; padding: .2cqw .3cqw; border: 0; border-radius: 0; background: transparent; font-size: 1.8cqw; line-height: 1.35; text-shadow: 0 .1cqw .15cqw #07385e; }
+.list-button { position: absolute; left: 3.5%; bottom: 33%; width: 10%; }
+.photo-next { position: absolute; right: 2%; bottom: 2%; display: grid; width: 3.5cqw; height: 3.5cqw; place-items: center; border: 0; border-radius: 50%; background: #263a49; color: white; cursor: pointer; font-size: 2.1cqw; }
+.photo-next:disabled { opacity: .4; cursor: default; }
+.slide-count { position: absolute; right: 7.5%; bottom: 3.1%; color: white; font-size: 1.8cqw; text-shadow: 0 .1cqw .15cqw #07385e; }
+.auto-button { position: absolute; left: 3.5%; right: auto; bottom: 11%; min-height: 2.7cqw; padding: 0 .6cqw; border: .25cqw solid #fff0bd; border-radius: .8cqw; background: linear-gradient(#ffe9a2, #eaaa40); color: #463e32; cursor: pointer; font: 700 1.6cqw "Microsoft JhengHei", sans-serif; }
+.stop-button { bottom: 5%; }
+.auto-button[aria-pressed="true"] { background: linear-gradient(#c0e2ae, #72a958); }
+@media (max-aspect-ratio: 3 / 2) { .birds-stage { width: 100vw; } }
