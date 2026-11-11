@@ -134,7 +134,8 @@ for (const file of (await fs.readdir(sourceDir)).filter(file => file.endsWith('.
   const blocks = readSwf(await fs.readFile(path.join(sourceDir, file)), file);
   if (blocks.length) result[page] = blocks;
 }
-const output = path.join(root, 'assets', 'decoded', 'swf-actions.json');
+const output = path.join(root, 'assets', 'flash-source', 'decoded', 'swf-actions.json');
 await fs.writeFile(output, `${JSON.stringify(result, null, 2)}\n`);
 if (!Object.keys(result).length) throw new Error('Action extraction self-check failed');
 console.log(`Extracted ${Object.values(result).reduce((total, blocks) => total + blocks.length, 0)} ActionScript blocks from ${Object.keys(result).join(', ')}.`);
+

@@ -14,7 +14,10 @@ function showSlide(index) {
   const bird = regionBirds[selectedBird];
   if (!bird) return;
   slide = Math.max(0, Math.min(bird.frames.length - 1, index));
-  viewer.src = `main-page.html?frame=${bird.frames[slide]}`;
+  viewer.classList.remove('frame-enter');
+  void viewer.offsetWidth;
+  viewer.classList.add('frame-enter');
+  viewer.src = `flash-frame.html?frame=${bird.frames[slide]}`;
   viewer.title = `${bird.name}｜第 ${slide + 1} 張`;
   progress.textContent = `${bird.name}　${slide + 1} / ${bird.frames.length}`;
   document.querySelector('#region-previous').disabled = slide === 0;
@@ -23,7 +26,10 @@ function showSlide(index) {
 
 function showOverview() {
   selectedBird = null;
-  viewer.src = 'main-page.html?frame=342';
+  viewer.classList.remove('frame-enter');
+  void viewer.offsetWidth;
+  viewer.classList.add('frame-enter');
+  viewer.src = 'flash-frame.html?frame=342';
   viewer.title = '展翅基隆原始 Flash 畫面';
   intro.hidden = false;
   controls.hidden = true;

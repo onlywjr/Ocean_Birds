@@ -6,7 +6,7 @@ body {
   display: grid;
   min-height: 100svh;
   place-items: center;
-  font-family: "Microsoft JhengHei", "PMingLiU", serif;
+  font-family:var(--font,"LXGW WenKai Mono TC",serif);
 }
 
 .movie-stage {
@@ -46,7 +46,7 @@ body {
   gap: 0;
   margin: 0;
   color: #ffc84f;
-  font-size: 9.5cqw;
+  font-size:max(15px,9.5cqw);
   font-weight: 900;
   letter-spacing: .06em;
   line-height: .95;
@@ -77,7 +77,7 @@ body {
   border-radius: .9cqw;
   background: linear-gradient(#8dbd39, #4d791a);
   color: #fff;
-  font-size: 2.6cqw;
+  font-size:max(15px,2.6cqw);
   font-weight: 700;
   text-decoration: none;
   text-shadow: 0 1px 2px #425a25;
@@ -127,7 +127,7 @@ body {
 .story-scroll p {
   margin: 0 0 3.2cqw;
   color: #fff;
-  font-size: 2.5cqw;
+  font-size:max(15px,2.5cqw);
   line-height: 1.68;
   text-align: center;
   text-shadow: 0 1px 2px rgb(21 46 66 / 55%);
@@ -152,7 +152,7 @@ body {
   background: #d8e8ed;
   color: #4b5961;
   cursor: pointer;
-  font-size: 2cqw;
+  font-size:max(15px,2cqw);
 }
 
 .home-button:focus-visible, .story-controls button:focus-visible { outline: .35cqw solid white; outline-offset: .25cqw; }

@@ -3,7 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const dataDir = path.join(root, 'assets', 'decoded');
+const dataDir = path.join(root, 'assets', 'flash-source', 'decoded');
 const timeline = JSON.parse(await fs.readFile(path.join(dataDir, 'main-page', 'timeline.json'), 'utf8'));
 const shapes = JSON.parse(await fs.readFile(path.join(root, 'shapes.json'), 'utf8'));
 const textFields = [
@@ -58,3 +58,4 @@ const output = `window.BIRD_SLIDES = ${JSON.stringify(selectedBird ? { [selected
 if (process.argv.includes('--write')) await fs.writeFile(path.join(root, 'bird-slides.js'), output);
 else process.stdout.write(output);
 if (process.argv.includes('--write')) console.log(JSON.stringify(counts, null, 2));
+

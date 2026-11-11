@@ -5,28 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>展翅基隆｜在海邊躍動的精靈</title>
   <link rel="stylesheet" href="guide.css">
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="site-redesign.css">
+  <link rel="stylesheet" href="presentation-pages.css">
 </head>
 <body>
-  <main class="guide-shell region-shell">
+<header class="site-header"><a class="brand" href="main-page.html">在海邊躍動的精靈</a><nav class="site-nav" aria-label="主導覽"><a href="guide.html">導引簡介</a><a href="birds.html">鳥類圖鑑</a><a href="region.html">展翅基隆</a><a href="movie.html">生態浩劫</a><a href="game.html">互動遊戲</a><a href="choice.html">成果驗收</a></nav></header>
+  <main class="guide-shell region-shell full-screen-page">
     <header class="guide-bar">
       <a class="home-link" href="main-page.html">回首頁</a>
       <h1>展翅基隆</h1>
       <span>基隆三寶</span>
     </header>
-    <iframe id="original-frame" title="展翅基隆原始 Flash 畫面" src="main-page.html?frame=342"></iframe>
+    <iframe id="original-frame" title="展翅基隆原始 Flash 畫面" src="flash-frame.html?frame=342"></iframe>
     <section class="region-intro" id="region-intro" aria-label="基隆三寶">
       <h2>認識基隆三寶</h2>
       <div class="region-birds">
         <button class="region-bird" type="button" data-bird="white-bellied-booby">
-          <img src="assets/decoded/bitmap_188.jpg" alt="白腹鰹鳥">
+          <img src="assets/region/white-bellied-booby.jpg" alt="白腹鰹鳥">
           <span>白腹鰹鳥</span>
         </button>
         <button class="region-bird" type="button" data-bird="black-kite">
-          <img src="assets/decoded/bitmap_345.jpg" alt="黑鳶">
+          <img src="assets/region/black-kite.jpg" alt="黑鳶">
           <span>黑鳶</span>
         </button>
         <button class="region-bird" type="button" data-bird="crested-tern">
-          <img src="assets/decoded/bitmap_752.jpg" alt="鳳頭燕鷗">
+          <img src="assets/region/crested-tern.jpg" alt="鳳頭燕鷗">
           <span>鳳頭燕鷗</span>
         </button>
       </div>
@@ -36,7 +40,7 @@
       <button id="region-previous" type="button" aria-label="上一張">上一張</button>
       <span id="region-progress" aria-live="polite"></span>
       <button id="region-next" type="button" aria-label="下一張">下一張 →</button>
-    </nav>
+    </nav><a class="next-topic region-next" href="movie.html">繼續看海岸故事 →</a>
   </main>
   <script src="region.js"></script>
 </body>

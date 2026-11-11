@@ -5,7 +5,7 @@ import { inflateSync } from 'node:zlib';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const sourceDir = path.join(root, 'source', '_bird');
-const outputDir = path.join(root, 'assets', 'decoded');
+const outputDir = path.join(root, 'assets', 'flash-source', 'decoded');
 
 class Bits {
   constructor(data, offset = 0) { this.data = data; this.bit = offset * 8; }
@@ -106,3 +106,4 @@ for (const file of (await fs.readdir(sourceDir)).filter(name => name.endsWith('.
   if (page === 'choice' && !sprites['160']?.frames?.some(frame => frame.items.some(item => item.char === 57))) throw new Error('Choice question timeline extraction self-check failed');
   console.log(`${page}: ${rootFrames.length} root frames, ${Object.keys(sprites).length} sprites.`);
 }
+

@@ -3,23 +3,38 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>導引&amp;簡介｜在海邊躍動的精靈</title>
+  <title>導引與簡介｜在海邊躍動的精靈</title>
   <link rel="stylesheet" href="guide.css">
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="site-redesign.css">
+  <link rel="stylesheet" href="presentation-pages.css">
+  <link rel="stylesheet" href="guide-layout.css">
 </head>
-<body>
-  <main class="guide-shell">
-    <header class="guide-bar">
-      <a class="home-link" href="main-page.html">回首頁</a>
-      <h1>導引&amp;簡介</h1>
+<body class="guide-page">
+  <main class="guide-shell full-screen-page">
+    <svg class="guide-filters" aria-hidden="true" focusable="false"><filter id="guide-sharpen"><feConvolveMatrix order="3" kernelMatrix="0 -0.12 0 -0.12 1.48 -0.12 0 -0.12 0" preserveAlpha="true"></feConvolveMatrix></filter></svg>
+    <section class="guide-scene" aria-live="polite" aria-atomic="true">
+      <figure class="guide-art">
+        <div id="guide-gallery" class="guide-gallery" aria-label="本頁原始圖片"></div>
+        <figcaption id="guide-caption">沿著海岸，認識與我們共存的生命</figcaption>
+      </figure>
+      <article class="guide-copy">
+        <a class="home-link" href="main-page.html">← 回首頁</a>
+        <p class="guide-kicker">COASTAL FIELD GUIDE · KEELUNG</p>
+        <p class="guide-step" id="guide-step">01 / 05</p>
+        <h1 id="guide-title">海與島嶼的日常</h1>
+        <p id="guide-text" class="guide-text"></p>
+        <div id="guide-comparison" class="guide-comparison" hidden></div>
+        <a id="guide-next-topic" class="next-topic" href="birds.html" hidden>快來看看美麗的精靈們 <span aria-hidden="true">→</span></a>
+      </article>
+    </section>
+    <nav class="frame-nav" aria-label="導引簡介頁面切換">
       <span id="page-counter" aria-live="polite">1 / 5</span>
-    </header>
-    <iframe id="original-frame" title="導引與簡介原始 Flash 影格" src="main-page.html?frame=2"></iframe>
-    <nav class="frame-nav" aria-label="導引頁面">
       <button id="previous" type="button" aria-label="上一頁">← 上一頁</button>
-      <span>原作影格 <span id="frame-number">2</span> / 6</span>
       <button id="next" type="button" aria-label="下一頁">下一頁 →</button>
     </nav>
   </main>
+  <script src="assets/guide/image-map.js"></script>
   <script src="guide.js"></script>
 </body>
 </html>

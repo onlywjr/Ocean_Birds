@@ -5,7 +5,7 @@ import { deflateSync, inflateSync } from 'node:zlib';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const sourceDir = path.join(root, 'source', '_bird');
-const outputDir = path.join(root, 'assets', 'decoded');
+const outputDir = path.join(root, 'assets', 'flash-source', 'decoded');
 
 function readTags(body) {
   const rectBytes = Math.ceil((5 + 4 * (body[0] >>> 3)) / 8);
@@ -128,4 +128,5 @@ for (const file of files) {
   }
 }
 
-console.log(`Extracted ${extracted} raster images from linked SWFs into assets/decoded/<page>/.`);
+console.log(`Extracted ${extracted} raster images from linked SWFs into assets/flash-source/decoded/<page>/.`);
+

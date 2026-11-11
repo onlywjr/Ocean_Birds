@@ -3,37 +3,39 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>躍動的精靈｜在海邊躍動的精靈</title>
+  <meta name="theme-color" content="#f7f6f1">
+  <title>鳥類圖鑑｜在海邊躍動的精靈</title>
+  <link rel="stylesheet" href="site.css">
   <link rel="stylesheet" href="birds.css">
 </head>
-<body>
-  <main class="birds-stage">
-    <header class="birds-heading"><h1>躍動的精靈</h1></header>
-    <a class="home-button" href="main-page.html">回首頁</a>
-    <section class="gallery" id="gallery" aria-label="鳥類分類">
-      <button class="family-card" data-family="鷺科"><img src="assets/decoded/bitmap_220.jpg" alt="大白鷺"><span>鷺科</span></button>
-      <button class="family-card" data-family="鶚科"><img src="assets/decoded/bitmap_588.jpg" alt="魚鷹"><span>鶚科</span></button>
-      <button class="family-card" data-family="鷸科"><img src="assets/decoded/bitmap_442.jpg" alt="半蹼鷸"><span>鷸科</span></button>
-      <button class="family-card" data-family="彩鷸科"><img src="assets/decoded/bitmap_614.jpg" alt="彩鷸"><span>彩鷸科</span></button>
-      <button class="family-card" data-family="鴴科"><img src="assets/decoded/bitmap_385.jpg" alt="小環頸鴴"><span>鴴科</span></button>
-      <button class="family-card" data-family="鷗科"><img src="assets/decoded/bitmap_528.jpg" alt="小燕鷗"><span>鷗科</span></button>
-      <button class="family-card" data-family="翡翠科"><img src="assets/decoded/bitmap_772.jpg" alt="翠鳥"><span>翡翠科</span></button>
-      <button class="family-card" data-family="鶺鴒科"><img src="assets/decoded/bitmap_792.jpg" alt="白鶺鴒"><span>鶺鴒科</span></button>
+<body class="bird-guide">
+  <header class="site-header"><a class="brand" href="main-page.html">在海邊躍動的精靈</a><nav class="site-nav" aria-label="主導覽"><a href="guide.html">導引簡介</a><a href="birds.html" aria-current="page">鳥類圖鑑</a><a href="region.html">展翅基隆</a><a href="movie.html">生態浩劫</a><a href="game.html">互動遊戲</a><a href="choice.html">成果驗收</a></nav></header>
+  <main class="page-shell birds-page deck">
+    <section id="catalog-view" class="catalog-view" data-scene>
+      <figure class="catalog-photo"><img src="assets/shared/coastal-egret.jpg" alt="白鷺在海岸覓食"></figure>
+      <a class="bird-home" href="main-page.html">← 返回首頁</a>
+      <div class="catalog-panel">
+        <p class="eyebrow">FIELD GUIDE · <span id="bird-total"></span></p>
+        <h1 class="page-title">海岸鳥類圖鑑</h1>
+        <p class="lead">選擇一個家族，認識牠們的模樣與棲地。每張照片，都有專屬的觀察對話。</p>
+        <label class="search-box">搜尋鳥名或科別<input id="bird-search" type="search" placeholder="例如：黑嘴鷗、鷸科" autocomplete="off"></label>
+        <div class="family-grid" id="family-grid" aria-label="鳥類家族"></div><a class="next-topic catalog-next" href="region.html">繼續走訪基隆 →</a>
+        <p id="empty-search" class="empty-search" hidden>沒有找到相符的鳥類，試試其他名稱。</p>
+      </div>
     </section>
-
-    <section class="species-view" id="species-view" hidden aria-label="鳥類介紹">
-      <h2 id="family-title"></h2>
-      <div class="species-list" id="species-list"></div>
-      <figure class="species-photo"><img id="species-image" alt=""><figcaption id="species-name"></figcaption></figure>
-      <p class="species-copy" id="species-copy" aria-live="polite"></p>
-      <output class="slide-count" id="slide-count" aria-label="目前照片張數"></output>
-      <button class="list-button" id="back-to-list" type="button">回選單</button>
-      <button class="auto-button" id="auto-play" type="button" aria-pressed="false">自動播放</button>
-      <button class="auto-button stop-button" id="stop-play" type="button">停止</button>
-      <button class="photo-next" id="next-slide" type="button" aria-label="下一張圖片">➜</button>
+    <section class="detail-view deck-scene" data-scene id="detail-view" hidden aria-label="鳥類介紹">
+      <button class="text-button detail-back" id="back-to-list" type="button">← 所有家族</button>
+      <span class="eyebrow detail-family" id="family-label"></span>
+      <figure class="species-photo"><img id="species-image" alt=""><figcaption><span id="species-name"></span><output id="slide-count" aria-label="照片張數"></output></figcaption></figure>
+      <article class="story-card"><p class="eyebrow">觀察筆記</p><h1 id="story-heading"></h1><p class="species-copy" id="species-copy" aria-live="polite"></p><a class="next-topic detail-next" href="region.html">下一站：展翅基隆 →</a></article>
+      <nav class="species-tabs" id="species-list" aria-label="同科鳥類"></nav>
+      <div class="slide-controls" aria-label="照片功能選單"><button class="icon-button" id="previous-slide" type="button" aria-label="上一張照片">←</button><button class="button" id="auto-play" type="button" aria-pressed="false">自動播放</button><button class="icon-button" id="next-slide" type="button" aria-label="下一張照片">→</button></div>
     </section>
   </main>
+  <script src="bird-catalog.js"></script>
   <script src="bird-slides.js"></script>
+  <script src="assets/bird-catalog/image-map.js"></script>
   <script src="birds.js"></script>
+  <script src="presentation.js"></script>
 </body>
 </html>

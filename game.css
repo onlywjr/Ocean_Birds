@@ -1,6 +1,6 @@
 * { box-sizing: border-box; }
 html, body { min-height: 100%; margin: 0; background: #255f8a; }
-body { display: grid; min-height: 100svh; place-items: center; font-family: "Microsoft JhengHei", "PMingLiU", serif; }
+body { display: grid; min-height: 100svh; place-items: center; font-family:var(--font,"LXGW WenKai Mono TC",serif); }
 .game-stage {
   position: relative;
   width: min(100vw, 150svh, 900px);
@@ -32,7 +32,7 @@ body { display: grid; min-height: 100svh; place-items: center; font-family: "Mic
   border-radius: .9cqw;
   background: linear-gradient(#8dbd39, #4d791a);
   color: white;
-  font-size: 2.5cqw;
+  font-size:max(15px,2.5cqw);
   font-weight: 700;
   text-decoration: none;
   text-shadow: 0 1px 2px #425a25;
@@ -44,7 +44,7 @@ body { display: grid; min-height: 100svh; place-items: center; font-family: "Mic
   left: 5%;
   margin: 0;
   color: #38e8eb;
-  font-size: 8.5cqw;
+  font-size:max(15px,8.5cqw);
   font-weight: 900;
   letter-spacing: .08em;
   white-space: nowrap;
@@ -59,7 +59,7 @@ body { display: grid; min-height: 100svh; place-items: center; font-family: "Mic
   gap: 1cqw;
   width: 32%;
   color: #192a36;
-  font-size: 3.1cqw;
+  font-size:max(15px,3.1cqw);
   font-weight: 800;
   text-decoration: none;
   text-shadow: 0 1px rgb(255 255 255 / 70%);

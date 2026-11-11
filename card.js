@@ -2,7 +2,7 @@ const species = [
   [11, '小白鷺'], [13, '黑鳶'], [15, '魚鷹'], [17, '彩鷸'],
   [19, '灰斑鴴'], [21, '紅胸濱鷸'], [23, '小燕鷗'], [25, '翠鳥'],
   [27, '白背鴴'], [29, '東方環頸鴴'], [31, '中杓鷸'], [9, '白腹鰹鳥'],
-].map(([id, name]) => ({ id, name, src: `assets/decoded/card/bitmap_${id}.jpg` }));
+].map(([id, name]) => ({ id, name, src: window.MATCHING_IMAGE_PATHS[id] }));
 
 const board = document.querySelector('#board');
 const welcome = document.querySelector('#welcome');

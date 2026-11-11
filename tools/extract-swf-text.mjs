@@ -161,16 +161,17 @@ for (const file of files) {
   pageText[page] = fields;
   pageStaticText[page] = staticText;
   const targetDir = page === 'main-page'
-    ? path.join(root, 'assets', 'decoded')
-    : path.join(root, 'assets', 'decoded', page);
+    ? path.join(root, 'assets', 'flash-source', 'decoded')
+    : path.join(root, 'assets', 'flash-source', 'decoded', page);
   await fs.mkdir(targetDir, { recursive: true });
   const basename = page === 'main-page' ? 'main-page-text' : 'text';
   if (fields.length) await fs.writeFile(path.join(targetDir, `${basename}.json`), `${JSON.stringify(fields, null, 2)}\n`);
   if (staticText.length) await fs.writeFile(path.join(targetDir, `${page === 'main-page' ? 'main-page-static-text' : 'static-text'}.json`), `${JSON.stringify(staticText, null, 2)}\n`);
 }
 
-const browserOutput = path.join(root, 'assets', 'decoded', 'swf-text.js');
+const browserOutput = path.join(root, 'assets', 'flash-source', 'decoded', 'swf-text.js');
 await fs.writeFile(browserOutput, `window.SWF_TEXT = ${JSON.stringify(pageText)}; window.SWF_STATIC_TEXT = ${JSON.stringify(pageStaticText)}; window.SWF_EDIT_TEXT = window.SWF_TEXT['main-page'] || [];\n`);
 const mainFields = pageText['main-page'] || [];
 if (!mainFields.length || mainFields.some(field => !field.text)) throw new Error('Main SWF text extraction self-check failed');
 console.log(`Extracted text: ${Object.entries(pageText).map(([page, fields]) => `${page}: ${fields.length} editable, ${pageStaticText[page].length} static`).join(', ')}.`);
+

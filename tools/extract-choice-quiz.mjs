@@ -3,11 +3,11 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const base = path.join(root, 'assets', 'decoded', 'choice');
+const base = path.join(root, 'assets', 'flash-source', 'decoded', 'choice');
 const [timeline, staticText, actionData] = await Promise.all([
   fs.readFile(path.join(base, 'timeline.json'), 'utf8').then(JSON.parse),
   fs.readFile(path.join(base, 'static-text.json'), 'utf8').then(JSON.parse),
-  fs.readFile(path.join(root, 'assets', 'decoded', 'swf-actions.json'), 'utf8').then(JSON.parse),
+  fs.readFile(path.join(root, 'assets', 'flash-source', 'decoded', 'swf-actions.json'), 'utf8').then(JSON.parse),
 ]);
 const textById = new Map(staticText.map(item => [item.id, item]));
 const actionByFrame = new Map(actionData.choice
@@ -27,7 +27,11 @@ const questions = frames.map((frame, index) => {
   }
   return { number: index + 1, prompt: prompt.text, choices, correctOption, swf: { frame: frame.frame, promptId: prompt.id, choicesId: optionText.id } };
 });
+await fs.mkdir(path.join(root, 'assets', 'assessment'), { recursive: true });
 if (questions.length !== 37) throw new Error(`Expected 37 original question frames, got ${questions.length}`);
-await fs.writeFile(path.join(base, 'quiz.json'), `${JSON.stringify(questions, null, 2)}\n`);
-await fs.writeFile(path.join(base, 'quiz.js'), `window.CHOICE_QUIZ = ${JSON.stringify(questions)};\n`);
+await fs.writeFile(path.join(root, 'assets', 'assessment', 'quiz-data.json'), `${JSON.stringify(questions, null, 2)}\n`);
+await fs.writeFile(path.join(root, 'assets', 'assessment', 'quiz-data.js'), `window.CHOICE_QUIZ = ${JSON.stringify(questions)};\n`);
 console.log(`Recovered ${questions.length} quiz questions and answer indices from choice.swf.`);
+
+
+

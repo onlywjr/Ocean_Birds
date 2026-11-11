@@ -1,15 +1,20 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>小白鷺找食物</title><link rel="stylesheet" href="section.css"><style>
-.section-stage{width:min(100vw,150svh,900px);height:auto;min-height:0;aspect-ratio:3/2;overflow:hidden}.play{width:88.8%;margin:10cqw auto 0;padding:1.5cqw;background:#e6f2f0ef;border-radius:1.7cqw;text-align:center;color:#164665}.play>p{margin:.6cqw 0;font-size:2.1cqw}.play button{padding:.9cqw 2cqw;margin:.3cqw;border:0;border-radius:.9cqw;background:#e4a94d;color:#352814;font-size:2.3cqw;font-weight:bold;cursor:pointer}.stats{display:flex;justify-content:center;gap:3.5cqw;font-size:2.5cqw;font-weight:bold}#shore{display:block;width:min(100%,70cqw);height:auto;margin:auto;border:.8cqw solid white;border-radius:1.2cqw;cursor:crosshair;touch-action:manipulation}
-</style></head>
-<body><main class="section-stage"><header class="section-heading"><h1>小白鷺找食物</h1></header><a class="home-button" href="game.html">回選單</a>
-<section class="play"><p>小白鷺來到海岸找食物，卻遇上垃圾與危險。聰明的你快來幫幫小白鷺吧！（吃錯了可是會扣分的唷）</p><div class="stats"><span>時間 <b id="time">60</b></span><span>分數 <b id="score">0</b></span></div><canvas id="shore" width="680" height="300" aria-label="海岸覓食遊戲場景"></canvas><div><button id="start">開始</button><button id="again">重新開始</button></div><p id="message" aria-live="polite">按「開始」進入海岸覓食。</p></section></main>
+.section-stage{width:min(100vw,150svh,900px);height:auto;min-height:0;aspect-ratio:3/2;overflow:hidden}.play{width:88.8%;margin:10cqw auto 0;padding:1.5cqw;background:#e6f2f0ef;border-radius:1.7cqw;text-align:center;color:#164665}.play>p{margin:.6cqw 0;font-size:max(15px,2.1cqw)}.play button{padding:.9cqw 2cqw;margin:.3cqw;border:0;border-radius:.9cqw;background:#e4a94d;color:#352814;font-size:max(15px,2.3cqw);font-weight:bold;cursor:pointer}.stats{display:flex;justify-content:center;gap:3.5cqw;font-size:max(15px,2.5cqw);font-weight:bold}#shore{display:block;width:min(100%,70cqw);height:auto;margin:auto;border:.8cqw solid white;border-radius:1.2cqw;cursor:crosshair;touch-action:manipulation}
+</style>  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="site-redesign.css">
+  <link rel="stylesheet" href="presentation-pages.css">
+  <script src="assets/games/food-search/image-map.js"></script>
+</head>
+<body>
+<header class="site-header"><a class="brand" href="main-page.html">在海邊躍動的精靈</a><nav class="site-nav" aria-label="主導覽"><a href="guide.html">導引簡介</a><a href="birds.html">鳥類圖鑑</a><a href="region.html">展翅基隆</a><a href="movie.html">生態浩劫</a><a href="game.html">互動遊戲</a><a href="choice.html">成果驗收</a></nav></header><main class="section-stage full-screen-page"><header class="section-heading"><h1>小白鷺找食物</h1></header><a class="home-button" href="game.html">回選單</a>
+<section class="play"><p>小白鷺來到海岸找食物，卻遇上垃圾與危險。聰明的你快來幫幫小白鷺吧！（吃錯了可是會扣分的唷）</p><div class="stats"><span>時間 <b id="time">60</b></span><span>分數 <b id="score">0</b></span></div><canvas id="shore" width="680" height="300" aria-label="海岸覓食遊戲場景"></canvas><div><button id="start">開始</button><button id="again">重新開始</button></div><p id="message" aria-live="polite">按「開始」進入海岸覓食。</p></section><a class="next-topic" href="choice.html">接著挑戰成果驗收 →</a></main>
 <script>
 const canvas=document.querySelector('#shore'),ctx=canvas.getContext('2d'),time=document.querySelector('#time'),score=document.querySelector('#score'),message=document.querySelector('#message');
 const loadImage=src=>{const image=new Image();image.src=src;return image};
-const background=loadImage('assets/decoded/hit/bitmap_7.jpg'),egret=[loadImage('assets/decoded/hit/lossless_20.png'),loadImage('assets/decoded/hit/lossless_22.png')];
-const objects=[{src:'lossless_27.png',food:true},{src:'lossless_32.png',food:true},{src:'lossless_36.png',food:true},{src:'lossless_46.png',food:false},{src:'lossless_51.png',food:false},{src:'lossless_55.png',food:false}].map(x=>({...x,image:loadImage(`assets/decoded/hit/${x.src}`)}));
+const background=loadImage(FOOD_SEARCH_PATHS[7]),egret=[loadImage(FOOD_SEARCH_PATHS[20]),loadImage(FOOD_SEARCH_PATHS[22])];
+const objects=[{id:27,food:true},{id:32,food:true},{id:36,food:true},{id:46,food:false},{id:51,food:false},{id:55,food:false}].map(x=>({...x,image:loadImage(FOOD_SEARCH_PATHS[x.id])}));
 let left=60,points=0,timer=null,targets=[],playing=false,raf=0,walk=0,step=0;
 function spawn(){const pool=[...objects].sort(()=>Math.random()-.5).slice(0,5);targets=pool.map(item=>({item,x:40+Math.random()*600,y:48+Math.random()*164,w:item.food?56:38,h:item.food?44:48,phase:Math.random()*6.28}))}
 function paint(){ctx.clearRect(0,0,680,300);ctx.fillStyle='#b8d0c4';ctx.fillRect(0,0,680,300);if(background.complete&&background.naturalWidth)ctx.drawImage(background,0,0,680,300);targets.forEach(t=>{const bob=Math.sin(step/13+t.phase)*3;if(t.item.image.complete&&t.item.image.naturalWidth)ctx.drawImage(t.item.image,t.x-t.w/2,t.y-t.h/2+bob,t.w,t.h)});if(playing){walk=(walk+1.15)%780;const bird=egret[Math.floor(step/8)%2];if(bird.complete&&bird.naturalWidth)ctx.drawImage(bird,walk-45,205,70,84);step++;raf=requestAnimationFrame(paint)}}

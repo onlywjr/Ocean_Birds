@@ -5,9 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>配對大進擊｜在海邊躍動的精靈</title>
   <link rel="stylesheet" href="card.css">
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="site-redesign.css">
+  <link rel="stylesheet" href="presentation-pages.css">
 </head>
 <body>
-  <main class="memory-stage">
+<header class="site-header"><a class="brand" href="main-page.html">在海邊躍動的精靈</a><nav class="site-nav" aria-label="主導覽"><a href="guide.html">導引簡介</a><a href="birds.html">鳥類圖鑑</a><a href="region.html">展翅基隆</a><a href="movie.html">生態浩劫</a><a href="game.html">互動遊戲</a><a href="choice.html">成果驗收</a></nav></header>
+  <main class="memory-stage full-screen-page">
     <header class="toolbar">
       <output class="clock" id="timer" aria-label="經過時間">00:00.0</output>
       <strong class="score">配對成功：<span id="matches">0</span></strong>
@@ -31,7 +35,8 @@
         <button class="primary" id="again" type="button">再玩一次</button>
       </div>
     </div>
+    <a class="next-topic" href="choice.html">接著挑戰成果驗收 →</a>
   </main>
-  <script src="card.js"></script>
+  <script src="assets/games/matching/image-map.js"></script><script src="card.js"></script>
 </body>
 </html>
