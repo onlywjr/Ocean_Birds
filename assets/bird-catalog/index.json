@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "species": [
+    {
+      "folder": "great-egret"
+    },
+    {
+      "folder": "little-egret"
+    },
+    {
+      "folder": "grey-heron"
+    },
+    {
+      "folder": "pacific-reef-heron"
+    },
+    {
+      "folder": "osprey"
+    },
+    {
+      "folder": "common-greenshank"
+    },
+    {
+      "folder": "whimbrel"
+    },
+    {
+      "folder": "asian-dowitcher"
+    },
+    {
+      "folder": "red-necked-stint"
+    },
+    {
+      "folder": "common-sandpiper"
+    },
+    {
+      "folder": "ruddy-turnstone"
+    },
+    {
+      "folder": "painted-snipe"
+    },
+    {
+      "folder": "little-ringed-plover"
+    },
+    {
+      "folder": "kentish-plover"
+    },
+    {
+      "folder": "pacific-golden-plover"
+    },
+    {
+      "folder": "grey-plover"
+    },
+    {
+      "folder": "grey-headed-plover"
+    },
+    {
+      "folder": "little-tern"
+    },
+    {
+      "folder": "saunders-gull"
+    },
+    {
+      "folder": "black-tailed-gull"
+    },
+    {
+      "folder": "kingfisher"
+    },
+    {
+      "folder": "white-wagtail"
+    }
+  ]
+}

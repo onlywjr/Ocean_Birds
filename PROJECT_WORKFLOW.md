@@ -1,97 +1,111 @@
-# Ocean Birds redesign workflow
+# Ocean Birds 改版工作流程
 
 ## 工作目錄與授權
 
 - 專案唯一工作目錄為 `C:\Users\Administrator\Downloads\Ocean_Birds`；之後直接在此目錄修改，不另開副本或工作資料夾。
 - 若工作階段沒有該目錄的讀寫權限，先向使用者提示並取得授權，再開始讀寫；不得改在 Codex 目錄另做一份。
 
-## Goals
+## 專案目標
 
-1. Modernize the layout and typography so the site feels polished, calm, and easy to read.
-2. Make the bird guide data-driven so new species can be added without rewriting page layouts or navigation.
+1. 更新版面與字體，讓網站更精緻、沉穩且易於閱讀。
+2. 讓鳥類圖鑑以資料驅動，新增鳥種時不必重寫頁面版面或導覽功能。
 
-## Visual direction (updated from `code_artifact.html`)
+## 視覺方向（依 `code_artifact.html` 更新）
 
-Use a presentation-like, full-viewport layout: one scene per screen with no page scrollbar, keyboard/touch navigation between scenes, and purposeful transitions. Use LXGW WenKai Mono TC throughout, with a 17px base and a 15px minimum font size, a polished high-contrast palette, a restrained animated backdrop, and light motion on featured objects. Keep motion short and readable, honor reduced-motion settings, and make every screen fit common desktop and mobile viewports. Long bird stories should become navigable screens rather than compressed into one viewport.
+採用簡報式滿版版面，每個畫面呈現一個場景，不顯示頁面捲軸；場景之間可用鍵盤或觸控導覽，並搭配合宜的轉場。全站使用 LXGW WenKai Mono TC，基準字級為 17px，最小字級為 15px；採用精緻且對比清楚的配色、克制的動態背景，以及主體物件的輕量動畫。頁面與場景轉場使用流暢的兩秒效果，並尊重減少動態效果的系統設定。每個畫面都應適合常見的桌上型電腦與手機視窗；較長的鳥類故事應拆成可導覽的畫面，不要硬塞在同一個視窗中。
 
-## Working rules
+## 工作原則
 
-- Keep the active site and all changes in the original project folder; do not create a working copy.
-- Keep archived SWF sources, Flash Player, extracted decode output, superseded styles, and unused assets under `Backup/`. The folder is ignored by Git in `.gitignore`; active pages must not reference archived files.
-- The original SWFs and their extraction tools remain available under `Backup/flash-archive/` as a local reference baseline.
-- Keep the site static and dependency-light unless implementation work proves a build system is needed.
-- Separate visual components from bird content data; keep the original SWF frame mapping as reference metadata.
-- Complete one phase and review its visible result before moving to the next.
+- 僅在原始專案資料夾維護目前網站與所有變更，不建立工作副本。
+- 將封存的 SWF 原始檔、Flash Player、解碼輸出、已取代的樣式與未使用素材放在 `Backup/`。此資料夾已在 `.gitignore` 中排除；目前使用的頁面不可引用封存檔案。
+- 原始 SWF 與素材抽取工具保留在 `Backup/flash-archive/`，作為本機參考基準。
+- 除非實作證明有必要，否則維持靜態網站並減少外部相依項目。
+- 將視覺元件與鳥類內容資料分開；保留原始 SWF 影格對應資訊作為參考中繼資料。
+- 每完成一個階段，就檢視可見成果後再進入下一階段。
 
-## Phases and review gates
+## 階段與檢視關卡
 
-### 0. Baseline and content inventory
+### 0. 現況基準與內容盤點
 
-**Status:** completed. The existing 22 species, 8 families, 160 photo/story slides, six home sections, movie, games, quiz, and original SWF frame viewer are preserved in the redesign worktree.
+**狀態：** 已完成。改版工作目錄保留了現有 22 種鳥、8 個科別、160 張照片與故事頁、首頁六個單元、影片、遊戲、測驗，以及原始 SWF 影格檢視器。
 
-- Record the current routes, page functions, source assets, and interactions that must survive.
-- Capture desktop and mobile reference views before layout changes.
-- Confirm the bird data fields and media relationships already recovered from the SWF.
+- 記錄目前的頁面路徑、頁面功能、來源素材，以及必須保留的互動方式。
+- 調整版面前，先保存桌面與手機版的參考畫面。
+- 確認已從 SWF 還原的鳥類資料欄位與媒體對應關係。
 
-**Review gate:** a page-by-page preservation checklist and an agreed visual direction.
+**檢視關卡：** 完成逐頁保留項目清單，並確認視覺方向。
 
-### 1. Design system and shared shell
+### 1. 設計系統與共用頁面框架
 
-**Status:** shared full-screen shell is implemented across the main routes. `site.css`, `presentation-pages.css`, and `presentation.js` provide scene sizing, keyboard/touch controls, transitions, reduced-motion support, and route-specific scene navigation.
+**狀態：** 主要頁面已導入共用滿版框架。`site.css`、`presentation-pages.css` 與 `presentation.js` 負責場景尺寸、鍵盤與觸控控制、轉場、減少動態效果的支援，以及各頁面的場景導覽。
 
-- Define reusable color, typography, spacing, radius, shadow, and breakpoint tokens with CSS custom properties.
-- Build the shared site header, navigation, page container, and responsive content widths.
-- Set accessibility defaults for focus states, contrast, semantic landmarks, and reduced motion.
+- 使用 CSS 自訂屬性定義可重用的色彩、字體、間距、圓角、陰影與響應式斷點設定。
+- 建立共用網站標頭、導覽列、頁面容器與響應式內容寬度。
+- 設定無障礙預設值，包括焦點狀態、色彩對比、語意區域與減少動態效果的支援。
 
-**Review gate:** the shared shell looks consistent at desktop and mobile sizes before individual pages are migrated.
+**檢視關卡：** 開始改造個別頁面前，先確認共用框架在桌上型電腦與手機尺寸下風格一致。
 
-### 2. Page layout modernization
+### 2. 頁面版面更新
 
-**Status:** first-pass full-screen layouts are in place for the home, bird guide, Keelung birds, guide, movie/story, quiz, and games. The pages share an image-left, right-panel full-screen layout with a 7% diagonal edge. The home page is a single cover without a scene counter, and each theme has a forward link in this route: home → guide → bird catalog → Keelung birds → coastal ecology story → games → quiz.
+**狀態：** 首頁、鳥類圖鑑、基隆鳥類、導引、影片／故事、測驗與遊戲均已完成第一版滿版版面。頁面共用左圖右側資訊面板，並以 7% 斜角分隔。首頁採單一封面，不顯示場景計數；各單元的前往順序為：首頁 → 導引 → 鳥類圖鑑 → 基隆鳥類 → 海岸生態故事 → 遊戲 → 測驗。
 
-- Redesign the home page and section landing pages using the shared shell and reusable cards.
-- Reflow the bird guide, Keelung birds, movie/story page, guide, and games to fit the new reading layout.
-- Preserve existing content, image/dialogue sequencing, page links, and game interactions.
+- 使用共用頁面框架與可重用卡片，重新設計首頁與各單元入口頁。
+- 調整鳥類圖鑑、基隆鳥類、影片／故事、導引與遊戲頁，使其符合新的閱讀版面。
+- 保留現有內容、圖片與對話順序、頁面連結及遊戲互動。
 
-**Review gate:** every existing page is reachable and its core content and controls still work.
+**檢視關卡：** 確認每個既有頁面都能前往，且主要內容與控制功能正常。
 
-### 3. Extensible bird catalog
+### 3. 可擴充的鳥類圖鑑
 
-**Status:** first pass implemented. `bird-catalog.js` holds family/species records; `bird-slides.js` holds each species' ordered photo and dialogue slides; `birds.js` renders the catalog and slideshow. The `id` value maps the cover image to its extracted bitmap.
+**狀態：** 圖鑑已改為資料夾式結構。`assets/bird-catalog/index.json` 登記鳥種資料夾；每種鳥的 `dialog.json` 與依數字命名的照片放在 `assets/bird-catalog/species/<slug>/`。`birds.js` 會在執行時讀取索引與各資料夾中的資料。
 
-- Move species and family information into a structured catalog, separate from rendering code.
-- Use a consistent species record with a stable slug, common name, family, optional scientific name and facts, plus an ordered list of photo/dialogue entries.
-- Render family listings, species navigation, photo counters, and detail pages from the catalog.
-- Migrate the recovered 22 species without changing their existing order or dialogue; keep SWF frame and bitmap IDs as optional provenance fields.
-- Document the add-a-bird process so adding a species means adding its data and media, not editing page logic.
+- 將鳥種與科別資料移至結構化圖鑑，並與頁面繪製程式分開。
+- 統一鳥種資料格式，包含固定 slug、中文名稱、科別、選填的學名與特徵，以及依序排列的照片／對話項目。
+- 依圖鑑資料產生科別清單、鳥種導覽、照片計數與介紹頁。
+- 移入已還原的 22 種鳥類資料，維持原有順序與對話；SWF 影格與點陣圖 ID 可作為選填的來源紀錄欄位。
+- 撰寫新增鳥種說明，讓新增鳥類只需加入資料與素材，不必修改頁面程式。
 
-**Review gate:** the current catalog matches the restored content, and a sample new species can be added through data only.
+**檢視關卡：** 確認圖鑑內容與還原資料一致，並能只透過新增資料的方式加入一種示範鳥類。
 
-### 4. Quality and handoff
+### 4. 品質檢查與交接
 
-**Status:** desktop screens have been reviewed and responsive CSS refined. The bird guide's family chooser, species detail, and synchronized photo/dialogue change were checked in the browser. It now loads the higher-quality JPEGs in `assets/` directly; the available bird photos are 640×426, so larger source images would be needed for more real detail. Mobile viewport review and complete game-flow checks remain.
+**狀態：** 已檢視桌面版畫面並調整響應式 CSS，也已在瀏覽器確認鳥類圖鑑的科別選擇、鳥種介紹，以及照片與對話同步切換。頁面現在直接載入 `assets/` 中畫質較好的 JPEG；目前可用的鳥類照片為 640×426，若要增加實際細節，需要更大尺寸的原始圖片。手機視窗檢視與完整遊戲流程檢查尚待完成。
 
-- Check the full route flow, image/audio/video loading, slideshow boundaries, and game controls.
-- Review desktop, tablet, and mobile layouts, keyboard navigation, text contrast, and long dialogue behavior.
-- Compare key screens against the restoration baseline to ensure the redesign changes presentation without losing content.
-- Update project documentation with the design tokens, catalog schema, and steps for adding a bird.
+- 檢查完整頁面流程、圖片／音訊／影片載入、圖集切換邊界與遊戲控制。
+- 檢視桌面、平板與手機版面、鍵盤導覽、文字對比，以及長篇對話的呈現方式。
+- 將主要畫面與還原基準比對，確認改版只調整呈現方式而未遺失內容。
+- 更新專案說明，記錄設計變數、圖鑑資料格式與新增鳥種步驟。
 
-**Review gate:** preservation checklist complete, no broken local assets, and the extension guide is sufficient for adding another species.
+**檢視關卡：** 完成內容保留清單、確認本機素材連結正常，並確保擴充說明足以讓使用者新增鳥種。
 
-## Suggested implementation order
+## 建議實作順序
 
-1. Approve the visual direction and content checklist.
-2. Create the shared layout and design tokens.
-3. Modernize the home and bird guide as the first full-screen scene implementations.
-4. Review and tune the shared scene components, then migrate the remaining pages.
-5. Migrate the remaining pages.
-6. Refactor the bird guide into catalog-driven rendering and verify adding a sample species.
-7. Complete responsive and interaction review, then update documentation.
+1. 確認視覺方向與內容保留清單。
+2. 建立共用版面與設計變數。
+3. 先將首頁與鳥類圖鑑改為滿版場景。
+4. 檢視並調整共用場景元件，再逐步改造其他頁面。
+5. 完成其餘頁面的改版。
+6. 將鳥類圖鑑改為依資料目錄產生頁面，並確認可以新增示範鳥種。
+7. 完成響應式與互動檢視，最後更新說明文件。
 
-## Add a species
+## 新增鳥種
 
-1. Add the species to its family array in `bird-catalog.js`, with `name` and the extracted cover bitmap `id`.
-2. Add that species' ordered photo and dialogue records to `bird-slides.js` under the exact same name. Each slide uses its extracted `image` ID and original `text`.
-3. Put the JPEG in the corresponding unit folder under `assets/` and name it for the bird or image subject. Update that unit's `image-map.js` so the new page points to the file; keep the `assets/` root free of loose files.
+1. 在 `assets/bird-catalog/species/<slug>/` 建立資料夾，使用唯一的小寫英文 slug，例如 `black-kite`。
+2. 將該鳥的照片放入資料夾，依序命名為 `1.jpg`、`2.jpg`、`3.jpg` 等。
+3. 在資料夾中新增 `dialog.json`，填入鳥名、科別與排序好的照片頁。每頁需指定 `image` 圖片檔名與 `text` 對話內容：
 
-The gallery, family filters, photo navigation, counter, and autoplay are generated from these records. Rendering code does not need a per-species edit.
+   ```json
+   {
+     "version": 1,
+     "name": "黑鳶",
+     "family": "鷲鷹科",
+     "slides": [
+       { "image": "1.jpg", "text": "第一張照片的對話。" },
+       { "image": "2.jpg", "text": "第二張照片的對話。" }
+     ]
+   }
+   ```
+
+4. 將資料夾 slug 加入 `assets/bird-catalog/index.json` 的 `species` 清單。頁面會自動讀取每個已登記資料夾及其 JSON；不必為個別鳥種修改圖鑑繪製程式。
+
+必須建立索引，因為瀏覽器無法自行列出本機資料夾。每個資料夾的 slug 必須唯一，而且 `dialog.json` 中的圖片檔名必須與該資料夾內的實際照片相符。

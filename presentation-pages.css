@@ -28,6 +28,10 @@ body:has(.full-screen-page) .deck-controls{right:max(24px,calc((100vw - 1320px)/
 .frame-enter{animation:frame-in .45s ease-out both}.photo-enter{animation:photo-in .4s ease-out both}@keyframes frame-in{from{opacity:.45;transform:scale(.99)}to{opacity:1;transform:none}}@keyframes photo-in{from{opacity:.65;transform:scale(.985)}to{opacity:1;transform:none}}@media(prefers-reduced-motion:reduce){.frame-enter,.photo-enter{animation:none!important}}
 @media(max-height:700px){.section-stage.full-screen-page .quiz{height:62vh}.section-stage.full-screen-page .play>p{font-size:.9375rem;line-height:1.4}.section-stage.full-screen-page #shore{max-height:27vh}}
 
+/* Give each incoming page a longer, softer fade and glide. */
+.full-screen-page{animation-duration:2s;animation-timing-function:ease-in-out}
+.scene-enter,body.guide-page .guide-scene.scene-enter{animation-duration:2s;animation-timing-function:ease-in-out}
+
 /* Shared full-bleed split layout: image left, readable content and controls right. */
 .home-content.deck{width:100%;padding:84px 0 62px;background:#f7f5ee}
 .home-content.deck>.hero,.home-content.deck>.explore{width:100%;max-width:none;margin:0;padding:0 4vw;height:100%;overflow:hidden}

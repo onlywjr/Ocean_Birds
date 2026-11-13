@@ -1,48 +1,50 @@
-# main-page.swf → HTML5 restoration report
+# main-page.swf → HTML5 還原報告
 
-- Stage: 900 × 600
-- FPS: 12.0
-- Main frames: 342
-- Main-page DoAction blocks: 29
-- PlaceObject tags: 901
-- RemoveObject2 tags: 546
-- Bitmap definitions: 171 type-21 + 37 type-6 = 208 total
-- Sprite definitions: 5
-- Shape definitions: 239
-- Button definitions: 53
+本報告記錄原始 Flash 作品的解析成果、已還原內容與尚未達成完全一致的部分。
 
-## ActionScript frame anchors
+- 舞台尺寸：900 × 600
+- 每秒影格數（FPS）：12.0
+- 主時間軸影格數：342
+- 主頁 DoAction 區塊數：29
+- PlaceObject 標籤數：901
+- RemoveObject2 標籤數：546
+- 點陣圖定義：171 個 type-21 + 37 個 type-6，共 208 個
+- Sprite 定義數：5
+- Shape 定義數：239
+- 按鈕定義數：53
+
+## ActionScript 影格索引
 
 1, 2, 7, 14, 26, 46, 66, 81, 96, 111, 126, 141, 156, 166, 176, 186, 196, 206, 216, 231, 246, 261, 276, 291, 301, 316, 326, 336, 342
 
-## Explicit button navigation
+## 已確認的按鈕導向
 
-- Button 52 → movie.html (_self)
-- Button 53 → game.html (_self)
-- Button 54 → choice.html (_self)
+- 按鈕 52 → movie.html（_self）
+- 按鈕 53 → game.html（_self）
+- 按鈕 54 → choice.html（_self）
 
-## Recovered bitmap data
+## 已取出的點陣圖資料
 
-- Browser-readable copies of all 208 bitmap definitions are in `assets/decoded/`.
-- The main SWF's 179 editable text fields and linked SWFs' editable text fields were extracted to `assets/decoded/*-text.json` and per-page `text.json` files.
-- The main SWF's 122 `DefineText` objects were extracted to `assets/decoded/main-page-static-text.json`; the homepage canvas now renders the first frame's text and display-list placements from the SWF data.
-- ActionScript data from 278 frame, Sprite, and button action blocks across the supplied SWFs were recovered to `assets/decoded/swf-actions.json` (84 are button actions); numeric pushes and opcode sequences are retained. The guess game exposes its 25 bird names and five board sizes (4, 6, 8, 10, 12).
-- 171 type-21 images were decoded from the SWF image stream and mapped back by definition order.
-- 37 type-6 images were repaired with the SWF's shared JPEG tables; `bitmap_1.jpg` is the original 900 × 600 home background, and IDs 5, 7, and 9 are the three home thumbnails.
-- The HTML timeline viewer now loads the repaired bitmap copies.
-- Linked SWFs' JPEGs and indexed-alpha `DefineBitsLossless2` assets are extracted by `tools/extract-swfs.mjs`; the hit game uses the original egret, food, and litter sprites.
-- `guide.html` displays original main-SWF frames 2–6 in the shared 900 × 600 HTML renderer; its controls step through the source frames, including the beach-loss and closing reflection frames.
-- `region.html` starts at original main-SWF frame 342 and now provides selectable profiles for the three Keelung birds. Their original photo/dialogue frames are navigable: white-bellied booby 14–19, black kite 96–104, and crested tern 316–321. The timeline renderer now draws both static DefineText and extracted editable text fields, so the black kite and crested tern captions appear.
-- The bird-family page now follows the eight names and the four-column, two-row grouping in main-SWF frame 7. Family species lists use the corresponding original names, including the six-item sandpiper list and three gulls.
-- Opened the original SWF in the bundled Flash Player Standalone using its absolute path without quotes. Visually checked the home screen, frame 7's eight-family menu, and the first heron detail screen. The bird detail layout places the species list at left, the large photograph at right, and the description below it. All 22 menu species now use the source timeline to provide 160 photo-and-dialogue slides; next and autoplay advance within the selected species and stop at its final slide. Once the user's Go Live origin was allowed in the built-in browser, visually compared the home and heron pages at `http://127.0.0.1:5500/`; main-menu button artwork and exact frame transitions remain less faithful than the SWF.
+- 208 個點陣圖定義的瀏覽器可讀副本位於 `assets/decoded/`。
+- 主 SWF 的 179 個可編輯文字欄位，以及連結 SWF 的可編輯文字欄位，已取出至 `assets/decoded/*-text.json` 與各頁的 `text.json`。
+- 主 SWF 的 122 個 `DefineText` 物件已取出至 `assets/decoded/main-page-static-text.json`；首頁畫布目前會依 SWF 資料呈現第一個影格的文字與顯示清單位置。
+- 提供的 SWF 中共有 278 個影格、Sprite 與按鈕動作區塊，其 ActionScript 資料已還原至 `assets/decoded/swf-actions.json`（其中 84 個為按鈕動作）；數值推入與操作碼序列均有保留。猜鳥遊戲可讀取 25 個鳥名與五種棋盤尺寸（4、6、8、10、12）。
+- SWF 圖片串流中的 171 張 type-21 圖片已解碼，並依定義順序對應回原始資料。
+- 37 張 type-6 圖片已使用 SWF 共用的 JPEG 表修復；`bitmap_1.jpg` 是原始 900 × 600 首頁背景，ID 5、7、9 是首頁的三張縮圖。
+- HTML 時間軸檢視器目前會載入修復後的點陣圖副本。
+- 連結 SWF 中的 JPEG 與索引透明度 `DefineBitsLossless2` 素材由 `tools/extract-swfs.mjs` 取出；找食物遊戲使用原始白鷺、食物與垃圾精靈圖。
+- `guide.html` 使用共用的 900 × 600 HTML 繪製器呈現主 SWF 第 2 至 6 個影格；控制項可逐格瀏覽原始畫面，包括海灘流失與結尾省思。
+- `region.html` 從主 SWF 第 342 個影格開始，並提供三種基隆鳥類的可選介紹。原始照片與對話影格可供瀏覽：白腹鰹鳥第 14–19 格、黑鳶第 96–104 格、鳳頭燕鷗第 316–321 格。時間軸繪製器現在會顯示靜態 `DefineText` 與取出的可編輯文字欄位，因此黑鳶和鳳頭燕鷗的說明也能呈現。
+- 鳥類家族頁依主 SWF 第 7 格的八個名稱與四欄兩列分組呈現。各科鳥種清單使用相對應的原始名稱，包括六種鷸科鳥類與三種鷗科鳥類。
+- 已使用未加引號的絕對路徑，在隨附的 Flash Player Standalone 中開啟原始 SWF。已目視檢查首頁、第 7 格的八科選單，以及第一個鷺科介紹頁。鳥類介紹頁左側顯示鳥種清單、右側顯示大圖，下方顯示說明。選單中的 22 種鳥目前都會依來源時間軸呈現 160 張照片與對話；下一張與自動播放會在所選鳥種內前進，並於最後一張停止。允許使用者的 Go Live 網址來源在內建瀏覽器中存取後，也已比對 `http://127.0.0.1:5500/` 的首頁與鷺科頁；主選單按鈕圖稿與精確影格轉場仍未完全忠於 SWF。
 
-## Remaining 1:1 work
+## 尚未完全一致的部分
 
-- The source `choice.swf` has 37 question frames. `assets/decoded/choice/quiz.json` now contains each prompt, its three original options, and the exact answer index from Sprite 160; `choice.html` draws 10 randomly selected questions and scores each correct answer with the recovered 10-point value. The remaining linked HTML sections are still partial visual recreations.
-- The bird guide uses the original dialogue and photographs, but flattens SWF frame transitions into per-photo pages; button animations and the original frame-by-frame timing are not reproduced.
-- The supplied `source/movie.flv` was converted to browser-compatible H.264/AAC at `movie.mp4`, and `movie.html` now uses the HTML5 video player.
-- Exact ShapeRecord rasterization instead of bitmap-filled bounding-box approximation.
-- Exact embedded glyph/font rendering for DefineText/DefineEditText; current text uses browser fonts and recovered advances.
-- Full AS1/2 VM semantics for all opcodes, rather than metadata/opcode reconstruction.
-- Exact button hit areas and Button2 state rendering.
-- Exact color transforms, filters, morphs and sound synchronization.
+- 原始 `choice.swf` 有 37 個題目影格。`assets/decoded/choice/quiz.json` 現在包含每題題目、三個原始選項，以及 Sprite 160 所記錄的正確答案索引；`choice.html` 會隨機抽取 10 題，每答對一題依還原資料加 10 分。其餘連結 HTML 單元目前仍是部分視覺重製。
+- 鳥類圖鑑使用原始對話與照片，但將 SWF 影格轉場整理成逐張照片頁面；按鈕動畫與原始逐格時間尚未重現。
+- 提供的 `source/movie.flv` 已轉換為瀏覽器可播放的 H.264/AAC 格式 `movie.mp4`，`movie.html` 現在使用 HTML5 影片播放器。
+- 尚未以精確的 ShapeRecord 繪製取代目前以點陣圖填滿外框的近似方式。
+- 尚未精確呈現內嵌字形與 `DefineText`／`DefineEditText` 字型；目前文字使用瀏覽器字型與還原出的字距。
+- 尚未完整實作所有操作碼的 AS1/2 虛擬機語意，目前採用中繼資料與操作碼重建。
+- 尚未精確重現按鈕點擊範圍與 Button2 狀態繪製。
+- 尚未精確重現色彩轉換、濾鏡、變形與音效同步。

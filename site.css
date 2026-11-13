@@ -3,6 +3,14 @@
 
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}}
 
+/* Shared fade-through for every local page navigation. */
+@view-transition{navigation:auto}
+::view-transition-old(root){animation:site-page-out 2s ease-in-out both}
+::view-transition-new(root){animation:site-page-in 2s ease-in-out both}
+@keyframes site-page-out{to{opacity:0}}
+@keyframes site-page-in{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){::view-transition-old(root),::view-transition-new(root){animation:none}}
+
 /* Full-screen presentation shell */
 :root{--night:#102d37;--foam:#eaf0e9;--coral:#d9a66f}
 html:has(.deck){height:100%;overflow:hidden;background:radial-gradient(ellipse at 78% 18%,#285260 0,#173b47 36%,#102d37 100%)}

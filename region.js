@@ -63,8 +63,12 @@ function stopAutoplay() {
 function showSlide(index) {
   const bird = regionBirds[selectedBird];
   if (!bird) return;
-  slide = Math.max(0, Math.min(bird.images.length - 1, index));
-  image.classList.remove('region-photo-enter');
+  const nextSlide = Math.max(0, Math.min(bird.images.length - 1, index));
+  window.transitionPageContent(() => renderSlide(bird, nextSlide), bird.images[nextSlide]);
+}
+
+function renderSlide(bird, index) {
+  slide = index;
   image.src = bird.images[slide];
   image.alt = `${bird.name}，第 ${slide + 1} 張照片`;
   title.textContent = bird.name;
@@ -72,8 +76,6 @@ function showSlide(index) {
   family.textContent = bird.caption;
   caption.textContent = bird.name;
   progress.textContent = `${slide + 1} / ${bird.images.length}`;
-  void image.offsetWidth;
-  image.classList.add('region-photo-enter');
   document.querySelector('#region-previous').disabled = slide === 0;
   document.querySelector('#region-next').disabled = slide === bird.images.length - 1;
   tabs.querySelectorAll('button').forEach(button => button.setAttribute('aria-current', String(button.dataset.bird === selectedBird)));
@@ -83,18 +85,23 @@ function selectBird(id) {
   selectedBird = id;
   slide = 0;
   stopAutoplay();
-  intro.hidden = true;
-  overviewArt.hidden = true;
-  detail.hidden = false;
-  showSlide(0);
+  const bird = regionBirds[id];
+  window.transitionPageContent(() => {
+    intro.hidden = true;
+    overviewArt.hidden = true;
+    detail.hidden = false;
+    renderSlide(bird, 0);
+  }, bird.images[0]);
 }
 
 function showOverview() {
   stopAutoplay();
   selectedBird = null;
-  detail.hidden = true;
-  overviewArt.hidden = false;
-  intro.hidden = false;
+  window.transitionPageContent(() => {
+    detail.hidden = true;
+    overviewArt.hidden = false;
+    intro.hidden = false;
+  });
 }
 
 tabs.innerHTML = Object.entries(regionBirds).map(([id, bird]) =>
@@ -113,7 +120,7 @@ document.querySelector('#region-autoplay').addEventListener('click', event => {
     const bird = regionBirds[selectedBird];
     if (slide >= bird.images.length - 1) return stopAutoplay();
     showSlide(slide + 1);
-  }, 3200);
+  }, 4600);
 });
 document.addEventListener('keydown', event => {
   if (detail.hidden || event.target.matches('input,textarea,select')) return;

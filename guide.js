@@ -59,6 +59,15 @@ const pages = [
   }
 ];
 
+// Decode the slide artwork before it is needed so navigation never waits on a
+// large image request or its first on-screen decode.
+const guideImageCache = pages.flatMap(item => item.images).map(item => {
+  const image = new Image();
+  image.src = item.src || window.GUIDE_IMAGE_PATHS[item.id];
+  image.decode?.().catch(() => {});
+  return image;
+});
+
 const gallery = document.querySelector('#guide-gallery');
 const caption = document.querySelector('#guide-caption');
 const title = document.querySelector('#guide-title');
@@ -68,7 +77,7 @@ const counter = document.querySelector('#page-counter');
 const nextTopic = document.querySelector('#guide-next-topic');
 let page = 0;
 
-function showPage(index) {
+function renderPage(index) {
   page = Math.max(0, Math.min(pages.length - 1, index));
   const data = pages[page];
   document.body.dataset.page = page + 1;
@@ -95,9 +104,12 @@ function showPage(index) {
   nextTopic.hidden = !data.nextTopic;
   document.querySelector('#previous').disabled = page === 0;
   document.querySelector('#next').disabled = page === pages.length - 1;
-  document.querySelector('.guide-scene').classList.remove('scene-enter');
-  void document.querySelector('.guide-scene').offsetWidth;
-  document.querySelector('.guide-scene').classList.add('scene-enter');
+}
+
+function showPage(index) {
+  const nextPage = Math.max(0, Math.min(pages.length - 1, index));
+  if (nextPage === page) return;
+  window.transitionPageContent(() => renderPage(nextPage));
 }
 
 document.querySelector('#previous').addEventListener('click', () => showPage(page - 1));
@@ -106,4 +118,4 @@ document.addEventListener('keydown', event => {
   if (event.key === 'ArrowLeft') showPage(page - 1);
   if (event.key === 'ArrowRight') showPage(page + 1);
 });
-showPage(0);
+renderPage(0);
