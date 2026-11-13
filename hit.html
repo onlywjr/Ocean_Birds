@@ -1,25 +1,60 @@
 <!doctype html>
 <html lang="zh-Hant">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>小白鷺找食物</title><link rel="stylesheet" href="section.css"><style>
-.section-stage{width:min(100vw,150svh,900px);height:auto;min-height:0;aspect-ratio:3/2;overflow:hidden}.play{width:88.8%;margin:10cqw auto 0;padding:1.5cqw;background:#e6f2f0ef;border-radius:1.7cqw;text-align:center;color:#164665}.play>p{margin:.6cqw 0;font-size:max(15px,2.1cqw)}.play button{padding:.9cqw 2cqw;margin:.3cqw;border:0;border-radius:.9cqw;background:#e4a94d;color:#352814;font-size:max(15px,2.3cqw);font-weight:bold;cursor:pointer}.stats{display:flex;justify-content:center;gap:3.5cqw;font-size:max(15px,2.5cqw);font-weight:bold}#shore{display:block;width:min(100%,70cqw);height:auto;margin:auto;border:.8cqw solid white;border-radius:1.2cqw;cursor:crosshair;touch-action:manipulation}
-</style>  <link rel="stylesheet" href="site.css">
-  <link rel="stylesheet" href="site-redesign.css">
-  <link rel="stylesheet" href="presentation-pages.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>小白鷺找食物｜在海邊躍動的精靈</title>
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="food-game.css">
   <script src="assets/games/food-search/image-map.js"></script>
 </head>
-<body>
-<header class="site-header"><a class="brand" href="main-page.html">在海邊躍動的精靈</a><nav class="site-nav" aria-label="主導覽"><a href="guide.html">導引簡介</a><a href="birds.html">鳥類圖鑑</a><a href="region.html">展翅基隆</a><a href="movie.html">生態浩劫</a><a href="game.html">互動遊戲</a><a href="choice.html">成果驗收</a></nav></header><main class="section-stage full-screen-page"><header class="section-heading"><h1>小白鷺找食物</h1></header><a class="home-button" href="game.html">回選單</a>
-<section class="play"><p>小白鷺來到海岸找食物，卻遇上垃圾與危險。聰明的你快來幫幫小白鷺吧！（吃錯了可是會扣分的唷）</p><div class="stats"><span>時間 <b id="time">60</b></span><span>分數 <b id="score">0</b></span></div><canvas id="shore" width="680" height="300" aria-label="海岸覓食遊戲場景"></canvas><div><button id="start">開始</button><button id="again">重新開始</button></div><p id="message" aria-live="polite">按「開始」進入海岸覓食。</p></section><a class="next-topic" href="choice.html">接著挑戰成果驗收 →</a></main>
-<script>
-const canvas=document.querySelector('#shore'),ctx=canvas.getContext('2d'),time=document.querySelector('#time'),score=document.querySelector('#score'),message=document.querySelector('#message');
-const loadImage=src=>{const image=new Image();image.src=src;return image};
-const background=loadImage(FOOD_SEARCH_PATHS[7]),egret=[loadImage(FOOD_SEARCH_PATHS[20]),loadImage(FOOD_SEARCH_PATHS[22])];
-const objects=[{id:27,food:true},{id:32,food:true},{id:36,food:true},{id:46,food:false},{id:51,food:false},{id:55,food:false}].map(x=>({...x,image:loadImage(FOOD_SEARCH_PATHS[x.id])}));
-let left=60,points=0,timer=null,targets=[],playing=false,raf=0,walk=0,step=0;
-function spawn(){const pool=[...objects].sort(()=>Math.random()-.5).slice(0,5);targets=pool.map(item=>({item,x:40+Math.random()*600,y:48+Math.random()*164,w:item.food?56:38,h:item.food?44:48,phase:Math.random()*6.28}))}
-function paint(){ctx.clearRect(0,0,680,300);ctx.fillStyle='#b8d0c4';ctx.fillRect(0,0,680,300);if(background.complete&&background.naturalWidth)ctx.drawImage(background,0,0,680,300);targets.forEach(t=>{const bob=Math.sin(step/13+t.phase)*3;if(t.item.image.complete&&t.item.image.naturalWidth)ctx.drawImage(t.item.image,t.x-t.w/2,t.y-t.h/2+bob,t.w,t.h)});if(playing){walk=(walk+1.15)%780;const bird=egret[Math.floor(step/8)%2];if(bird.complete&&bird.naturalWidth)ctx.drawImage(bird,walk-45,205,70,84);step++;raf=requestAnimationFrame(paint)}}
-function start(){clearInterval(timer);cancelAnimationFrame(raf);left=60;points=0;walk=0;step=0;playing=true;time.textContent=left;score.textContent=points;message.textContent='幫小白鷺找到食物，避開海岸垃圾！';spawn();paint();timer=setInterval(()=>{time.textContent=--left;if(left<=0){clearInterval(timer);timer=null;playing=false;cancelAnimationFrame(raf);paint();message.textContent=`時間到！本次得分：${points}`}},1000)}
-document.querySelector('#start').onclick=start;document.querySelector('#again').onclick=start;
-canvas.addEventListener('click',event=>{if(!playing)return;const rect=canvas.getBoundingClientRect(),x=(event.clientX-rect.left)*680/rect.width,y=(event.clientY-rect.top)*300/rect.height,index=targets.findIndex(t=>Math.abs(t.x-x)<t.w*.62&&Math.abs(t.y-y)<t.h*.65);if(index<0)return;const [target]=targets.splice(index,1);points+=target.item.food?10:-5;score.textContent=points;message.textContent=target.item.food?'找到食物了！':'哎呀，吃到垃圾了，扣分。';setTimeout(()=>{if(playing){const item=objects[Math.floor(Math.random()*objects.length)];targets.push({item,x:40+Math.random()*600,y:48+Math.random()*164,w:item.food?56:38,h:item.food?44:48,phase:Math.random()*6.28})}},450)});
-background.onload=paint;egret.forEach(image=>image.onload=paint);objects.forEach(item=>item.image.onload=paint);
-</script></body></html>
+<body class="food-page">
+  <main class="food-game">
+    <canvas id="shore" tabindex="0" aria-label="移動滑鼠或手指，帶領小白鷺尋找食物"></canvas>
+    <div class="shore-wash" aria-hidden="true"></div>
+    <a class="food-back" href="game.html">← 返回遊戲選單</a>
+
+    <header class="food-header">
+      <p class="food-brand">COASTAL BIRDS <span>·</span> FIELD PLAY</p>
+      <h1>小白鷺找食物</h1>
+      <p class="food-subtitle">跟著潮汐覓食，替海岸避開垃圾</p>
+    </header>
+
+    <section class="food-hud" aria-label="遊戲狀態">
+      <div class="hud-item hud-time"><span>剩餘時間</span><output id="time">01:00</output></div>
+      <div class="hud-item hud-score"><span>覓食得分</span><output id="score">0</output></div>
+    </section>
+
+    <div class="food-feedback" id="feedback" role="status" aria-live="polite" hidden></div>
+    <p class="food-tip" id="food-tip">目標會隨機冒出，快帶小白鷺追上牠們</p>
+
+    <section class="food-overlay" id="welcome" aria-labelledby="welcome-title">
+      <div class="food-dialog">
+        <p class="dialog-eyebrow">60 SECONDS · COASTAL MISSION</p>
+        <h2 id="welcome-title">潮間帶覓食任務</h2>
+        <p class="dialog-copy">小白鷺會跟著你的滑鼠移動。魚蝦和垃圾會在潮間帶隨機冒出，短暫停留後消失；把握時間覓食，也要小心別吃到垃圾。</p>
+        <div class="score-guide">
+          <span><i class="guide-dot is-food"></i>魚蝦 <b>+10</b></span>
+          <span><i class="guide-dot is-trash"></i>垃圾 <b>−8</b></span>
+        </div>
+        <button class="start-button" id="start" type="button">開始覓食 <span>→</span></button>
+        <p class="dialog-note">一分鐘後看看，你能替海岸找回多少活力。</p>
+      </div>
+    </section>
+
+    <section class="food-overlay" id="results" aria-labelledby="result-title" hidden>
+      <div class="food-dialog result-dialog">
+        <p class="dialog-eyebrow">MISSION COMPLETE</p>
+        <h2 id="result-title">覓食時間結束</h2>
+        <p class="result-score"><output id="final-score">0</output><span>分</span></p>
+        <p id="result-copy" class="dialog-copy"></p>
+        <div class="result-actions">
+          <button class="start-button" id="again" type="button">再玩一次 <span>↻</span></button>
+          <a class="food-back result-back" href="game.html">返回遊戲選單</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="hit.js"></script>
+</body>
+</html>

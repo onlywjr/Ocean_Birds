@@ -1,14 +1,14 @@
 window.MATCHING_IMAGE_PATHS = {
-  "9": "assets/games/matching/white-bellied-booby.jpg",
-  "11": "assets/games/matching/little-egret.jpg",
-  "13": "assets/games/matching/black-kite.jpg",
-  "15": "assets/games/matching/osprey.jpg",
-  "17": "assets/games/matching/painted-snipe.jpg",
-  "19": "assets/games/matching/grey-headed-plover.jpg",
-  "21": "assets/games/matching/red-necked-stint.jpg",
-  "23": "assets/games/matching/little-tern.jpg",
-  "25": "assets/games/matching/kingfisher.jpg",
-  "27": "assets/games/matching/white-backed-plover.jpg",
-  "29": "assets/games/matching/kentish-plover.jpg",
-  "31": "assets/games/matching/whimbrel.jpg"
+  "9": "assets/region/white-bellied-booby.jpg",
+  "11": "assets/bird-catalog/little-egret-01.jpg",
+  "13": "assets/region/black-kite.jpg",
+  "15": "assets/bird-catalog/osprey-01.jpg",
+  "17": "assets/bird-catalog/painted-snipe-01.jpg",
+  "19": "assets/bird-catalog/grey-headed-plover-01.jpg",
+  "21": "assets/bird-catalog/red-necked-stint-01.jpg",
+  "23": "assets/bird-catalog/little-tern-01.jpg",
+  "25": "assets/bird-catalog/kingfisher-01.jpg",
+  "27": "assets/bird-catalog/grey-plover-01.jpg",
+  "29": "assets/bird-catalog/kentish-plover-01.jpg",
+  "31": "assets/bird-catalog/whimbrel-01.jpg"
 };

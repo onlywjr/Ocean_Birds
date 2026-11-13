@@ -16,7 +16,9 @@ Use a presentation-like, full-viewport layout: one scene per screen with no page
 
 ## Working rules
 
-- Preserve the restored Flash source, extracted assets, and existing stories as the reference baseline.
+- Keep the active site and all changes in the original project folder; do not create a working copy.
+- Keep archived SWF sources, Flash Player, extracted decode output, superseded styles, and unused assets under `Backup/`. The folder is ignored by Git in `.gitignore`; active pages must not reference archived files.
+- The original SWFs and their extraction tools remain available under `Backup/flash-archive/` as a local reference baseline.
 - Keep the site static and dependency-light unless implementation work proves a build system is needed.
 - Separate visual components from bird content data; keep the original SWF frame mapping as reference metadata.
 - Complete one phase and review its visible result before moving to the next.

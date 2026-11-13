@@ -18,7 +18,7 @@ function renderSlide(index=0){currentSlide=index;const bird=options[current],sli
  document.querySelector('#family-label').textContent=bird.family;document.querySelector('#story-heading').textContent=bird.name;document.querySelector('#species-name').textContent=bird.name;
  image.classList.remove('photo-enter');void image.offsetWidth;image.classList.add('photo-enter');
  image.src=window.BIRD_ASSET_PATHS[slide?.image??bird.id];image.alt=`${bird.name}（第 ${index+1} 張照片）`;
- const html=(slide?.text||'').replace(/<br\s*\/?\s*>/gi,'\n').replace(/<\/p>\s*<p[^>]*>/gi,'\n\n').replace(/<\/p>/gi,'\n').replace(/<[^>]*>/g,'');const decoded=document.createElement('textarea');decoded.innerHTML=html;copy.textContent=decoded.value.trim()||'這張照片暫無文字記錄。';
+ const html=(slide?.text||'').replace(/<br\s*\/?\s*>/gi,' ').replace(/<\/p>\s*<p[^>]*>/gi,' ').replace(/<\/?p[^>]*>/gi,' ').replace(/<[^>]*>/g,'');const decoded=document.createElement('textarea');decoded.innerHTML=html;copy.textContent=decoded.value.replace(/\s+/g,' ').trim()||'這張照片暫無文字記錄。';
  document.querySelector('#slide-count').textContent=`${index+1} / ${slides.length||1}`;document.querySelector('#previous-slide').disabled=index<=0;document.querySelector('#next-slide').disabled=index>=slides.length-1;
  list.querySelectorAll('button').forEach((b,i)=>b.setAttribute('aria-current',i===current?'true':'false'));
 }

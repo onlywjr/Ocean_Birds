@@ -1,5 +1,23 @@
 window.REGION_IMAGE_PATHS = {
   "188": "assets/region/white-bellied-booby.jpg",
+  "192": "assets/region/white-bellied-booby-02.jpg",
+  "196": "assets/region/white-bellied-booby-03.jpg",
+  "199": "assets/region/white-bellied-booby-04.jpg",
+  "202": "assets/region/white-bellied-booby-05.jpg",
+  "205": "assets/region/white-bellied-booby-06.jpg",
   "345": "assets/region/black-kite.jpg",
-  "752": "assets/region/crested-tern.jpg"
+  "348": "assets/region/black-kite-02.jpg",
+  "351": "assets/region/black-kite-03.jpg",
+  "354": "assets/region/black-kite-04.jpg",
+  "357": "assets/region/black-kite-05.jpg",
+  "360": "assets/region/black-kite-06.jpg",
+  "363": "assets/region/black-kite-07.jpg",
+  "366": "assets/region/black-kite-08.jpg",
+  "369": "assets/region/black-kite-09.jpg",
+  "752": "assets/region/crested-tern.jpg",
+  "755": "assets/region/crested-tern-02.jpg",
+  "758": "assets/region/crested-tern-03.jpg",
+  "761": "assets/region/crested-tern-04.jpg",
+  "764": "assets/region/crested-tern-05.jpg",
+  "767": "assets/region/crested-tern-06.jpg"
 };

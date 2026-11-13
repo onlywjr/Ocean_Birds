@@ -3,24 +3,52 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173c43">
+  <meta name="description" content="用十道題目回顧海岸鳥類與棲地知識。">
   <title>成果驗收｜在海邊躍動的精靈</title>
-  <link rel="stylesheet" href="section.css">
-  <link rel="stylesheet" href="choice.css">
   <link rel="stylesheet" href="site.css">
-  <link rel="stylesheet" href="site-redesign.css">
-  <link rel="stylesheet" href="presentation-pages.css">
+  <link rel="stylesheet" href="choice.css">
 </head>
-<body>
-<header class="site-header"><a class="brand" href="main-page.html">在海邊躍動的精靈</a><nav class="site-nav" aria-label="主導覽"><a href="guide.html">導引簡介</a><a href="birds.html">鳥類圖鑑</a><a href="region.html">展翅基隆</a><a href="movie.html">生態浩劫</a><a href="game.html">互動遊戲</a><a href="choice.html">成果驗收</a></nav></header>
-  <main class="section-stage choice-stage full-screen-page">
-    <header class="section-heading"><h1>成果驗收</h1></header>
-    <a class="home-button" href="main-page.html">旅程完成，回首頁</a>
-    <section class="quiz" aria-label="海鳥知識測驗">
-      <div class="quiz-meta"><span id="progress">準備開始</span><span>每回合 10 題</span></div>
-      <h2 id="question">從原作 37 題題庫中抽題，測試你的海鳥知識。</h2>
-      <div id="answers" class="answers" aria-label="選擇答案"></div>
-      <p id="feedback" aria-live="polite"></p>
-      <button id="start" type="button">開始測驗</button>
+<body class="assessment-page">
+  <main class="assessment-stage">
+    <aside class="assessment-visual" aria-label="海岸鳥類觀察">
+      <a class="assessment-home" href="main-page.html">← 回首頁</a>
+      <div class="visual-copy">
+        <p class="assessment-kicker">COASTAL BIRDS · FIELD NOTES</p>
+        <p class="visual-index">FINAL<br>CHALLENGE</p>
+        <h2>把沿途的<br>發現記在心裡</h2>
+        <p class="visual-description">從海岸、鳥類到棲地，完成十道題目，回顧這趟觀察旅程。</p>
+      </div>
+      <div class="visual-stats" aria-live="polite">
+        <span>本回合得分</span>
+        <strong><output id="score">0</output><i>分</i></strong>
+      </div>
+      <span class="visual-caption">看見牠們，也記得守護牠們</span>
+    </aside>
+
+    <section class="assessment-content" aria-labelledby="assessment-title">
+      <header class="assessment-heading">
+        <p class="content-kicker">YOUR COASTAL JOURNEY</p>
+        <h1 id="assessment-title">成果驗收</h1>
+        <p>準備好測試你的海岸鳥類知識了嗎？</p>
+      </header>
+
+      <section class="quiz" aria-label="海鳥知識測驗">
+        <div class="quiz-meta">
+          <span class="round-label">FIELD QUIZ <b id="progress">準備開始</b></span>
+          <span class="quiz-total">每回合 10 題</span>
+        </div>
+        <div class="quiz-body">
+          <p class="question-label">觀察題</p>
+          <h2 id="question">從原作 37 題題庫中抽題，測試你的海鳥知識。</h2>
+          <div id="answers" class="answers" aria-label="選擇答案"></div>
+          <div class="quiz-footer">
+            <p id="feedback" aria-live="polite">開始後，選出你認為正確的答案。</p>
+            <button class="quiz-start" id="start" type="button">開始測驗 <span aria-hidden="true">→</span></button>
+          </div>
+        </div>
+      </section>
+      <p class="assessment-footnote">題目依原始作品題庫隨機抽選，每回合共 10 題。</p>
     </section>
   </main>
   <script src="assets/assessment/quiz-data.js"></script>

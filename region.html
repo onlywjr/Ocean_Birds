@@ -8,16 +8,20 @@
   <link rel="stylesheet" href="site.css">
   <link rel="stylesheet" href="site-redesign.css">
   <link rel="stylesheet" href="presentation-pages.css">
+  <link rel="stylesheet" href="region-layout.css">
 </head>
-<body>
-<header class="site-header"><a class="brand" href="main-page.html">在海邊躍動的精靈</a><nav class="site-nav" aria-label="主導覽"><a href="guide.html">導引簡介</a><a href="birds.html">鳥類圖鑑</a><a href="region.html">展翅基隆</a><a href="movie.html">生態浩劫</a><a href="game.html">互動遊戲</a><a href="choice.html">成果驗收</a></nav></header>
+<body class="region-page">
   <main class="guide-shell region-shell full-screen-page">
     <header class="guide-bar">
       <a class="home-link" href="main-page.html">回首頁</a>
       <h1>展翅基隆</h1>
-      <span>基隆三寶</span>
+      <p class="region-lead">黑鳶、鳳頭燕鷗及白腹鰹鳥是基隆港常見的三種鳥類，牠們被稱為基隆三寶。其中黑鳶更是基隆市的市鳥，偶爾停下腳步，抬頭觀察牠們在港區上空盤旋、尋找食物的身影，一起認識這些海岸鄰居。</p>
     </header>
-    <iframe id="original-frame" title="展翅基隆原始 Flash 畫面" src="flash-frame.html?frame=342"></iframe>
+    <section class="region-overview-art" id="region-overview-art" aria-label="基隆三寶鳥類滿版拼貼">
+      <figure class="region-overview-main"><img src="assets/region/white-bellied-booby.jpg" alt="白腹鰹鳥在海面上飛翔"></figure>
+      <figure class="region-overview-tile region-overview-tile--kite"><img src="assets/region/black-kite.jpg" alt="黑鳶在空中展翅"></figure>
+      <figure class="region-overview-tile region-overview-tile--tern"><img src="assets/region/crested-tern.jpg" alt="鳳頭燕鷗在藍天下飛翔"></figure>
+    </section>
     <section class="region-intro" id="region-intro" aria-label="基隆三寶">
       <h2>認識基隆三寶</h2>
       <div class="region-birds">
@@ -35,12 +39,28 @@
         </button>
       </div>
     </section>
-    <nav class="frame-nav region-controls" id="region-controls" aria-label="鳥類介紹" hidden>
-      <button id="region-overview" type="button">← 回三寶介紹</button>
-      <button id="region-previous" type="button" aria-label="上一張">上一張</button>
-      <span id="region-progress" aria-live="polite"></span>
-      <button id="region-next" type="button" aria-label="下一張">下一張 →</button>
-    </nav><a class="next-topic region-next" href="movie.html">繼續看海岸故事 →</a>
+    <section class="region-detail" id="region-detail" aria-label="鳥類觀察介紹" hidden>
+      <figure class="region-detail-photo">
+        <img id="region-detail-image" alt="">
+        <figcaption><span id="region-detail-caption"></span><output id="region-progress" aria-live="polite"></output></figcaption>
+      </figure>
+      <aside class="region-detail-panel">
+        <button id="region-overview" class="region-detail-back" type="button">← 所有三寶</button>
+        <p class="region-detail-family" id="region-detail-family"></p>
+        <article class="region-detail-story">
+          <p class="region-detail-kicker">觀察筆記</p>
+          <h2 id="region-detail-title"></h2>
+          <p id="region-detail-copy"></p>
+        </article>
+        <nav class="region-detail-tabs" id="region-detail-tabs" aria-label="切換鳥種"></nav>
+        <div class="region-detail-controls" aria-label="照片控制">
+          <button id="region-previous" type="button" aria-label="上一張">←</button>
+          <button id="region-autoplay" class="region-autoplay" type="button" aria-pressed="false">自動播放</button>
+          <button id="region-next" type="button" aria-label="下一張">→</button>
+        </div>
+      </aside>
+    </section>
+    <a class="next-topic region-next" href="movie.html">繼續看海岸故事 →</a>
   </main>
   <script src="region.js"></script>
 </body>

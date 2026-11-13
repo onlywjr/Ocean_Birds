@@ -5,24 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>生態浩劫｜在海邊躍動的精靈</title>
   <link rel="stylesheet" href="site.css">
-  <link rel="stylesheet" href="movie.css">
   <link rel="stylesheet" href="site-redesign.css">
   <link rel="stylesheet" href="presentation-pages.css">
+  <link rel="stylesheet" href="movie.css">
 </head>
-<body>
-  <header class="site-header"><a class="brand" href="main-page.html">在海邊躍動的精靈</a><nav class="site-nav" aria-label="主導覽"><a href="guide.html">導引簡介</a><a href="birds.html">鳥類圖鑑</a><a href="region.html">展翅基隆</a><a href="movie.html" aria-current="page">生態浩劫</a><a href="game.html">互動遊戲</a><a href="choice.html">成果驗收</a></nav></header>
-  <main class="movie-stage deck">
-    <section class="movie-scene" data-scene>
-      <div class="movie-topline"><header class="movie-heading"><h1><span>生態</span><strong>浩劫</strong></h1></header><a class="home-button" href="main-page.html">回首頁</a></div>
-      <section class="video-frame" aria-label="影片播放區"><video class="video-player" controls preload="metadata" playsinline aria-label="鹽寮灣海岸影片"><source src="assets/ecology/coastal-impact.mp4" type="video/mp4">您的瀏覽器不支援 HTML5 影片播放。</video></section>
-      <p class="deck-hint">看完影像後，向右切換閱讀鹽寮灣的故事</p>
+<body class="movie-page">
+  <main class="movie-stage movie-single">
+    <figure class="movie-visual">
+      <video id="coast-video" class="video-player" controls preload="metadata" playsinline aria-label="鹽寮灣海岸影片">
+        <source src="assets/ecology/coastal-impact.mp4" type="video/mp4">
+        您的瀏覽器不支援 HTML5 影片播放。
+      </video>
+    </figure>
+    <section class="movie-copy" aria-label="影片故事文字">
+      <a class="movie-home" href="main-page.html">← 回首頁</a>
+      <header class="movie-title">
+        <p class="movie-eyebrow">COASTAL MEMORY · YANLIAO</p>
+        <div class="movie-title-row">
+          <h1>生態浩劫</h1>
+          <a class="movie-next" href="game.html">放鬆一下 →</a>
+        </div>
+        <p>一段關於鹽寮灣的海岸記憶</p>
+      </header>
+      <div class="lyrics-window" id="lyrics-window" aria-live="off">
+        <div class="lyrics-track" id="lyrics-track">
+          <article class="lyric-verse"><h2>曾經閃耀的海岸</h2><p>曾經，這裡有一片金黃色的沙灘，綿延三千公尺的鹽寮灣，位於台灣東北角的一隅。夾在岩岸中的美麗沙灘，像一顆珍珠般閃耀。</p></article>
+          <article class="lyric-verse"><h2>碼頭改變了海灣</h2><p>為了興建核四廠的「進水重件碼頭」，海灘生態受到嚴重破壞。連綿的沙灘被碼頭切割，珍貴海沙流失或沉入海水，明亮的珍珠也逐漸黯淡。</p></article>
+          <article class="lyric-verse"><h2>記憶裡的鹽寮灣</h2><p>小時候，奶奶家住在貢寮鄉澳底，這裡也是鹽寮灣的一部分。曾經最喜歡沿著出海的溪流，一路踏著沙走向海灘；如今沙灘不見了，溪流上也多了堤防。</p></article>
+          <article class="lyric-verse"><h2>透過鏡頭重新觀看</h2><p>就讓我們透過鏡頭，看看曾經閃耀動人的黃金海岸線。當我們追求發展的同時，是否也該想想，其他物種的生存權應該放在哪一個位置？</p></article>
+          <article class="lyric-verse"><h2>把海岸留給生命</h2><p>我們一味地破壞美麗的大自然，而這樣的損失，絕不是短暫的經濟發展所能彌補。</p></article>
+        </div>
+      </div>
+      <div class="lyrics-progress" aria-hidden="true"><span id="lyrics-progress"></span></div>
+      <p class="movie-time"><span id="movie-current">00:00</span><span id="movie-duration">影片播放時，文字將同步上滑</span></p>
     </section>
-    <section class="movie-scene" data-scene hidden><header class="movie-heading"><h1>曾經閃耀的海岸</h1></header><article class="story-panel"><div class="story-scroll"><p>曾經，這裡有一片金黃色的沙灘，綿延三千公尺-鹽寮灣，它位於台灣東北角的一隅，夾在岩岸中的一片美麗沙灘，使它就像一顆珍珠般美麗。</p></div></article></section>
-    <section class="movie-scene" data-scene hidden><header class="movie-heading"><h1>碼頭改變了海灣</h1></header><article class="story-panel"><div class="story-scroll"><p>從前它是如此的閃耀動人，但為了興建核四廠的「進水重件碼頭」，海灘生態被嚴重破壞，連綿的沙灘被碼頭切割，造成金黃色的珍貴海沙流失或沉入海水中，明亮的珍珠也為之黯淡。</p></div></article></section>
-    <section class="movie-scene" data-scene hidden><header class="movie-heading"><h1>記憶裡的鹽寮灣</h1></header><article class="story-panel"><div class="story-scroll"><p>小時侯，奶奶家就住在貢寮鄉的澳底，這裡的海岸屬於鹽寮灣的一部分，同時也是核四廠興建的位置，正確來說，核四廠就在奶奶家門口斜對面，碼頭就在不遠的海邊，曾經最喜歡延著出海的溪流，一路踏著沙走向海灘，而如今沙灘不見了，溪流上也多了堤防。</p></div></article></section>
-    <section class="movie-scene" data-scene hidden><header class="movie-heading"><h1>透過鏡頭重新觀看</h1></header><article class="story-panel"><div class="story-scroll"><p>就讓我們透過鏡頭來看看曾經閃耀動人的"黃金海岸線"，透過這樣的鏡頭，我們是否該想想，在我們追求發展的同時，該將別的物種的生存權放在哪一順位?</p></div></article></section>
-    <section class="movie-scene" data-scene hidden><header class="movie-heading"><h1>把海岸留給生命</h1></header><article class="story-panel"><div class="story-scroll"><p>我們一味自私的破壞美麗大自然，而這樣的損失，相信絕不是短暫經濟發展所能彌補的回來的。</p><a class="next-topic" href="game.html">接著來互動體驗 →</a></div></article></section>
   </main>
-  <script src="presentation.js"></script>
+  <script src="movie.js"></script>
 </body>
 </html>
