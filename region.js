@@ -50,24 +50,61 @@ const caption = document.querySelector('#region-detail-caption');
 const family = document.querySelector('#region-detail-family');
 const progress = document.querySelector('#region-progress');
 const tabs = document.querySelector('#region-detail-tabs');
+const voiceReplay = document.querySelector('#region-voice-replay');
+const narration = new Audio();
+narration.preload = 'auto';
 let selectedBird = null;
 let slide = 0;
 let autoplayTimer;
+let advanceTimer;
+
+function advanceAutoplay() {
+  if (!autoplayTimer) return;
+  const bird = regionBirds[selectedBird];
+  if (!bird || slide >= bird.images.length - 1) return stopAutoplay();
+  showSlide(slide + 1);
+}
+
+function playNarration(bird, index) {
+  clearTimeout(advanceTimer);
+  narration.pause();
+  const audioSource = bird.images[index].replace(/\.jpg$/i, '.mp3');
+  narration.src = audioSource;
+  narration.load();
+  const fallback = () => {
+    if (autoplayTimer) advanceTimer = setTimeout(advanceAutoplay, Math.max(5000, bird.stories[index].length * 220));
+  };
+  narration.onerror = fallback;
+  const request = narration.play();
+  if (request?.catch) request.catch(fallback);
+}
+
+narration.addEventListener('ended', () => {
+  if (autoplayTimer) {
+    clearTimeout(advanceTimer);
+    advanceTimer = setTimeout(advanceAutoplay, 450);
+  }
+});
 
 function stopAutoplay() {
-  clearInterval(autoplayTimer);
+  clearTimeout(advanceTimer);
+  advanceTimer = undefined;
   autoplayTimer = undefined;
-  document.querySelector('#region-autoplay').setAttribute('aria-pressed', 'false');
+  const button = document.querySelector('#region-autoplay');
+  button.setAttribute('aria-pressed', 'false');
+  button.textContent = '自動播放';
 }
 
 function showSlide(index) {
   const bird = regionBirds[selectedBird];
   if (!bird) return;
   const nextSlide = Math.max(0, Math.min(bird.images.length - 1, index));
-  window.transitionPageContent(() => renderSlide(bird, nextSlide), bird.images[nextSlide]);
+  playNarration(bird, nextSlide);
+  window.transitionPageContent(() => renderSlide(bird, nextSlide, true), bird.images[nextSlide]);
 }
 
-function renderSlide(bird, index) {
+function renderSlide(bird, index, audioStarted = false) {
+  if (!audioStarted) playNarration(bird, index);
   slide = index;
   image.src = bird.images[slide];
   image.alt = `${bird.name}，第 ${slide + 1} 張照片`;
@@ -86,16 +123,21 @@ function selectBird(id) {
   slide = 0;
   stopAutoplay();
   const bird = regionBirds[id];
+  playNarration(bird, 0);
   window.transitionPageContent(() => {
     intro.hidden = true;
     overviewArt.hidden = true;
     detail.hidden = false;
-    renderSlide(bird, 0);
+    renderSlide(bird, 0, true);
   }, bird.images[0]);
 }
 
 function showOverview() {
   stopAutoplay();
+  narration.pause();
+  narration.currentTime = 0;
+  narration.removeAttribute('src');
+  narration.load();
   selectedBird = null;
   window.transitionPageContent(() => {
     detail.hidden = true;
@@ -110,20 +152,23 @@ tabs.innerHTML = Object.entries(regionBirds).map(([id, bird]) =>
 tabs.querySelectorAll('button').forEach(button => button.addEventListener('click', () => selectBird(button.dataset.bird)));
 document.querySelectorAll('.region-bird').forEach(button => button.addEventListener('click', () => selectBird(button.dataset.bird)));
 document.querySelector('#region-overview').addEventListener('click', showOverview);
-document.querySelector('#region-previous').addEventListener('click', () => showSlide(slide - 1));
-document.querySelector('#region-next').addEventListener('click', () => showSlide(slide + 1));
+document.querySelector('#region-previous').addEventListener('click', () => { stopAutoplay(); showSlide(slide - 1); });
+document.querySelector('#region-next').addEventListener('click', () => { stopAutoplay(); showSlide(slide + 1); });
+voiceReplay.addEventListener('click', () => {
+  const bird = regionBirds[selectedBird];
+  if (bird) playNarration(bird, slide);
+});
 document.querySelector('#region-autoplay').addEventListener('click', event => {
   if (autoplayTimer) return stopAutoplay();
-  if (slide === regionBirds[selectedBird].images.length - 1) showSlide(0);
+  autoplayTimer = true;
   event.currentTarget.setAttribute('aria-pressed', 'true');
-  autoplayTimer = setInterval(() => {
-    const bird = regionBirds[selectedBird];
-    if (slide >= bird.images.length - 1) return stopAutoplay();
-    showSlide(slide + 1);
-  }, 4600);
+  event.currentTarget.textContent = '停止播放';
+  const bird = regionBirds[selectedBird];
+  if (slide === bird.images.length - 1) showSlide(0);
+  else if (narration.paused || narration.ended) playNarration(bird, slide);
 });
 document.addEventListener('keydown', event => {
   if (detail.hidden || event.target.matches('input,textarea,select')) return;
-  if (event.key === 'ArrowLeft') showSlide(slide - 1);
-  if (event.key === 'ArrowRight') showSlide(slide + 1);
+  if (event.key === 'ArrowLeft') { stopAutoplay(); showSlide(slide - 1); }
+  if (event.key === 'ArrowRight') { stopAutoplay(); showSlide(slide + 1); }
 });

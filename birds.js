@@ -1,6 +1,7 @@
 const birds = {};
-const gallery=document.querySelector('#family-grid'), list=document.querySelector('#species-list'), detail=document.querySelector('#detail-view'), catalog=document.querySelector('#catalog-view'), image=document.querySelector('#species-image'), copy=document.querySelector('#species-copy'), auto=document.querySelector('#auto-play');
-let options=[],current=0,currentSlide=0,timer=null,allBirds=[];
+const gallery=document.querySelector('#family-grid'), list=document.querySelector('#species-list'), detail=document.querySelector('#detail-view'), catalog=document.querySelector('#catalog-view'), image=document.querySelector('#species-image'), copy=document.querySelector('#species-copy'), auto=document.querySelector('#auto-play'), voiceReplay=document.querySelector('#voice-replay');
+const narration=new Audio();narration.preload='auto';
+let options=[],current=0,currentSlide=0,timer=null,advanceTimer=null,allBirds=[];
 async function loadBirdData(){
  const index=await fetch('assets/bird-catalog/index.json').then(response=>{if(!response.ok)throw new Error('無法讀取鳥類目錄');return response.json()});
  window.BIRD_SLIDES={};window.BIRD_ASSET_PATHS={};
@@ -11,7 +12,7 @@ async function loadBirdData(){
   if(!/^[a-z0-9-]+$/i.test(folder))throw new Error(`鳥種資料夾名稱不正確：${folder}`);
   const root=`assets/bird-catalog/species/${folder}/`;
   const data=await fetch(`${root}dialog.json`).then(response=>{if(!response.ok)throw new Error(`找不到 ${folder}/dialog.json`);return response.json()});
-  const slides=(data.slides||[]).map(item=>({image:`${folder}/${item.image}`,text:item.text||''}));
+  const slides=(data.slides||[]).map(item=>({image:`${folder}/${item.image}`,audio:`${root}${encodeURIComponent(item.image.replace(/\.[^.]+$/,'')+'.mp3')}`,text:item.text||''}));
   if(!data.name||!data.family||!slides.length)throw new Error(`${folder}/dialog.json 缺少鳥名、科別或對話圖片`);
   slides.forEach(slide=>{window.BIRD_ASSET_PATHS[slide.image]=`${root}${encodeURIComponent(slide.image.slice(folder.length+1))}`});
   window.BIRD_SLIDES[data.name]=slides;
@@ -36,10 +37,21 @@ function renderFamilies(query=''){
  }
  document.querySelector('#empty-search').hidden=count>0;
 }
-function stopAutoplay(){clearInterval(timer);timer=null;auto.setAttribute('aria-pressed','false');auto.textContent='自動播放'}
-function renderSlide(index=0, transition=true){
+function scheduleAutoplayAdvance(delay){clearTimeout(advanceTimer);advanceTimer=setTimeout(()=>{const slides=window.BIRD_SLIDES?.[options[current]?.name]||[];if(currentSlide>=slides.length-1){stopAutoplay();return}renderSlide(currentSlide+1)},delay)}
+narration.addEventListener('ended',()=>{if(timer)scheduleAutoplayAdvance(450)});
+function playNarration(slide){
+ clearTimeout(advanceTimer);narration.pause();narration.onended=null;
+ if(!slide?.audio){if(timer)scheduleAutoplayAdvance(Math.max(5000,(slide?.text||'').length*220));return}
+ narration.src=slide.audio;narration.load();
+ narration.onerror=()=>{if(timer)scheduleAutoplayAdvance(Math.max(5000,(slide?.text||'').length*220))};
+ const request=narration.play();if(request?.catch)request.catch(()=>{if(timer)scheduleAutoplayAdvance(Math.max(5000,(slide?.text||'').length*220))});
+}
+function stopAutoplay(){clearTimeout(advanceTimer);advanceTimer=null;timer=null;auto.setAttribute('aria-pressed','false');auto.textContent='自動播放'}
+function stopNarration(){narration.pause();narration.currentTime=0;narration.removeAttribute('src');narration.load()}
+function renderSlide(index=0, transition=true, audioStarted=false){
  const bird=options[current],slides=window.BIRD_SLIDES?.[bird.name]||[],slide=slides[index];
  const imageSource=window.BIRD_ASSET_PATHS[slide?.image??bird.id];
+ if(!audioStarted)playNarration(slide);
  const update=()=>{
   currentSlide=index;
   document.querySelector('#family-label').textContent=bird.family;document.querySelector('#story-heading').textContent=bird.name;document.querySelector('#species-name').textContent=bird.name;
@@ -51,8 +63,9 @@ function renderSlide(index=0, transition=true){
  if(transition)window.transitionPageContent(update,imageSource);else update();
 }
 function selectBird(i){stopAutoplay();current=i;renderSlide(0)}
-function openFamily(family,items){options=items.map(b=>({...b,family}));current=0;const bird=options[0],slide=window.BIRD_SLIDES?.[bird.name]?.[0],src=window.BIRD_ASSET_PATHS[slide?.image??bird.id];window.transitionPageContent(()=>{list.innerHTML='';options.forEach((item,i)=>{const b=document.createElement('button');b.type='button';b.textContent=item.name;b.addEventListener('click',()=>selectBird(i));list.append(b)});catalog.hidden=true;detail.hidden=false;renderSlide(0,false)},src)}
-document.querySelector('#bird-search').addEventListener('input',e=>renderFamilies(e.target.value));document.querySelector('#back-to-list').addEventListener('click',()=>{stopAutoplay();window.transitionPageContent(()=>{detail.hidden=true;catalog.hidden=false})});
+function openFamily(family,items){options=items.map(b=>({...b,family}));current=0;const bird=options[0],slide=window.BIRD_SLIDES?.[bird.name]?.[0],src=window.BIRD_ASSET_PATHS[slide?.image??bird.id];playNarration(slide);window.transitionPageContent(()=>{list.innerHTML='';options.forEach((item,i)=>{const b=document.createElement('button');b.type='button';b.textContent=item.name;b.addEventListener('click',()=>selectBird(i));list.append(b)});catalog.hidden=true;detail.hidden=false;renderSlide(0,false,true)},src)}
+document.querySelector('#bird-search').addEventListener('input',e=>renderFamilies(e.target.value));document.querySelector('#back-to-list').addEventListener('click',()=>{stopAutoplay();stopNarration();window.transitionPageContent(()=>{detail.hidden=true;catalog.hidden=false})});
 document.querySelector('#previous-slide').addEventListener('click',()=>{stopAutoplay();if(currentSlide>0)renderSlide(currentSlide-1)});document.querySelector('#next-slide').addEventListener('click',()=>{stopAutoplay();const slides=window.BIRD_SLIDES?.[options[current].name]||[];if(currentSlide<slides.length-1)renderSlide(currentSlide+1)});
-auto.addEventListener('click',()=>{if(timer){stopAutoplay();return}const slides=window.BIRD_SLIDES?.[options[current].name]||[];if(currentSlide>=slides.length-1)renderSlide(0);auto.setAttribute('aria-pressed','true');auto.textContent='停止播放';timer=setInterval(()=>{if(currentSlide>=slides.length-1){stopAutoplay();return}renderSlide(currentSlide+1)},4600)});
+voiceReplay.addEventListener('click',()=>playNarration((window.BIRD_SLIDES?.[options[current]?.name]||[])[currentSlide]));
+auto.addEventListener('click',()=>{if(timer){stopAutoplay();return}timer=true;auto.setAttribute('aria-pressed','true');auto.textContent='停止播放';const slides=window.BIRD_SLIDES?.[options[current].name]||[];if(currentSlide>=slides.length-1)renderSlide(0);else if(narration.paused||narration.ended)playNarration(slides[currentSlide])});
 loadBirdData().then(failures=>{renderFamilies();if(failures.length){const empty=document.querySelector('#empty-search');empty.hidden=false;empty.textContent=`部分鳥種未能載入：${failures.join('；')}`}}).catch(error=>{const empty=document.querySelector('#empty-search');empty.hidden=false;empty.textContent=`鳥類圖鑑載入失敗：${error.message}`;});
