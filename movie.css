@@ -7,12 +7,13 @@ body.movie-page { color: #17221f; font-family: var(--font, "LXGW WenKai Mono TC"
 .movie-visual figcaption { position: absolute; left: 4%; bottom: 4%; padding: 9px 14px; border-radius: 999px; background: #102d37bf; color: #f7f5ee; font-size: .9375rem; backdrop-filter: blur(8px); }
 .movie-copy { position: absolute; z-index: 2; inset: 0 0 0 70%; display: flex; flex-direction: column; padding: 7vh 3.2vw 3.5vh 2.5vw; background: #f7f5ee; }
 .movie-copy > * { position: relative; z-index: 1; }
-.movie-home { position: absolute; top: 26px; right: 4%; display: inline-flex; min-height: 42px; align-items: center; padding: 8px 15px; border: 1px solid #ffffff2b; border-radius: 999px; background: #1d363a; color: #f7f5ee; font-size: .9375rem; text-decoration: none; }
+.movie-home { display: inline-flex; min-height: 42px; align-items: center; padding: 8px 15px; border: 1px solid #ffffff2b; border-radius: 999px; background: #1d363a; color: #f7f5ee; font-size: .9375rem; text-decoration: none; }
 .movie-title { flex: 0 0 auto; padding-top: 2vh; }
 .movie-title-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .movie-eyebrow { margin: 0 0 10px; color: #9b744d; font-size: .9375rem; letter-spacing: .13em; }
 .movie-title h1 { margin: 0; color: #17221f; font: 700 clamp(2rem, 3vw, 3.2rem)/1.2 var(--font-bold, "Noto Serif TC", serif); }
 .movie-next { flex: none; display: inline-flex; min-height: 40px; align-items: center; justify-content: center; padding: 7px 13px; border-radius: 999px; background: #c68f57; color: #182f36; font: 700 .9375rem var(--font-bold, "Noto Serif TC", serif); text-decoration: none; white-space: nowrap; }
+.movie-actions { display: flex; flex: 0 0 auto; align-items: center; justify-content: space-between; gap: 12px; margin-top: 14px; }
 .movie-title > p:last-child { margin: 8px 0 0; color: #64716b; font-size: 1rem; }
 .lyrics-window { position: relative; flex: 1 1 auto; min-height: 0; margin-top: 3vh; overflow: hidden; mask-image: linear-gradient(to bottom, transparent 0%, #000 12%, #000 86%, transparent 100%); }
 .lyrics-track { position: absolute; top: 0; right: 0; left: 0; will-change: transform; }

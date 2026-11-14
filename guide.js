@@ -75,7 +75,19 @@ const text = document.querySelector('#guide-text');
 const step = document.querySelector('#guide-step');
 const counter = document.querySelector('#page-counter');
 const nextTopic = document.querySelector('#guide-next-topic');
+const guideNarration = new Audio();
+guideNarration.preload = 'auto';
 let page = 0;
+let narrationGeneration = 0;
+
+function playGuideNarration(index) {
+  guideNarration.pause();
+  guideNarration.currentTime = 0;
+  guideNarration.src = `assets/guide/guide-${String(index + 1).padStart(2, '0')}.mp3`;
+  guideNarration.load();
+  const request = guideNarration.play();
+  request?.catch(() => {});
+}
 
 function renderPage(index) {
   page = Math.max(0, Math.min(pages.length - 1, index));
@@ -109,7 +121,11 @@ function renderPage(index) {
 function showPage(index) {
   const nextPage = Math.max(0, Math.min(pages.length - 1, index));
   if (nextPage === page) return;
-  window.transitionPageContent(() => renderPage(nextPage));
+  const generation = ++narrationGeneration;
+  guideNarration.pause();
+  window.transitionPageContent(() => renderPage(nextPage), null, () => {
+    if (generation === narrationGeneration) playGuideNarration(nextPage);
+  });
 }
 
 document.querySelector('#previous').addEventListener('click', () => showPage(page - 1));
@@ -119,3 +135,7 @@ document.addEventListener('keydown', event => {
   if (event.key === 'ArrowRight') showPage(page + 1);
 });
 renderPage(0);
+const initialNarration = ++narrationGeneration;
+requestAnimationFrame(() => requestAnimationFrame(() => {
+  if (initialNarration === narrationGeneration) playGuideNarration(page);
+}));

@@ -7,6 +7,7 @@
   <title>鳥類圖鑑｜在海邊躍動的精靈</title>
   <link rel="stylesheet" href="site.css">
   <link rel="stylesheet" href="birds.css">
+  <link rel="stylesheet" href="mobile-layout.css">
 </head>
 <body class="bird-guide">
   <header class="site-header"><a class="brand" href="main-page.html">在海邊躍動的精靈</a><nav class="site-nav" aria-label="主導覽"><a href="guide.html">導引簡介</a><a href="birds.html" aria-current="page">鳥類圖鑑</a><a href="region.html">展翅基隆</a><a href="movie.html">生態浩劫</a><a href="game.html">互動遊戲</a><a href="choice.html">成果驗收</a></nav></header>
@@ -25,8 +26,7 @@
     </section>
     <section class="detail-view deck-scene" data-scene id="detail-view" hidden aria-label="鳥類介紹">
       <button class="text-button detail-back" id="back-to-list" type="button">← 所有家族</button>
-      <span class="eyebrow detail-family" id="family-label"></span>
-      <figure class="species-photo"><img id="species-image" alt=""><figcaption><span id="species-name"></span><output id="slide-count" aria-label="照片張數"></output></figcaption></figure>
+      <figure class="species-photo"><img id="species-image" alt=""><figcaption><span id="species-name"></span><span class="photo-meta"><span class="eyebrow detail-family" id="family-label"></span><output id="slide-count" aria-label="照片張數"></output></span></figcaption></figure>
       <article class="story-card"><p class="eyebrow">觀察筆記</p><h1 id="story-heading"></h1><p class="species-copy" id="species-copy" aria-live="polite"></p></article>
       <nav class="species-tabs" id="species-list" aria-label="同科鳥類"></nav>
       <div class="slide-controls" aria-label="照片功能選單"><button class="icon-button" id="previous-slide" type="button" aria-label="上一張照片">←</button><button class="icon-button" id="voice-replay" type="button" aria-label="重播語音" title="重播語音">♪</button><button class="button" id="auto-play" type="button" aria-pressed="false">自動播放</button><button class="icon-button" id="next-slide" type="button" aria-label="下一張照片">→</button></div>

@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="site-redesign.css">
   <link rel="stylesheet" href="presentation-pages.css">
   <link rel="stylesheet" href="movie.css">
+  <link rel="stylesheet" href="mobile-layout.css">
 </head>
 <body class="movie-page">
   <main class="movie-stage movie-single">
@@ -18,12 +19,10 @@
       </video>
     </figure>
     <section class="movie-copy" aria-label="影片故事文字">
-      <a class="movie-home" href="main-page.html">← 回首頁</a>
       <header class="movie-title">
         <p class="movie-eyebrow">COASTAL MEMORY · YANLIAO</p>
         <div class="movie-title-row">
           <h1>生態浩劫</h1>
-          <a class="movie-next" href="game.html">放鬆一下 →</a>
         </div>
         <p>一段關於鹽寮灣的海岸記憶</p>
       </header>
@@ -38,9 +37,14 @@
       </div>
       <div class="lyrics-progress" aria-hidden="true"><span id="lyrics-progress"></span></div>
       <p class="movie-time"><span id="movie-current">00:00</span><span id="movie-duration">影片播放時，文字將同步上滑</span></p>
+      <nav class="movie-actions" aria-label="頁面導覽">
+        <a class="movie-home" href="main-page.html">← 回首頁</a>
+        <a class="movie-next" href="game.html">放鬆一下 →</a>
+      </nav>
     </section>
   </main>
   <script src="page-transitions.js"></script>
   <script src="movie.js"></script>
+  <script src="background-music.js"></script>
 </body>
 </html>

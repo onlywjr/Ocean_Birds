@@ -293,7 +293,7 @@ body.region-page .region-detail-photo figcaption {
   font-size: .9375rem;
   backdrop-filter: blur(8px);
 }
-body.region-page .region-detail-photo output { color: #e0c398; }
+body.region-page .region-detail-photo output { margin-left: auto; color: #e0c398; }
 body.region-page .region-detail-panel { position: absolute; z-index: 2; inset: 0; }
 body.region-page .region-detail-back {
   position: absolute;
@@ -309,13 +309,12 @@ body.region-page .region-detail-back {
   cursor: pointer;
 }
 body.region-page .region-detail-family {
-  position: absolute;
-  top: 14%;
-  right: 4%;
+  position: static;
+  align-self: center;
   margin: 0;
-  color: #9b744d;
+  color: #e0c398;
   font-size: 1rem;
-  letter-spacing: .12em;
+  letter-spacing: .04em;
 }
 body.region-page .region-detail-story {
   position: absolute;

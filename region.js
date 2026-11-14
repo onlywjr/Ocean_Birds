@@ -57,6 +57,7 @@ let selectedBird = null;
 let slide = 0;
 let autoplayTimer;
 let advanceTimer;
+let narrationGeneration = 0;
 
 function advanceAutoplay() {
   if (!autoplayTimer) return;
@@ -99,8 +100,11 @@ function showSlide(index) {
   const bird = regionBirds[selectedBird];
   if (!bird) return;
   const nextSlide = Math.max(0, Math.min(bird.images.length - 1, index));
-  playNarration(bird, nextSlide);
-  window.transitionPageContent(() => renderSlide(bird, nextSlide, true), bird.images[nextSlide]);
+  const generation = ++narrationGeneration;
+  narration.pause();
+  window.transitionPageContent(() => renderSlide(bird, nextSlide, true), bird.images[nextSlide], () => {
+    if (generation === narrationGeneration && selectedBird && slide === nextSlide) playNarration(bird, nextSlide);
+  });
 }
 
 function renderSlide(bird, index, audioStarted = false) {
@@ -119,20 +123,23 @@ function renderSlide(bird, index, audioStarted = false) {
 }
 
 function selectBird(id) {
+  const generation = ++narrationGeneration;
   selectedBird = id;
   slide = 0;
   stopAutoplay();
   const bird = regionBirds[id];
-  playNarration(bird, 0);
   window.transitionPageContent(() => {
     intro.hidden = true;
     overviewArt.hidden = true;
     detail.hidden = false;
     renderSlide(bird, 0, true);
-  }, bird.images[0]);
+  }, bird.images[0], () => {
+    if (generation === narrationGeneration && selectedBird === id && slide === 0) playNarration(bird, 0);
+  });
 }
 
 function showOverview() {
+  narrationGeneration++;
   stopAutoplay();
   narration.pause();
   narration.currentTime = 0;

@@ -139,7 +139,7 @@
     const pecking = now < bird.peckUntil;
     const image = images[pecking ? 22 : 20];
     if (!image.complete || !image.naturalWidth) return;
-    const baseHeight = clamp(height * .2, 108, 190);
+    const baseHeight = width <= 760 ? clamp(height * .14, 80, 130) : clamp(height * .2, 108, 190);
     const spriteHeight = pecking ? baseHeight * .7 : baseHeight;
     const spriteWidth = spriteHeight * image.naturalWidth / image.naturalHeight;
     const vx = bird.targetX - bird.x;

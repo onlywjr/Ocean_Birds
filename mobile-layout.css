@@ -1,0 +1,505 @@
+/* Mobile-only layout corrections. Keep every desktop rule untouched. */
+@media (max-width: 760px) {
+  html, body { max-width: 100%; }
+  body { overflow-x: hidden; }
+  button, a { -webkit-tap-highlight-color: transparent; }
+
+  /* Bird catalog: stack the photo and content; keep the whole family list in page flow. */
+  html:has(.bird-guide), body.bird-guide { height: auto; min-height: 100%; overflow-x: hidden; overflow-y: auto; }
+  body.bird-guide .birds-page.deck { height: auto; min-height: 100svh; overflow: visible; }
+  body.bird-guide .birds-page.deck > [data-scene] { position: relative; inset: auto; width: 100%; height: auto; min-height: 100svh; overflow: visible; }
+  body.bird-guide .catalog-photo { position: relative; inset: auto; width: 100%; height: 34svh; min-height: 190px; clip-path: none; }
+  body.bird-guide .catalog-photo img { width: 100%; height: 100%; object-fit: cover; }
+  body.bird-guide .catalog-panel { position: relative; inset: auto; width: 100%; height: auto; min-height: 0; gap: 10px; padding: 18px 16px 26px; }
+  body.bird-guide .bird-home { position: absolute; top: calc(34svh - 50px); right: 14px; left: auto; }
+  body.bird-guide .family-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); max-height: none; overflow: visible; gap: 7px; padding: 0; }
+  body.bird-guide .family-card { min-height: 58px; height: auto; grid-template-columns: 48px minmax(0, 1fr); gap: 7px; padding: 5px; }
+  body.bird-guide .family-card img { width: 48px; height: 46px; }
+  body.bird-guide .catalog-panel .catalog-next { align-self: flex-end; max-width: 100%; font-size: .9rem; }
+
+  body.bird-guide .detail-view { position: relative; display: flex; min-height: 100svh; height: auto; flex-direction: column; overflow: visible; padding: 0 16px 22px; }
+  body.bird-guide .detail-view[hidden] { display: none !important; }
+  body.bird-guide .species-photo { position: relative; inset: auto; width: calc(100% + 32px); height: 40svh; min-height: 220px; margin: 0 -16px 14px; clip-path: none; }
+  body.bird-guide .species-photo img { object-fit: cover; }
+  body.bird-guide .species-photo figcaption { left: 12px; bottom: 12px; max-width: calc(100% - 24px); font-size: .82rem; }
+  body.bird-guide .detail-back { position: absolute; top: 12px; right: 12px; left: auto; font-size: .82rem; }
+  body.bird-guide .detail-family { position: static; align-self: flex-end; margin: 0 0 8px; font-size: .82rem !important; }
+  body.bird-guide .story-card { position: static; width: 100%; height: auto; min-height: 0; overflow: visible; margin: 0; }
+  body.bird-guide .story-card .eyebrow { font-size: .82rem; }
+  body.bird-guide .story-card h1 { font-size: clamp(1.7rem, 7vw, 2.2rem); }
+  body.bird-guide .species-copy { max-height: none; overflow: visible; font-size: .92rem; line-height: 1.65; }
+  body.bird-guide .species-tabs { position: static; max-height: none; overflow: visible; justify-content: flex-end; margin: 18px 0 10px; }
+  body.bird-guide .species-tabs button { min-height: 34px; padding: 5px 8px; font-size: .8rem; }
+  body.bird-guide .slide-controls { position: static; justify-content: flex-end; gap: 7px; margin-top: 2px; }
+  body.bird-guide .slide-controls .button { min-height: 38px; padding: 6px 12px; font-size: .82rem; }
+  body.bird-guide .icon-button { width: 36px; height: 36px; }
+
+  /* Full-screen presentation pages become normal document flow on phones. */
+  html:has(body.guide-page), body.guide-page,
+  html:has(body.region-page), body.region-page,
+  html:has(body.game-page), body.game-page { height: auto; min-height: 100%; overflow-x: hidden; overflow-y: auto; }
+  body.guide-page .guide-shell.full-screen-page,
+  body.region-page .region-shell.full-screen-page,
+  body.game-page .game-stage.full-screen-page { position: relative; inset: auto; display: block; width: 100%; height: auto; min-height: 100svh; overflow: visible; padding: 0 16px 24px; }
+
+  /* Guide slides: straight edges, no text over imagery, no nested scrolling. */
+  body.guide-page .guide-scene { position: relative; inset: auto; display: flex; min-height: 100svh; flex-direction: column; overflow: visible; padding-bottom: 12px; }
+  body.guide-page .guide-art { position: relative; inset: auto; width: calc(100% + 32px); height: 34svh !important; min-height: 190px; flex: none; margin: 0 -16px; clip-path: none !important; }
+  body.guide-page .guide-art img { object-fit: cover; }
+  body.guide-page .guide-gallery { right: 0 !important; width: 100% !important; height: 100%; gap: 3px; }
+  body.guide-page .guide-gallery--triptych { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  body.guide-page .guide-gallery--triptych figure { position: relative; inset: auto !important; width: auto; clip-path: none; }
+  body.guide-page .guide-gallery--before-after { --guide-split-offset: 0px; }
+  body.guide-page .guide-copy,
+  body.guide-page[data-page="5"] .guide-copy { position: relative; inset: auto; width: 100%; min-height: 0; flex: 1; align-items: flex-start; justify-content: center; padding: 20px 2px 76px; clip-path: none; text-align: left; }
+  body.guide-page .guide-copy .home-link { position: absolute; top: 12px; right: 0; }
+  body.guide-page .guide-copy h1 { margin-bottom: 8px; font-size: clamp(1.7rem, 7vw, 2.2rem); }
+  body.guide-page .guide-kicker { margin-bottom: 8px; font-size: .78rem; }
+  body.guide-page .guide-step { margin-bottom: 4px; font-size: .85rem; }
+  body.guide-page .guide-text { font-size: .95rem; line-height: 1.65; }
+  body.guide-page .guide-comparison { width: 100%; gap: 7px; }
+  body.guide-page .guide-comparison img { height: 90px; }
+  body.guide-page .frame-nav,
+  body.guide-page[data-page="5"] .frame-nav { position: relative; inset: auto; display: flex; width: 100%; flex-wrap: wrap; justify-content: flex-end; gap: 7px; margin-top: 8px; }
+  body.guide-page .frame-nav #page-counter { width: 100%; }
+  body.guide-page .frame-nav button { min-height: 38px; padding: 6px 11px; font-size: .82rem; }
+  body.guide-page[data-page="5"] .guide-copy { padding-left: 2px; padding-right: 2px; }
+
+  /* Keelung overview/detail: content stacks below photos without overlays. */
+  body.region-page .region-shell .guide-bar { position: relative; inset: auto; display: flex; width: 100%; flex-direction: column; align-items: flex-start; gap: 5px; padding: 58px 0 14px; }
+  body.region-page .region-shell .guide-bar .home-link { position: absolute; top: 12px; right: 0; left: auto; min-height: 36px; padding: 6px 11px; font-size: .82rem; }
+  body.region-page .region-shell .guide-bar h1 { font-size: clamp(1.7rem, 7vw, 2.2rem); }
+  body.region-page .region-shell .guide-bar .region-lead { font-size: .9rem; line-height: 1.55; }
+  body.region-page .region-overview-art { position: relative; inset: auto; width: calc(100% + 32px); height: 44svh; min-height: 230px; margin: 0 -16px; clip-path: none; }
+  body.region-page .region-overview-art figure { clip-path: none !important; }
+  body.region-page .region-shell.full-screen-page .region-intro { position: relative; inset: auto; width: 100%; margin: 18px 0 12px; }
+  body.region-page .region-shell.full-screen-page .region-intro h2 { font-size: 1.15rem; }
+  body.region-page .region-shell.full-screen-page .region-birds { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 7px; }
+  body.region-page .region-shell.full-screen-page .region-bird { min-width: 0; padding: 6px; font-size: .78rem; }
+  body.region-page .region-shell.full-screen-page .region-bird img { width: 100%; height: 68px; }
+  body.region-page .region-shell.full-screen-page > .region-next { position: relative; inset: auto; display: flex; width: fit-content; margin: 14px 0 0 auto; font-size: .82rem; }
+  body.region-page .region-detail { position: relative; inset: auto; display: flex; min-height: 100svh; height: auto; flex-direction: column; overflow: visible; padding: 0 16px 22px; }
+  body.region-page .region-detail[hidden] { display: none !important; }
+  body.region-page .region-detail-photo { position: relative; inset: auto; width: calc(100% + 32px); height: 40svh; min-height: 220px; margin: 0 -16px 14px; clip-path: none; }
+  body.region-page .region-detail-panel { position: static; display: flex; flex-direction: column; overflow: visible; padding: 0; }
+  body.region-page .region-detail-back { position: absolute; top: 12px; right: 12px; min-height: 36px; font-size: .82rem; }
+  body.region-page .region-detail-family { position: static; align-self: flex-end; margin: 0 0 7px; font-size: .82rem; }
+  body.region-page .region-detail-story { position: static; height: auto; overflow: visible; }
+  body.region-page .region-detail-story h2 { font-size: clamp(1.7rem, 7vw, 2.2rem); }
+  body.region-page .region-detail-story > p:last-child { max-height: none; overflow: visible; font-size: .92rem; line-height: 1.6; }
+  body.region-page .region-detail-tabs { position: static; display: flex; flex-wrap: wrap; gap: 6px; margin: 16px 0 10px; }
+  body.region-page .region-detail-tabs button { min-height: 34px; padding: 5px 8px; font-size: .8rem; }
+  body.region-page .region-detail-controls { position: static; display: flex; justify-content: flex-end; gap: 7px; margin-top: 2px; }
+  body.region-page .region-detail-controls button { width: 36px; height: 36px; }
+  body.region-page .region-detail-controls .region-autoplay { width: auto; min-width: 92px; height: 36px; font-size: .8rem; }
+
+  /* Game menu has cards and copy in flow; no diagonal hero area. */
+  body.game-page { display: block; }
+  body.game-page .game-heading { position: relative; inset: auto; width: 100%; padding: 28px 0 18px; text-align: center; }
+  body.game-page .game-stage.full-screen-page { display: flex; min-height: 100svh; flex-direction: column; justify-content: flex-start; align-items: stretch; background: #f7f5ee; color: #17221f; }
+  body.game-page .game-stage .home-button { position: static; inset: auto; min-height: 36px; padding: 6px 11px; font-size: .82rem; }
+  body.game-page .game-stage .vertical-title { width: 100%; font-size: clamp(1.8rem, 8vw, 2.4rem); text-align: center; }
+  body.game-page .game-lead { margin: 5px 0 0; font-size: .9rem; text-align: center; }
+  body.game-page .game-stage .modes { position: relative; inset: auto; display: grid; width: 100%; grid-template-columns: minmax(0, 1fr); gap: 9px; margin: 0; padding: 0; }
+  body.game-page .game-stage .mode { width: 100%; min-height: 80px; grid-template-columns: 92px minmax(0,1fr); gap: 10px; padding: 8px; font-size: .95rem; }
+  body.game-page .game-stage .mode img { width: 92px; height: 64px; min-height: 0; }
+  body.game-page .game-stage .mode-number { top: 8px; left: 8px; font-size: .72rem; }
+  body.game-page .game-stage .game-next { position: static; right: auto; bottom: auto; width: fit-content; margin: 0; font-size: .82rem; }
+  body.game-page .game-actions { display: flex; width: 100%; align-items: center; justify-content: space-between; gap: 8px; margin: 14px 0 0; padding-top: 0; }
+
+  /* Video page keeps the native frame ratio and moves its story below it. */
+  body.movie-page { height: auto; min-height: 100%; overflow-x: hidden; overflow-y: auto; }
+  body.movie-page .movie-stage.movie-single { position: relative; inset: auto; display: flex; width: 100%; height: auto; min-height: 100svh; flex-direction: column; overflow: visible; padding: 0 16px 22px; }
+  body.movie-page .movie-visual { position: relative; inset: auto; width: calc(100% + 32px); height: auto; aspect-ratio: 16 / 9; margin: 0 -16px; clip-path: none; }
+  body.movie-page .movie-visual video { width: 100%; height: 100%; object-fit: contain; }
+  body.movie-page .movie-copy { position: relative; inset: auto; display: flex; width: 100%; flex: 1; flex-direction: column; overflow: visible; padding: 20px 0 8px; }
+  body.movie-page .movie-home { position: absolute; top: 12px; right: 0; min-height: 36px; padding: 6px 11px; font-size: .82rem; }
+  body.movie-page .movie-title { padding: 28px 0 0; }
+  body.movie-page .movie-title h1 { font-size: clamp(1.7rem, 7vw, 2.2rem); }
+  body.movie-page .movie-title > p:last-child { font-size: .9rem; }
+  body.movie-page .movie-title-row { align-items: center; flex-wrap: wrap; gap: 8px; }
+  body.movie-page .movie-next { min-height: 36px; padding: 6px 11px; font-size: .82rem; }
+  body.movie-page .lyrics-window { min-height: 190px; max-height: none; overflow: hidden; margin-top: 16px; }
+  body.movie-page .lyric-verse p { font-size: .9rem; line-height: 1.6; }
+
+  /* Small screens: compact controls, allow document scrolling, never inner panels. */
+  body.guess-page, body.food-page { height: auto; min-height: 100%; overflow-x: hidden; overflow-y: auto; }
+  body.pair-page { height: 100svh; min-height: 0; overflow: hidden; }
+  body.guess-page .guess-game { position: relative; inset: auto; min-height: 100svh; height: auto; overflow: visible; padding: 12px; }
+  body.pair-page .pair-game { position: relative; inset: auto; display: flex; min-height: 0; height: 100svh; flex-direction: column; overflow: hidden; padding: 8px 10px 10px; }
+  body.guess-page .guess-header { position: relative; inset: auto; width: auto; transform: none; padding: 8px 16px 0; }
+  body.guess-page .guess-back { position: relative; top: auto; left: auto; margin: 0; min-height: 36px; padding: 6px 11px; font-size: .8rem; }
+  body.guess-page .guess-status { position: relative; top: auto; right: auto; flex-wrap: wrap; justify-content: center; margin: 10px 12px; padding: 6px; gap: 7px; }
+  body.guess-page .guess-status > div { min-width: 0; text-align: center; }
+  body.guess-page .guess-board { position: relative; inset: auto; min-height: 0; overflow: visible; margin: 10px 10px; padding: 12px; }
+  body.guess-page .guess-content { overflow: visible; justify-content: flex-start; }
+  body.guess-page .question-grid, body.guess-page .photo-tray { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 7px; }
+  body.guess-page .question-slot { min-height: 54px; font-size: .82rem; }
+  body.guess-page .photo-tray { grid-auto-rows: minmax(100px, 24vw); }
+  body.guess-page .board-footer { flex-wrap: wrap; gap: 8px; }
+  body.guess-page .guess-overlay { position: fixed; overflow-y: auto; padding: 14px; }
+  body.guess-page .guess-dialog { max-height: none; padding: 20px 16px; }
+  body.guess-page .guess-dialog h2 { font-size: 1.4rem; }
+  body.guess-page .guess-board button, body.guess-page .guess-back { font-size: .82rem; }
+
+  body.pair-page .pair-toolbar { position: relative; inset: auto; display: grid; flex: 0 0 auto; height: auto; min-height: 0; grid-template-columns: 1fr; grid-template-rows: auto auto auto; gap: 5px; padding: 0; }
+  body.pair-page .pair-heading { grid-column: 1; grid-row: auto; white-space: normal; }
+  body.pair-page .pair-heading h1 { font-size: 1.25rem; }
+  body.pair-page .pair-hud { grid-column: 1; grid-row: auto; justify-self: stretch; display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 4px; }
+  body.pair-page .pair-hud > div { display: flex; min-width: 0; max-width: none; flex: initial; align-items: center; justify-content: space-between; gap: 3px; padding: 4px 6px; }
+  body.pair-page .pair-hud > div span { font-size: .56rem; white-space: nowrap; }
+  body.pair-page .pair-hud output, body.pair-page .pair-hud strong { font-size: .76rem; white-space: nowrap; }
+  body.pair-page .pair-actions { grid-column: 1; grid-row: auto; justify-content: flex-end; flex-wrap: nowrap; gap: 4px; }
+  body.pair-page .pair-actions button, body.pair-page .pair-back { min-height: 27px; padding: 3px 7px; font-size: .6rem; }
+  body.pair-page .round-progress { position: relative; top: auto; left: auto; width: 100%; flex: 0 0 2px; margin: 6px 0 8px; }
+  body.pair-page .pair-board { position: relative; inset: auto; width: 100%; min-height: 0; height: auto; flex: 1 1 auto; grid-template-columns: repeat(3, minmax(0,1fr)); grid-template-rows: none; grid-auto-rows: minmax(0,1fr); gap: 4px; margin: 0; }
+  body.pair-page .pair-overlay { position: fixed; overflow-y: auto; }
+  body.pair-page .pair-dialog { max-height: none; padding: 20px 16px; }
+
+  body.food-page .food-game { min-height: 100svh; }
+  body.food-page .food-header { top: 88px; left: 0; width: 100%; padding: 0 12px; }
+  body.food-page .food-back { top: 10px; left: 10px; min-height: 34px; padding: 5px 9px; font-size: .78rem; }
+  body.food-page .food-hud { top: 10px; right: 10px; }
+  body.food-page .hud-item { min-width: 62px; padding: 5px 7px; }
+  body.food-page .hud-item output { font-size: 1rem; }
+  body.food-page .food-tip { bottom: 10px; left: 10px; max-width: calc(100% - 20px); font-size: .78rem; }
+  body.food-page .food-overlay { position: fixed; overflow-y: auto; }
+  body.food-page .food-dialog { max-height: none; padding: 20px 15px; }
+  body.food-page .dialog-copy { font-size: .9rem; }
+  body.food-page .score-guide { flex-wrap: wrap; }
+
+  body.assessment-page { overflow-x: hidden; }
+  body.assessment-page .assessment-home { font-size: .8rem; }
+  body.assessment-page .assessment-content { clip-path: none; }
+  body.assessment-page .assessment-visual { display: flex; min-height: 0; height: auto; flex-direction: column; gap: 8px; padding: 62px 18px 16px; background: #1d454b; }
+  body.assessment-page .assessment-visual::before { display: none; }
+  body.assessment-page .visual-copy, body.assessment-page .visual-stats, body.assessment-page .visual-index { position: static; inset: auto; margin: 0; }
+  body.assessment-page .visual-copy h2 { font-size: 1.2rem; }
+  body.assessment-page .visual-index { color: #e5c38f; font-size: 1.5rem; }
+  body.assessment-page .visual-stats { align-items: flex-start; }
+  body.assessment-page .visual-caption { display: block; color: #fffefa; font-size: .8rem; }
+  body.assessment-page .quiz { max-height: none; overflow: visible; }
+  body.assessment-page .answers button, body.assessment-page .quiz-start { min-height: 42px; font-size: .88rem; }
+
+  /* Remove the remaining diagonal image edges from mobile hero layouts. */
+  body.home-page .home-content.deck .hero-image { clip-path: none; }
+  body.home-page .home-content.deck .explore::before { clip-path: none; }
+  body.guide-page .guide-art > figcaption, body.guide-page .guide-gallery ~ figcaption { display: none; }
+  body.bird-guide .species-photo { display: flex; flex-direction: column; }
+  body.bird-guide .species-photo img { min-height: 0; height: auto; flex: 1; }
+  body.bird-guide .species-photo figcaption { position: static; flex: none; border-radius: 0; padding: 5px 12px; font-size: .78rem; }
+  body.region-page .region-detail-photo { display: flex; flex-direction: column; }
+  body.region-page .region-detail-photo img { min-height: 0; height: auto; flex: 1; }
+  body.region-page .region-detail-photo figcaption { position: static; flex: none; border-radius: 0; padding: 5px 12px; font-size: .78rem; }
+}
+
+@media (max-width: 760px) {
+  /* Home: put navigation and captions in their own space and remove the empty hero area. */
+  body.home-page { height: auto; min-height: 100%; overflow-x: hidden; overflow-y: auto; }
+  body.home-page { background: #f7f5ee; }
+  body.home-page .site-header { position: relative; z-index: 10; inset: auto; width: 100%; margin: 0; padding: 8px 12px 10px; background: #315f88; }
+  body.home-page .site-nav { position: relative; display: grid; width: min(100%, 390px); grid-template-columns: repeat(3, minmax(0, 1fr)); justify-content: center; gap: 4px; margin: 0 auto; padding: 7px; border: 0; border-radius: 17px; background: #315f88; box-shadow: 0 5px 14px #102a3520; }
+  body.home-page .site-nav::after { position: absolute; top: 50%; right: 12px; left: 12px; height: 1px; background: #f6ead140; content: ""; pointer-events: none; }
+  body.home-page .site-nav a { display: flex; min-width: 0; justify-content: center; padding: 6px 4px; border: 1px solid transparent; border-radius: 11px; color: #fffaf0; font-size: .78rem; line-height: 1.2; white-space: nowrap; transition: background .2s ease, border-color .2s ease, transform .2s ease; }
+  body.home-page .site-nav a:hover { transform: translateY(-1px); border-color: #f4dfbb55; background: #ffffff18; }
+  body.home-page .site-nav a[aria-current="page"] { border-color: #f1d2a355; background: #f1d2a322; color: #ffe1ad; }
+  body.home-page .home-content.deck { position: relative; width: 100%; height: auto; min-height: 0; margin: 0; padding: 0; }
+  body.home-page .home-content.deck > [data-scene] { position: relative; inset: auto; display: flex; height: auto; min-height: 0; flex-direction: column; gap: 0; padding: 0; }
+  body.home-page .home-content.deck .hero-image { position: relative; order: 0; width: 100%; height: 34svh; min-height: 210px; margin: 0; clip-path: none; }
+  body.home-page .home-content.deck .hero-image { overflow: hidden; }
+  body.home-page .home-content.deck .hero-image img { width: 100%; height: 100%; max-height: none; border-radius: 0; object-fit: cover; animation: home-tide-drift 8s ease-in-out infinite; }
+  body.home-page .home-content.deck .hero-image::after { position: absolute; inset: 48% 0 0; background: repeating-linear-gradient(174deg, transparent 0 15px, #e6f6f322 16px, transparent 19px, transparent 31px), linear-gradient(180deg, transparent, #d6f0f017); background-size: 100% 100%, 100% 100%; content: ""; opacity: .6; pointer-events: none; animation: home-tide-shimmer 7s ease-in-out infinite alternate; }
+  body.home-page .home-content.deck .hero-image figcaption { display: none; }
+  body.home-page .home-content.deck .hero-copy { position: relative; inset: auto; order: 1; width: 100%; padding: 16px 18px 20px; background: #f7f5ee; transform: none; }
+  body.home-page .home-content.deck .hero h1 { margin: 4px 0 8px; font-size: clamp(2rem, 9vw, 2.6rem); line-height: 1.12; }
+  body.home-page .home-content.deck .hero-copy > p:not(.eyebrow) { margin: 0 0 12px; font-size: .9rem; line-height: 1.55; }
+  body.home-page .home-content.deck .hero-copy .button { min-height: 38px; padding: 6px 12px; font-size: .85rem; }
+  body.home-page .home-content.deck .ambient-orb { display: none; }
+
+  /* Keep catalog controls below the cover photo instead of on top of it. */
+  body.bird-guide .catalog-view { position: relative; display: flex; min-height: 0; flex-direction: column; }
+  body.bird-guide .catalog-photo { order: 0; }
+  body.bird-guide .bird-home { position: absolute; order: 3; top: auto; right: auto; bottom: 14px; left: 14px; z-index: 5; align-self: flex-start; margin: 0; min-height: 42px; padding: 8px 12px; font-size: .78rem; }
+  body.bird-guide .catalog-panel { position: relative; order: 2; padding: 10px 14px 72px; }
+  body.bird-guide .catalog-panel .catalog-next { position: absolute; right: 14px; bottom: 14px; align-self: auto; min-height: 42px; margin: 0; padding: 8px 12px; font-size: .78rem; }
+
+  /* Guide: compact content, and keep Taiwan in the left collage column. */
+  body.guide-page .guide-shell.full-screen-page { min-height: 0; padding: 0 12px 12px; }
+  body.guide-page .guide-scene { min-height: 0; height: auto; padding-bottom: 0; }
+  body.guide-page .guide-art { width: calc(100% + 24px); height: 30svh !important; min-height: 180px; margin: 0 -12px; }
+  body.guide-page .guide-gallery--map { display: grid; grid-template-columns: 46fr 27fr 27fr; grid-template-rows: repeat(2, minmax(0, 1fr)); }
+  body.guide-page .guide-gallery--map .guide-image--map { grid-column: 1; grid-row: 1 / 3; }
+  body.guide-page .guide-gallery--map figure:nth-child(2) { grid-column: 2; grid-row: 1; }
+  body.guide-page .guide-gallery--map figure:nth-child(3) { grid-column: 3; grid-row: 1; }
+  body.guide-page .guide-gallery--map figure:nth-child(4) { grid-column: 2; grid-row: 2; }
+  body.guide-page .guide-gallery--map figure:nth-child(5) { grid-column: 3; grid-row: 2; }
+  body.guide-page .guide-gallery--map figure:nth-child(n + 6) { display: none; }
+  body.guide-page .guide-gallery figcaption { display: none; }
+  body.guide-page .guide-copy, body.guide-page[data-page="5"] .guide-copy { min-height: 0; flex: none; justify-content: flex-start; padding: 12px 2px 8px; }
+  body.guide-page .guide-copy .home-link { position: static; align-self: flex-end; min-height: 34px; margin: 0 0 10px; padding: 5px 10px; font-size: .78rem; }
+  body.guide-page .guide-kicker { margin-bottom: 4px; font-size: .7rem; }
+  body.guide-page .guide-copy h1 { margin: 2px 0 6px; font-size: clamp(1.45rem, 6.5vw, 1.85rem); }
+  body.guide-page .guide-text { font-size: .85rem; line-height: 1.55; }
+  body.guide-page .guide-comparison { margin-top: 8px; }
+  body.guide-page .guide-comparison img { height: 68px; }
+  body.guide-page .frame-nav, body.guide-page[data-page="5"] .frame-nav { position: relative !important; inset: auto !important; display: flex; width: 100%; align-items: center; justify-content: flex-end; gap: 6px; margin: 4px 0 0; }
+  body.guide-page .frame-nav #page-counter { width: auto; margin-right: auto; font-size: .82rem; }
+  body.guide-page .frame-nav button { min-height: 34px; padding: 5px 8px; font-size: .75rem; }
+
+  /* Keelung bird close-ups: taller portrait crop, anchored high enough to preserve heads. */
+  body.region-page .region-shell.full-screen-page { min-height: 0; padding-bottom: 14px; }
+  body.region-page .region-detail { min-height: 0; padding-bottom: 14px; }
+  body.region-page .region-detail-photo { height: 46svh; min-height: 280px; margin-bottom: 10px; }
+  body.region-page .region-detail-photo img { object-position: center 10%; }
+  body.region-page .region-detail-panel { gap: 0; }
+  body.region-page .region-detail-back { position: static; align-self: flex-end; margin: 0 0 5px; min-height: 34px; padding: 5px 9px; font-size: .76rem; }
+  body.region-page .region-detail-family { margin-bottom: 3px; font-size: .76rem; }
+  body.region-page .region-detail-story h2 { margin-bottom: 5px; font-size: 1.55rem; }
+  body.region-page .region-detail-kicker { margin-bottom: 2px; font-size: .82rem; }
+  body.region-page .region-detail-story > p:last-child { font-size: .85rem; line-height: 1.5; }
+  body.region-page .region-detail-tabs { margin: 10px 0 7px; }
+  body.region-page .region-detail-controls button { width: 33px; height: 33px; }
+  body.region-page .region-detail-controls .region-autoplay { min-width: 86px; height: 33px; font-size: .75rem; }
+
+  /* Ecology video: bring the title directly below the native-ratio video. */
+  body.movie-page .movie-stage.movie-single { min-height: 100svh; padding-bottom: 14px; }
+  body.movie-page .movie-visual { height: auto; aspect-ratio: 16 / 9; }
+  body.movie-page .movie-visual video { height: 100%; aspect-ratio: 16 / 9; object-fit: contain; }
+  body.movie-page .movie-copy { flex: 1 0 auto; padding: 8px 0; }
+  body.movie-page .movie-home { position: static; inset: auto; align-self: auto; min-height: 32px; margin: 0; padding: 4px 9px; font-size: .75rem; }
+  body.movie-page .movie-title { padding: 0; }
+  body.movie-page .movie-eyebrow { margin-bottom: 2px; font-size: .72rem; }
+  body.movie-page .movie-title h1 { font-size: 1.55rem; }
+  body.movie-page .movie-title > p:last-child { margin-top: 2px; font-size: .82rem; }
+  body.movie-page .movie-next { position: static; min-height: 32px; padding: 4px 9px; font-size: .75rem; }
+  body.movie-page .lyrics-window { flex: 0 0 190px; min-height: 190px; margin-top: 8px; }
+  body.movie-page .lyric-verse { padding-bottom: 20px; }
+  body.movie-page .lyric-verse h2 { font-size: .92rem; }
+  body.movie-page .lyric-verse p { font-size: .82rem; line-height: 1.5; }
+  body.movie-page .lyrics-progress { margin-top: 5px; }
+  body.movie-page .movie-time { margin-top: 4px; font-size: .72rem; }
+  body.movie-page .movie-actions { margin-top: 12px; }
+
+  /* The assessment deliberately layers its copy on the egret photo. */
+  body.assessment-page .assessment-visual { position: relative; min-height: 250px; padding: 16px 18px; background: #1b4247; }
+  body.assessment-page .assessment-stage { min-height: 0; }
+  body.assessment-page .assessment-content { min-height: 0; }
+  body.assessment-page .assessment-visual::before { display: block; background-image: linear-gradient(180deg,#102d3750 0%,#102d3720 38%,#102d37bb 100%),url("assets/bird-catalog/species/little-egret/1.jpg"); background-position: center 48%; background-size: cover; transform: scaleX(-1) scale(1.02); }
+  body.assessment-page .assessment-visual::after { display: block; }
+  body.assessment-page .visual-copy { position: relative; z-index: 1; top: auto; right: auto; bottom: auto; left: auto; max-width: 74%; }
+  body.assessment-page .visual-index { position: static; margin: 8px 0; font-size: clamp(1.8rem, 9vw, 2.8rem); }
+  body.assessment-page .visual-copy h2 { font-size: 1.15rem; }
+  body.assessment-page .visual-stats { position: relative; z-index: 1; right: auto; bottom: auto; left: auto; flex-direction: row; align-items: baseline; justify-content: flex-start; gap: 12px; margin-top: auto; }
+  body.assessment-page .visual-caption { position: relative; z-index: 1; right: auto; bottom: auto; align-self: flex-end; margin-top: 4px; }
+
+  body.bird-guide .birds-page.deck { min-height: 0; }
+  body.bird-guide .birds-page.deck > [data-scene] { min-height: 0; }
+  body.bird-guide .detail-view { display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: auto auto auto auto; min-height: 0; padding: 0 16px 14px; }
+  body.bird-guide .detail-back { position: static; grid-column: 1; grid-row: 4; justify-self: start; align-self: center; margin: 10px 0 0; padding: 5px 9px; font-size: .76rem; }
+  body.bird-guide .species-photo { grid-column: 1 / -1; grid-row: 1; width: calc(100% + 32px); margin: 0 -16px; }
+  body.bird-guide .species-photo img { display: block; }
+  body.bird-guide .species-photo figcaption { display: flex; align-items: center; justify-content: flex-start; gap: 5px; width: 100%; box-sizing: border-box; padding-right: 3px; }
+  body.bird-guide .species-photo #species-name { flex: 0 0 auto; white-space: nowrap; }
+  body.bird-guide .species-photo .photo-meta { display: contents; }
+  body.bird-guide .species-photo .detail-family { position: static; top: auto; right: auto; bottom: auto; left: auto; align-self: center; margin: 0; font-size: .76rem !important; line-height: 1; white-space: nowrap; }
+  body.bird-guide .species-photo #slide-count { margin-left: auto; padding-right: 0; white-space: nowrap; }
+  body.bird-guide .story-card { grid-column: 1 / -1; grid-row: 2; }
+  body.bird-guide .species-tabs { grid-column: 1 / -1; grid-row: 3; min-width: 0; flex-wrap: nowrap; justify-content: flex-start; gap: 3px; margin: 10px 0 0; }
+  body.bird-guide .species-tabs button { flex: 1 1 0; min-width: 0; min-height: 31px; padding: 4px 2px; font-size: 11px; white-space: nowrap; }
+  body.bird-guide .slide-controls { grid-column: 2; grid-row: 4; justify-self: end; align-self: center; gap: 3px; margin: 10px 0 0; }
+  body.bird-guide .slide-controls .icon-button { width: 29px; height: 29px; }
+  body.bird-guide #voice-replay { display: inline-flex; align-items: center; justify-content: center; box-sizing: border-box; padding: 0; line-height: 1; font-size: 16px; vertical-align: middle; transform: none; }
+  body.bird-guide .slide-controls .button { min-height: 31px; padding: 4px 7px; font-size: 11px; }
+}
+
+@keyframes home-tide-drift {
+  0%, 100% { translate: 0 0; }
+  32% { translate: 0 -2px; }
+  68% { translate: 0 2px; }
+}
+@keyframes home-tide-shimmer {
+  0% { background-position: 0 0, 0 0; opacity: .35; }
+  50% { background-position: 12px -6px, 0 0; opacity: .65; }
+  100% { background-position: -8px 4px, 0 0; opacity: .42; }
+}
+
+@media (max-width: 760px) {
+  /* Guide: keep one page number and pin the home/slide controls to one footer row. */
+  body.guide-page .guide-step { display: block; }
+  body.guide-page .frame-nav #page-counter { display: none; }
+  body.guide-page .guide-copy .home-link { position: fixed !important; top: auto !important; right: auto !important; bottom: max(10px, env(safe-area-inset-bottom)); left: 10px; z-index: 20; box-sizing: border-box; height: 36px; min-height: 36px; margin: 0; padding: 5px 10px; display: inline-flex; align-items: center; }
+  body.guide-page .frame-nav, body.guide-page[data-page="5"] .frame-nav { position: fixed !important; inset: auto 10px max(10px, env(safe-area-inset-bottom)) auto !important; display: flex; width: auto; height: 36px; min-height: 36px !important; align-items: center; z-index: 20; margin: 0; padding: 0; }
+  body.guide-page .frame-nav button { box-sizing: border-box; height: 36px; min-height: 36px; padding-top: 4px; padding-bottom: 4px; }
+  body.guide-page .guide-copy, body.guide-page[data-page="5"] .guide-copy { padding-bottom: 62px; }
+  body.guide-page[data-page="4"] .guide-copy { position: relative; inset: auto; min-height: 0; height: auto; padding-top: 12px; }
+  body.guide-page[data-page="4"] .guide-art { height: 30svh !important; min-height: 180px; }
+
+  /* Keelung overview: move the return link to the footer and fill the leading tile. */
+  body.region-page .region-shell .guide-bar .home-link { position: fixed; top: auto; right: auto; bottom: max(10px, env(safe-area-inset-bottom)); left: 10px; z-index: 20; }
+  body.region-page .region-shell.full-screen-page > .region-next { position: fixed; right: 10px; bottom: max(10px, env(safe-area-inset-bottom)); z-index: 20; }
+  body.region-page .region-overview-main img { object-fit: cover; object-position: 70% center; transform: none; }
+}
+
+/* Keelung overview mobile layout: stacked copy, balanced mosaic, clear footer. */
+@media (max-width: 760px) {
+  body.region-page { min-height: 100%; overflow-x: hidden; overflow-y: auto; background: #f7f5ee; }
+  body.region-page .region-shell.full-screen-page {
+    position: relative;
+    inset: auto;
+    display: flex;
+    width: 100%;
+    height: auto;
+    min-height: 100svh;
+    flex-direction: column;
+    overflow: visible;
+    padding: 0 16px 76px;
+    background: #f7f5ee;
+  }
+  body.region-page .region-shell .guide-bar {
+    position: relative;
+    inset: auto;
+    display: flex;
+    width: 100%;
+    min-height: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 24px 0 14px;
+  }
+  body.region-page .region-shell .guide-bar h1 { margin: 0; font-size: clamp(1.8rem, 8vw, 2.35rem); line-height: 1.2; }
+  body.region-page .region-shell.full-screen-page > .guide-bar > .region-lead { width: 100%; align-self: stretch; margin: 0; font-size: .9rem; line-height: 1.55; text-align: left; text-align-last: left; }
+  body.region-page .region-overview-art {
+    position: relative;
+    inset: auto;
+    display: grid;
+    width: calc(100% + 32px);
+    height: clamp(340px, 48svh, 440px);
+    flex: none;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    gap: 4px;
+    margin: 0 -16px;
+    overflow: hidden;
+    clip-path: none;
+    background: #fff;
+  }
+  body.region-page .region-overview-art figure {
+    position: relative !important;
+    inset: auto;
+    width: auto;
+    height: auto;
+    clip-path: none !important;
+    overflow: hidden;
+    margin: 0;
+  }
+  body.region-page .region-overview-main { grid-column: 1; grid-row: 1 / 3; }
+  body.region-page .region-overview-main img { object-fit: cover; object-position: 62% center; transform: none; background: #dfe8eb; }
+  body.region-page .region-overview-tile { left: auto; width: auto; height: auto; }
+  body.region-page .region-overview-tile--kite { grid-column: 2; grid-row: 1; }
+  body.region-page .region-overview-tile--tern { grid-column: 2; grid-row: 2; }
+  body.region-page .region-overview-tile img { object-fit: cover; }
+  body.region-page .region-shell.full-screen-page .region-intro {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    margin: 12px 0 0;
+    text-align: left;
+  }
+  body.region-page .region-shell.full-screen-page .region-intro h2 { margin: 0 0 8px; font-size: 1.15rem; }
+  body.region-page .region-shell.full-screen-page .region-birds { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 7px; }
+  body.region-page .region-shell.full-screen-page .region-bird {
+    display: flex;
+    width: 100%;
+    min-width: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    padding: 5px;
+    text-align: center;
+  }
+  body.region-page .region-shell.full-screen-page .region-bird img { order: 0; width: 100%; height: clamp(54px, 9vh, 72px); object-fit: cover; }
+  body.region-page .region-shell.full-screen-page .region-bird span { order: 1; align-self: center; font-size: .78rem; }
+  body.region-page .region-shell .guide-bar .home-link {
+    position: fixed;
+    inset: auto auto max(12px, env(safe-area-inset-bottom)) 16px;
+    z-index: 20;
+    min-height: 40px;
+    padding: 7px 12px;
+    font-size: .82rem;
+  }
+  body.region-page .region-shell.full-screen-page > .region-next {
+    position: fixed;
+    inset: auto 16px max(12px, env(safe-area-inset-bottom)) auto;
+    z-index: 20;
+    display: inline-flex;
+    width: auto;
+    min-height: 40px;
+    margin: 0;
+    padding: 7px 12px;
+    font-size: .82rem;
+  }
+}
+
+/* Keelung bird detail pages mirror the catalog's mobile reading order. */
+@media (max-width: 760px) {
+  body.region-page .region-detail {
+    position: relative;
+    inset: auto;
+    display: flex;
+    width: calc(100% + 32px);
+    min-height: 0;
+    height: auto;
+    flex-direction: column;
+    overflow: visible;
+    margin-inline: -16px;
+    padding: 0 0 14px;
+    background: #f7f6f1;
+  }
+  body.region-page .region-detail-photo {
+    position: relative;
+    inset: auto;
+    display: flex;
+    width: 100%;
+    height: 46svh;
+    min-height: 280px;
+    flex-direction: column;
+    margin: 0 0 10px;
+    clip-path: none;
+  }
+  body.region-page .region-detail-photo img { min-height: 0; flex: 1; object-position: center 10%; }
+  body.region-page .region-detail-photo figcaption {
+    position: static;
+    display: flex;
+    width: 100%;
+    flex: none;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 5px;
+    padding: 5px 3px 5px 12px;
+    border-radius: 0;
+    font-size: .78rem;
+  }
+  body.region-page #region-detail-caption { flex: 0 0 auto; white-space: nowrap; }
+  body.region-page .region-detail-family { position: static; align-self: center; margin: 0; font-size: .76rem; line-height: 1; white-space: nowrap; }
+  body.region-page #region-progress { margin-left: auto; padding: 0; white-space: nowrap; }
+  body.region-page .region-detail-panel {
+    position: static;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-rows: auto auto auto;
+    gap: 0;
+    overflow: visible;
+    padding: 0 16px;
+  }
+  body.region-page .region-detail-story { position: static; grid-column: 1 / -1; grid-row: 1; height: auto; overflow: visible; }
+  body.region-page .region-detail-kicker { margin: 0 0 2px; font-size: .82rem; }
+  body.region-page .region-detail-story h2 { margin: 0 0 5px; font-size: clamp(1.65rem, 7vw, 2.15rem); }
+  body.region-page .region-detail-story > p:last-child { max-height: none; margin: 0; overflow: visible; font-size: .9rem; line-height: 1.55; }
+  body.region-page .region-detail-tabs { position: static; grid-column: 1 / -1; grid-row: 2; flex-wrap: nowrap; justify-content: flex-start; gap: 4px; margin: 12px 0 0; }
+  body.region-page .region-detail-tabs button { min-width: 0; min-height: 32px; padding: 5px 8px; font-size: .78rem; white-space: nowrap; }
+  body.region-page .region-detail-back { position: static; grid-column: 1; grid-row: 3; justify-self: start; align-self: center; min-height: 33px; margin: 10px 0 0; padding: 5px 9px; font-size: .76rem; }
+  body.region-page .region-detail-controls { position: static; grid-column: 2; grid-row: 3; justify-self: end; align-self: center; gap: 3px; margin: 10px 0 0; }
+  body.region-page .region-detail-controls button { display: inline-flex; width: 29px; height: 29px; align-items: center; justify-content: center; padding: 0; line-height: 1; font-size: 15px; }
+  body.region-page .region-detail-controls .region-autoplay { min-width: 78px; height: 31px; padding: 4px 7px; font-size: 11px; }
+  body.region-page #region-voice-replay { line-height: 1; font-size: 16px; }
+}

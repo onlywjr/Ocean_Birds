@@ -51,7 +51,7 @@ function stopNarration(){narration.pause();narration.currentTime=0;narration.rem
 function renderSlide(index=0, transition=true, audioStarted=false){
  const bird=options[current],slides=window.BIRD_SLIDES?.[bird.name]||[],slide=slides[index];
  const imageSource=window.BIRD_ASSET_PATHS[slide?.image??bird.id];
- if(!audioStarted)playNarration(slide);
+ const startNarration=()=>{if(options[current]===bird&&currentSlide===index)playNarration(slide)};
  const update=()=>{
   currentSlide=index;
   document.querySelector('#family-label').textContent=bird.family;document.querySelector('#story-heading').textContent=bird.name;document.querySelector('#species-name').textContent=bird.name;
@@ -60,10 +60,10 @@ function renderSlide(index=0, transition=true, audioStarted=false){
   document.querySelector('#slide-count').textContent=`${index+1} / ${slides.length||1}`;document.querySelector('#previous-slide').disabled=index<=0;document.querySelector('#next-slide').disabled=index>=slides.length-1;
   list.querySelectorAll('button').forEach((b,i)=>b.setAttribute('aria-current',i===current?'true':'false'));
  };
- if(transition)window.transitionPageContent(update,imageSource);else update();
+ if(transition){stopNarration();window.transitionPageContent(update,imageSource,startNarration)}else{update();if(!audioStarted)startNarration()}
 }
-function selectBird(i){stopAutoplay();current=i;renderSlide(0)}
-function openFamily(family,items){options=items.map(b=>({...b,family}));current=0;const bird=options[0],slide=window.BIRD_SLIDES?.[bird.name]?.[0],src=window.BIRD_ASSET_PATHS[slide?.image??bird.id];playNarration(slide);window.transitionPageContent(()=>{list.innerHTML='';options.forEach((item,i)=>{const b=document.createElement('button');b.type='button';b.textContent=item.name;b.addEventListener('click',()=>selectBird(i));list.append(b)});catalog.hidden=true;detail.hidden=false;renderSlide(0,false,true)},src)}
+function selectBird(i){stopAutoplay();stopNarration();current=i;renderSlide(0)}
+function openFamily(family,items){stopNarration();stopAutoplay();options=items.map(b=>({...b,family}));current=0;const bird=options[0],slide=window.BIRD_SLIDES?.[bird.name]?.[0],src=window.BIRD_ASSET_PATHS[slide?.image??bird.id];window.transitionPageContent(()=>{list.innerHTML='';options.forEach((item,i)=>{const b=document.createElement('button');b.type='button';b.textContent=item.name;b.addEventListener('click',()=>selectBird(i));list.append(b)});catalog.hidden=true;detail.hidden=false;renderSlide(0,false,true)},src,()=>{if(options[current]===bird&&currentSlide===0)playNarration(slide)})}
 document.querySelector('#bird-search').addEventListener('input',e=>renderFamilies(e.target.value));document.querySelector('#back-to-list').addEventListener('click',()=>{stopAutoplay();stopNarration();window.transitionPageContent(()=>{detail.hidden=true;catalog.hidden=false})});
 document.querySelector('#previous-slide').addEventListener('click',()=>{stopAutoplay();if(currentSlide>0)renderSlide(currentSlide-1)});document.querySelector('#next-slide').addEventListener('click',()=>{stopAutoplay();const slides=window.BIRD_SLIDES?.[options[current].name]||[];if(currentSlide<slides.length-1)renderSlide(currentSlide+1)});
 voiceReplay.addEventListener('click',()=>playNarration((window.BIRD_SLIDES?.[options[current]?.name]||[])[currentSlide]));
