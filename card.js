@@ -113,7 +113,9 @@
     hasStarted = false;
     foundPairs = 0;
     flips = 0;
-    pauseButton.textContent = '休息一下';
+    pauseButton.textContent = 'Ⅱ';
+    pauseButton.setAttribute('aria-label', '休息一下');
+    pauseButton.title = '休息一下';
     pauseButton.setAttribute('aria-pressed', 'false');
     totalOutput.textContent = String(pairCount);
     buildBoard();
@@ -211,7 +213,9 @@
   pauseButton.addEventListener('click', () => {
     if (board.hidden || !results.hidden) return;
     paused = !paused;
-    pauseButton.textContent = paused ? '繼續遊戲' : '休息一下';
+    pauseButton.textContent = paused ? '▶' : 'Ⅱ';
+    pauseButton.setAttribute('aria-label', paused ? '繼續遊戲' : '休息一下');
+    pauseButton.title = paused ? '繼續遊戲' : '休息一下';
     pauseButton.setAttribute('aria-pressed', String(paused));
     if (paused) {
       if (timerId) remainingMs = Math.max(0, duration * 1000 - (Date.now() - startedAt));
@@ -225,7 +229,9 @@
   });
   document.querySelector('#resume').addEventListener('click', () => {
     paused = false;
-    pauseButton.textContent = '休息一下';
+    pauseButton.textContent = 'Ⅱ';
+    pauseButton.setAttribute('aria-label', '休息一下');
+    pauseButton.title = '休息一下';
     pauseButton.setAttribute('aria-pressed', 'false');
     pausePanel.hidden = true;
     startTimer();
