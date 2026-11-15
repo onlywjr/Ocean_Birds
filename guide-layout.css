@@ -247,6 +247,9 @@ body.guide-page .guide-copy .home-link {
   color: #f7f5ee;
 }
 
+/* The duplicate link belongs to the compact mobile control row. */
+body.guide-page .mobile-home-link { display: none; }
+
 body.guide-page .guide-kicker {
   margin: 0 0 18px;
   color: #9b744d;
@@ -331,6 +334,10 @@ body.guide-page .frame-nav #page-counter {
   color: #9b744d;
   font: 600 1rem var(--font-bold, "Noto Serif TC", serif);
   text-align: right;
+}
+
+@media (min-width: 761px) {
+  body.guide-page .frame-nav #page-counter { display: none; }
 }
 
 body.guide-page[data-page="5"] .frame-nav {

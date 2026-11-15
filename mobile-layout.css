@@ -2144,6 +2144,7 @@
     pointer-events: auto;
   }
   body.guide-page .frame-nav .mobile-home-link {
+    display: inline-flex;
     position: static;
     z-index: auto;
     margin-right: auto;
@@ -2713,7 +2714,13 @@
   }
   body.home-page .home-content.deck .hero-image::after {
     inset: 0;
-    background: linear-gradient(180deg, #102d3740 0%, #102d3700 26%, #102d3710 46%, #102d37d9 100%);
+    background: linear-gradient(
+      180deg,
+      #102d3740 0%,
+      #102d3700 26%,
+      #102d3710 46%,
+      #102d37d9 100%
+    );
     opacity: 1;
     animation: none;
   }
