@@ -1,42 +1,129 @@
 <!doctype html>
 <html lang="zh-Hant">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f6f1">
-  <title>鳥類圖鑑｜在海邊躍動的精靈</title>
-  <link rel="stylesheet" href="site.css">
-  <link rel="stylesheet" href="birds.css">
-  <link rel="stylesheet" href="mobile-layout.css">
-</head>
-<body class="bird-guide">
-  <header class="site-header"><a class="brand" href="main-page.html">在海邊躍動的精靈</a><nav class="site-nav" aria-label="主導覽"><a href="guide.html">導引簡介</a><a href="birds.html" aria-current="page">鳥類圖鑑</a><a href="region.html">展翅基隆</a><a href="movie.html">生態浩劫</a><a href="game.html">互動遊戲</a><a href="choice.html">成果驗收</a></nav></header>
-  <main class="page-shell birds-page deck">
-    <section id="catalog-view" class="catalog-view" data-scene>
-      <figure class="catalog-photo"><div class="random-carousel" data-images="assets/bird-catalog/species/great-egret/1.jpg|assets/bird-catalog/species/little-egret/1.jpg|assets/bird-catalog/species/grey-heron/1.jpg|assets/bird-catalog/species/pacific-reef-heron/1.jpg|assets/bird-catalog/species/osprey/1.jpg|assets/bird-catalog/species/common-greenshank/1.jpg|assets/bird-catalog/species/whimbrel/1.jpg|assets/bird-catalog/species/asian-dowitcher/1.jpg|assets/bird-catalog/species/red-necked-stint/1.jpg|assets/bird-catalog/species/common-sandpiper/1.jpg|assets/bird-catalog/species/ruddy-turnstone/1.jpg|assets/bird-catalog/species/painted-snipe/1.jpg|assets/bird-catalog/species/little-ringed-plover/1.jpg|assets/bird-catalog/species/kentish-plover/1.jpg|assets/bird-catalog/species/pacific-golden-plover/1.jpg|assets/bird-catalog/species/grey-plover/1.jpg|assets/bird-catalog/species/grey-headed-plover/1.jpg|assets/bird-catalog/species/little-tern/1.jpg|assets/bird-catalog/species/saunders-gull/1.jpg|assets/bird-catalog/species/black-tailed-gull/1.jpg" aria-label="海岸鳥類照片輪播"><img class="is-active" src="assets/bird-catalog/species/great-egret/1.jpg" alt="海岸鳥類照片"><img src="assets/bird-catalog/species/little-egret/1.jpg" alt="" aria-hidden="true"></div></figure>
-      <a class="bird-home" href="main-page.html">← 返回首頁</a>
-      <div class="catalog-panel">
-        <p class="eyebrow">FIELD GUIDE · <span id="bird-total"></span></p>
-        <h1 class="page-title">海岸鳥類圖鑑</h1>
-        <p class="lead">選擇一個家族，認識牠們的模樣與棲地。每張照片，都有專屬的觀察對話。</p>
-        <label class="search-box">搜尋鳥名或科別<input id="bird-search" type="search" placeholder="例如：黑嘴鷗、鷸科" autocomplete="off"></label>
-        <div class="family-grid" id="family-grid" aria-label="鳥類家族"></div><a class="next-topic catalog-next" href="region.html">繼續走訪基隆 →</a>
-        <p id="empty-search" class="empty-search" hidden>沒有找到相符的鳥類，試試其他名稱。</p>
-      </div>
-    </section>
-    <section class="detail-view deck-scene" data-scene id="detail-view" hidden aria-label="鳥類介紹">
-      <figure class="species-photo"><img id="species-image" alt=""><figcaption><span id="species-name"></span><span class="photo-meta"><span class="eyebrow detail-family" id="family-label"></span><output id="slide-count" aria-label="照片張數"></output></span></figcaption></figure>
-      <aside class="species-detail-panel">
-        <button class="text-button detail-back" id="back-to-list" type="button">← 所有家族</button>
-        <article class="story-card"><p class="eyebrow">觀察筆記</p><h1 id="story-heading"></h1><p class="species-copy" id="species-copy" aria-live="polite"></p></article>
-        <nav class="species-tabs" id="species-list" aria-label="同科鳥類"></nav>
-        <div class="slide-controls" aria-label="照片功能選單"><button class="icon-button" id="previous-slide" type="button" aria-label="上一張照片">←</button><button class="icon-button" id="voice-replay" type="button" aria-label="重播語音" title="重播語音">♪</button><button class="button" id="auto-play" type="button" aria-pressed="false">自動播放</button><button class="icon-button" id="next-slide" type="button" aria-label="下一張照片">→</button></div>
-      </aside>
-    </section>
-  </main>
-  <script src="page-transitions.js"></script>
-  <script src="random-image-carousel.js"></script>
-  <script src="birds.js"></script>
-  <script src="presentation.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f6f1" />
+    <title>鳥類圖鑑｜在海邊躍動的精靈</title>
+    <link rel="stylesheet" href="site.css" />
+    <link rel="stylesheet" href="birds.css" />
+    <link rel="stylesheet" href="mobile-layout.css" />
+  </head>
+  <body class="bird-guide">
+    <header class="site-header">
+      <a class="brand" href="main-page.html">在海邊躍動的精靈</a>
+      <nav class="site-nav" aria-label="主導覽">
+        <a href="guide.html">導引簡介</a
+        ><a href="birds.html" aria-current="page">鳥類圖鑑</a
+        ><a href="region.html">展翅基隆</a><a href="movie.html">生態浩劫</a
+        ><a href="game.html">互動遊戲</a><a href="choice.html">成果驗收</a>
+      </nav>
+    </header>
+    <main class="page-shell birds-page deck">
+      <section id="catalog-view" class="catalog-view" data-scene>
+        <figure class="catalog-photo">
+          <div
+            class="random-carousel"
+            data-images="assets/bird-catalog/species/great-egret/1.jpg|assets/bird-catalog/species/little-egret/1.jpg|assets/bird-catalog/species/grey-heron/1.jpg|assets/bird-catalog/species/pacific-reef-heron/1.jpg|assets/bird-catalog/species/osprey/1.jpg|assets/bird-catalog/species/common-greenshank/1.jpg|assets/bird-catalog/species/whimbrel/1.jpg|assets/bird-catalog/species/asian-dowitcher/1.jpg|assets/bird-catalog/species/red-necked-stint/1.jpg|assets/bird-catalog/species/common-sandpiper/1.jpg|assets/bird-catalog/species/ruddy-turnstone/1.jpg|assets/bird-catalog/species/painted-snipe/1.jpg|assets/bird-catalog/species/little-ringed-plover/1.jpg|assets/bird-catalog/species/kentish-plover/1.jpg|assets/bird-catalog/species/pacific-golden-plover/1.jpg|assets/bird-catalog/species/grey-plover/1.jpg|assets/bird-catalog/species/grey-headed-plover/1.jpg|assets/bird-catalog/species/little-tern/1.jpg|assets/bird-catalog/species/saunders-gull/1.jpg|assets/bird-catalog/species/black-tailed-gull/1.jpg"
+            aria-label="海岸鳥類照片輪播">
+            <img
+              class="is-active"
+              src="assets/bird-catalog/species/great-egret/1.jpg"
+              alt="海岸鳥類照片" /><img
+              src="assets/bird-catalog/species/little-egret/1.jpg"
+              alt=""
+              aria-hidden="true" />
+          </div>
+        </figure>
+        <a class="bird-home" href="main-page.html">← 返回首頁</a>
+        <div class="catalog-panel">
+          <p class="eyebrow">FIELD GUIDE · <span id="bird-total"></span></p>
+          <h1 class="page-title">海岸鳥類圖鑑</h1>
+          <p class="lead">
+            選擇一個家族，認識牠們的模樣與棲地。每張照片，都有專屬的觀察對話。
+          </p>
+          <label class="search-box"
+            ><input
+              id="bird-search"
+              type="search"
+              placeholder="搜尋鳥名或科別"
+              autocomplete="off"
+          /></label>
+          <div class="family-grid" id="family-grid" aria-label="鳥類家族"></div>
+          <a class="next-topic catalog-next" href="region.html"
+            >繼續走訪基隆 →</a
+          >
+          <p id="empty-search" class="empty-search" hidden>
+            沒有找到相符的鳥類，試試其他名稱。
+          </p>
+        </div>
+      </section>
+      <section
+        class="detail-view deck-scene"
+        data-scene
+        id="detail-view"
+        hidden
+        aria-label="鳥類介紹">
+        <figure class="species-photo">
+          <img id="species-image" alt="" />
+          <figcaption>
+            <span id="species-name"></span
+            ><span class="photo-meta"
+              ><span class="eyebrow detail-family" id="family-label"></span
+              ><output id="slide-count" aria-label="照片張數"></output
+            ></span>
+          </figcaption>
+        </figure>
+        <aside class="species-detail-panel">
+          <button
+            class="text-button detail-back"
+            id="back-to-list"
+            type="button">
+            ← 所有家族
+          </button>
+          <article class="story-card">
+            <p class="eyebrow">觀察筆記</p>
+            <h1 id="story-heading"></h1>
+            <p class="species-copy" id="species-copy" aria-live="polite"></p>
+          </article>
+          <nav
+            class="species-tabs"
+            id="species-list"
+            aria-label="同科鳥類"></nav>
+          <div class="slide-controls" aria-label="照片功能選單">
+            <button
+              class="icon-button"
+              id="previous-slide"
+              type="button"
+              aria-label="上一張照片">
+              ←</button
+            ><button
+              class="icon-button"
+              id="voice-replay"
+              type="button"
+              aria-label="重播語音"
+              title="重播語音">
+              ♪</button
+            ><button
+              class="button"
+              id="auto-play"
+              type="button"
+              aria-pressed="false">
+              自動播放</button
+            ><button
+              class="icon-button"
+              id="next-slide"
+              type="button"
+              aria-label="下一張照片">
+              →
+            </button>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <script src="page-transitions.js"></script>
+    <script src="random-image-carousel.js"></script>
+    <script src="birds.js"></script>
+    <script src="presentation.js"></script>
+  </body>
 </html>

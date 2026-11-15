@@ -2473,7 +2473,10 @@
     grid-row: 2;
     width: 100%;
     min-width: 0;
+    max-height: none;
     box-sizing: border-box;
+    flex-wrap: wrap;
+    overflow: visible;
     margin: 12px 0 0;
   }
   html body.bird-guide .detail-view .detail-back {
