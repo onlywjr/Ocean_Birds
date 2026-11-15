@@ -2,3 +2,7 @@
 Backup/
 # Local raw source photos (staging, not part of the site)
 newpic/
+
+# TTS generation logs
+*.generation.log
+tts_generation.log

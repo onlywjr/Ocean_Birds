@@ -112,7 +112,6 @@
   body.bird-guide .species-photo figcaption {
     left: 12px;
     bottom: 12px;
-    max-width: calc(100% - 24px);
     font-size: 0.82rem;
   }
   body.bird-guide .detail-back {
@@ -2150,16 +2149,31 @@
     margin-right: auto;
     pointer-events: auto;
   }
-  body.guide-page .guide-copy .home-link { display: none; }
-  body.guide-page .frame-nav #page-counter { display: none; }
-  body.guide-page .frame-nav button { pointer-events: auto; }
-  body.bird-guide .catalog-panel { position: relative; z-index: 2; }
+  body.guide-page .guide-copy .home-link {
+    display: none;
+  }
+  body.guide-page .frame-nav #page-counter {
+    display: none;
+  }
+  body.guide-page .frame-nav button {
+    pointer-events: auto;
+  }
+  body.bird-guide .catalog-panel {
+    position: relative;
+    z-index: 2;
+  }
   body.bird-guide .family-grid,
-  body.bird-guide .family-card { position: relative; z-index: 3; pointer-events: auto; }
+  body.bird-guide .family-card {
+    position: relative;
+    z-index: 3;
+    pointer-events: auto;
+  }
 }
 
 @media (max-width: 760px) {
-  body.bird-guide .birds-page.deck > [data-scene][hidden] { display: none !important; }
+  body.bird-guide .birds-page.deck > [data-scene][hidden] {
+    display: none !important;
+  }
 }
 
 /* Match the bird catalog detail view to the proven Keelung mobile layout. */
@@ -2178,7 +2192,9 @@
     padding: 0 0 14px;
     background: #f7f6f1;
   }
-  body.bird-guide .detail-view[hidden] { display: none !important; }
+  body.bird-guide .detail-view[hidden] {
+    display: none !important;
+  }
   body.bird-guide .detail-view .species-photo {
     position: relative;
     inset: auto;
@@ -2190,7 +2206,9 @@
     margin: 0 0 10px;
     clip-path: none;
   }
-  body.bird-guide .detail-view .species-photo img { object-fit: cover; }
+  body.bird-guide .detail-view .species-photo img {
+    object-fit: cover;
+  }
   body.bird-guide .detail-view .story-card {
     position: static;
     grid-column: 1 / -1;
@@ -2240,8 +2258,8 @@
     margin: 10px 16px 0 0;
   }
   body.bird-guide .detail-view .slide-controls .icon-button {
-    width: 29px;
-    height: 29px;
+    width: 35px;
+    height: 35px;
   }
   body.bird-guide .detail-view .slide-controls .button {
     min-height: 31px;
@@ -2263,7 +2281,9 @@
     padding: 0 0 14px;
     background: #f7f6f1;
   }
-  body.bird-guide .detail-view[hidden] { display: none !important; }
+  body.bird-guide .detail-view[hidden] {
+    display: none !important;
+  }
   body.bird-guide .detail-view .species-photo {
     position: relative;
     inset: auto;
@@ -2292,8 +2312,13 @@
     border-radius: 0;
     font-size: 0.78rem;
   }
-  body.bird-guide .detail-view .species-photo #species-name { flex: 0 0 auto; white-space: nowrap; }
-  body.bird-guide .detail-view .photo-meta { display: contents; }
+  body.bird-guide .detail-view .species-photo #species-name {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+  body.bird-guide .detail-view .photo-meta {
+    display: contents;
+  }
   body.bird-guide .detail-view .detail-family {
     position: static;
     align-self: center;
@@ -2302,7 +2327,10 @@
     line-height: 1;
     white-space: nowrap;
   }
-  body.bird-guide .detail-view #slide-count { margin-left: auto; white-space: nowrap; }
+  body.bird-guide .detail-view #slide-count {
+    margin-left: auto;
+    white-space: nowrap;
+  }
   body.bird-guide .species-detail-panel {
     position: static;
     display: grid;
@@ -2322,8 +2350,15 @@
     overflow: visible;
     padding: 0;
   }
-  body.bird-guide .detail-view .story-card h1 { margin: 0 0 5px; }
-  body.bird-guide .detail-view .species-copy { max-height: none; overflow: visible; font-size: 0.9rem; line-height: 1.55; }
+  body.bird-guide .detail-view .story-card h1 {
+    margin: 0 0 5px;
+  }
+  body.bird-guide .detail-view .species-copy {
+    max-height: none;
+    overflow: visible;
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
   body.bird-guide .detail-view .species-tabs {
     position: static;
     grid-column: 1 / -1;
@@ -2363,8 +2398,15 @@
     gap: 3px;
     margin: 10px 0 0;
   }
-  body.bird-guide .detail-view .slide-controls .icon-button { width: 29px; height: 29px; }
-  body.bird-guide .detail-view .slide-controls .button { min-height: 31px; padding: 4px 7px; font-size: 11px; }
+  body.bird-guide .detail-view .slide-controls .icon-button {
+    width: 35px;
+    height: 35px;
+  }
+  body.bird-guide .detail-view .slide-controls .button {
+    min-height: 31px;
+    padding: 4px 7px;
+    font-size: 11px;
+  }
 }
 /* Keep the bird detail aligned within its card and pin actions to the bottom. */
 @media (max-width: 760px) {
@@ -2381,7 +2423,9 @@
     margin: 0;
     padding: 0 0 14px;
   }
-  html body.bird-guide main.birds-page.deck section.detail-view[hidden] { display: none !important; }
+  html body.bird-guide main.birds-page.deck section.detail-view[hidden] {
+    display: none !important;
+  }
   html body.bird-guide .detail-view .species-photo {
     position: relative;
     inset: auto;
@@ -2401,7 +2445,11 @@
     flex: 1;
     object-fit: cover;
   }
-  html body.bird-guide .detail-view .species-photo figcaption { box-sizing: border-box; }
+  html body.bird-guide .detail-view .species-photo figcaption {
+    box-sizing: border-box;
+    align-items: end;
+    font-size: 16px;
+  }
   html body.bird-guide .species-detail-panel {
     display: grid;
     flex: 1 0 auto;
@@ -2460,7 +2508,10 @@
     align-items: start;
     gap: 5px 8px;
   }
-  body.pair-page .pair-heading { grid-column: 1; grid-row: 1; }
+  body.pair-page .pair-heading {
+    grid-column: 1;
+    grid-row: 1;
+  }
   body.pair-page .pair-actions {
     grid-column: 2;
     grid-row: 1;
@@ -2488,7 +2539,9 @@
   }
 }
 @media (max-width: 760px) {
-  body.guess-page .guess-game { padding-bottom: 68px; }
+  body.guess-page .guess-game {
+    padding-bottom: 68px;
+  }
   body.guess-page .guess-back {
     position: fixed;
     top: auto;

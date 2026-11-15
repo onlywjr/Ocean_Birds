@@ -234,10 +234,10 @@
   function finish(won = true) {
     board.hidden = true;
     complete.hidden = false;
-    document.querySelector('#complete-title').textContent = won ? '海岸鳥類專家' : '生命值用完了';
+    document.querySelector('#complete-title').textContent = won ? '海岸鳥類專家' : ranks[level];
     const summary = won
       ? (score >= 360 ? '鳥類辨識高手，海岸的鳥兒都難不倒你！' : score >= 220 ? '觀察得很仔細，再多走幾趟海岸就能認識更多鳥朋友。' : '每一張照片都是新的線索，再挑戰一次，認識更多海岸鳥朋友吧。')
-      : `五條命都用完了，最後一輪答對 ${matched.size} 題。重新開始，再試試看吧！`;
+      : `本輪答對 ${matched.size} 題，繼續練習，朝下一個等級前進！`;
     document.querySelector('#final-score').textContent = String(score);
     document.querySelector('#complete-copy').textContent = summary;
   }
