@@ -2555,3 +2555,230 @@
     margin: 0;
   }
 }
+
+/* Refine the mobile homepage with a consistent, quiet coastal visual rhythm. */
+@media (max-width: 760px) {
+  body.home-page .site-header {
+    padding: 12px 14px 10px;
+  }
+  body.home-page .site-nav {
+    width: 100%;
+    max-width: none;
+    gap: 4px;
+    padding: 7px;
+    border: 1px solid #e5dfd3;
+    border-radius: 17px;
+    background: linear-gradient(145deg, #fffdf8, #f1eee6);
+    box-shadow: 0 5px 16px #263b3510;
+  }
+  body.home-page .site-nav::after {
+    right: 14px;
+    left: 14px;
+    background: #b6a78e55;
+  }
+  body.home-page .site-nav a {
+    min-height: 34px;
+    padding: 6px 3px;
+    border-radius: 10px;
+    color: #29464a;
+    font-size: 0.76rem;
+    font-weight: 600;
+    text-shadow: none;
+  }
+  body.home-page .site-nav a:hover {
+    background: #d9c9ad55;
+    transform: none;
+  }
+  body.home-page .home-content.deck .hero-image {
+    width: calc(100% - 28px);
+    height: clamp(215px, 30svh, 260px);
+    min-height: 0;
+    margin: 2px 14px 0;
+    border: 1px solid #ffffffb8;
+    border-radius: 18px;
+    box-shadow: 0 12px 28px #173c4320;
+  }
+  body.home-page .home-content.deck .hero-image .random-carousel,
+  body.home-page .home-content.deck .hero-image img {
+    border-radius: 17px;
+  }
+  body.home-page .home-content.deck .hero-copy {
+    padding: 22px 22px 20px;
+  }
+  body.home-page .home-content.deck .hero-copy .eyebrow {
+    margin: 0 0 9px;
+    color: #9a7047;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+  }
+  body.home-page .home-content.deck .hero h1 {
+    margin: 0 0 10px;
+    color: #18363a;
+    font-size: clamp(2.1rem, 9vw, 2.55rem);
+    letter-spacing: 0.015em;
+    line-height: 1.16;
+  }
+  body.home-page .home-content.deck .hero-copy > p:not(.eyebrow) {
+    max-width: 34ch;
+    color: #536564;
+    font-size: 0.94rem;
+    line-height: 1.75;
+  }
+  body.home-page .home-content.deck .hero-copy .button {
+    min-height: 44px;
+    border: 1px solid #d4a56d;
+    border-radius: 999px;
+    background: linear-gradient(110deg, #d4a56d, #c18b50);
+    box-shadow: 0 5px 13px #855b3022;
+    color: #17363a;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+}
+@media (max-width: 760px) {
+  body.home-page .site-nav a {
+    font-family: var(--font-bold, "Noto Serif TC", serif);
+    font-size: 0.9rem;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 760px) {
+  body.home-page .site-nav {
+    border-color: #d9cbb4;
+    background: linear-gradient(145deg, #f0e8d9, #e8decc);
+    box-shadow: 0 5px 16px #6d563418;
+  }
+}
+
+/* Make the mobile homepage carousel a full-screen photographic cover. */
+@media (max-width: 760px) {
+  body.home-page {
+    min-height: 100svh;
+    height: 100svh;
+    overflow: hidden;
+    background: #173c43;
+  }
+  body.home-page .site-header {
+    position: absolute;
+    z-index: 10;
+    top: max(10px, env(safe-area-inset-top));
+    right: 14px;
+    left: 14px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+  body.home-page .home-content.deck {
+    position: relative;
+    width: 100%;
+    height: 100svh;
+    min-height: 100svh;
+    margin: 0;
+    padding: 0;
+  }
+  body.home-page .home-content.deck > [data-scene] {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 100svh;
+    overflow: hidden;
+  }
+  body.home-page .home-content.deck .hero-image {
+    position: absolute;
+    z-index: 0;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    margin: 0;
+    overflow: hidden;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  body.home-page .home-content.deck .hero-image .random-carousel,
+  body.home-page .home-content.deck .hero-image img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    border-radius: 0;
+    object-fit: cover;
+    object-position: center;
+  }
+  body.home-page .home-content.deck .hero-image::after {
+    inset: 0;
+    background: linear-gradient(180deg, #102d3740 0%, #102d3700 26%, #102d3710 46%, #102d37d9 100%);
+    opacity: 1;
+    animation: none;
+  }
+  body.home-page .home-content.deck .hero-copy {
+    position: absolute;
+    z-index: 2;
+    inset: auto 7vw max(9svh, calc(env(safe-area-inset-bottom) + 74px));
+    display: flex;
+    width: auto;
+    max-width: 560px;
+    min-height: 0;
+    flex-direction: column;
+    padding: 0;
+    background: transparent;
+  }
+  body.home-page .home-content.deck .hero-copy .eyebrow {
+    color: #efd2a4;
+    text-shadow: 0 2px 12px #102d3780;
+  }
+  body.home-page .home-content.deck .hero h1 {
+    color: #fffaf0;
+    text-shadow: 0 3px 20px #102d3780;
+  }
+  body.home-page .home-content.deck .hero-copy > p:not(.eyebrow) {
+    color: #f4f0e7;
+    text-shadow: 0 2px 12px #102d3780;
+  }
+  body.home-page .home-content.deck .hero-copy .button {
+    align-self: flex-start;
+    min-width: min(230px, 100%);
+    margin-top: 16px;
+  }
+  body.home-page .home-content.deck .hero-mark {
+    display: block;
+    z-index: 2;
+    right: 7vw;
+    bottom: max(16px, env(safe-area-inset-bottom));
+    color: #f1d8b2;
+    text-shadow: 0 2px 10px #102d3780;
+  }
+}
+@media (max-width: 760px) {
+  body.home-page .site-header {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    backdrop-filter: none;
+  }
+  body.home-page .site-nav {
+    overflow: hidden;
+    border-radius: 17px;
+    background-clip: padding-box;
+  }
+}
+@media (max-width: 760px) {
+  body.home-page .site-nav {
+    background: linear-gradient(145deg, #f0e8d9e8, #e8deccdb);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+}
+@media (max-width: 760px) {
+  body.home-page .home-content.deck .hero-image img {
+    object-fit: cover;
+    object-position: var(--mobile-focal-x, 50%) center;
+    transform: none;
+  }
+}
