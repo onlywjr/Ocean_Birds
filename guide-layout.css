@@ -117,6 +117,7 @@ body.guide-page .guide-gallery--map .guide-image--map img {
   transform: scaleY(1.02);
   background: #1b5360;
 }
+body.guide-page[data-page="1"] .guide-gallery--map figure:nth-child(3) img { object-position: 70% center; }
 body.guide-page .guide-gallery--map figure:nth-child(2) { grid-column: 2; grid-row: 1; }
 body.guide-page .guide-gallery--map figure:nth-child(3) { grid-column: 3; grid-row: 1; }
 body.guide-page .guide-gallery--map figure:nth-child(4) { grid-column: 2; grid-row: 2; }
@@ -134,9 +135,10 @@ body.guide-page .guide-gallery--triptych figure { position: absolute; top: 0; bo
 body.guide-page .guide-gallery--triptych figure:nth-child(1) { left: -6.666667%; }
 body.guide-page .guide-gallery--triptych figure:nth-child(2) { left: calc(20% + 5px); }
 body.guide-page .guide-gallery--triptych figure:nth-child(3) { left: calc(46.666667% + 10px); }
-body.guide-page .guide-gallery--triptych figure:nth-child(1) img { object-position: 93% center; }
-body.guide-page .guide-gallery--triptych figure:nth-child(2) img { object-position: 60% center; }
-body.guide-page .guide-gallery--triptych figure:nth-child(3) img { object-position: 62% center; }
+/* Keep the bird centered in each angled panel after the guide photos were replaced. */
+body.guide-page .guide-gallery--triptych figure:nth-child(1) img { object-position: 50% center; }
+body.guide-page .guide-gallery--triptych figure:nth-child(2) img { object-position: 52% center; }
+body.guide-page .guide-gallery--triptych figure:nth-child(3) img { object-position: 48% center; }
 
 body.guide-page .guide-gallery--mosaic { grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-rows: repeat(3, minmax(0, 1fr)); }
 body.guide-page .guide-gallery--mosaic figure:nth-child(1) { grid-column: 1 / 3; grid-row: 1 / 3; }
@@ -145,6 +147,9 @@ body.guide-page .guide-gallery--mosaic figure:nth-child(3) { grid-column: 4; gri
 body.guide-page .guide-gallery--mosaic figure:nth-child(4) { grid-column: 1; grid-row: 3; }
 body.guide-page .guide-gallery--mosaic figure:nth-child(5) { grid-column: 2; grid-row: 3; }
 body.guide-page .guide-gallery--mosaic figure:nth-child(6) { grid-column: 3; grid-row: 2 / 4; }
+body.guide-page[data-page="3"] .guide-gallery--mosaic figure:nth-child(1) img { object-position: 44% center; }
+body.guide-page[data-page="3"] .guide-gallery--mosaic figure:nth-child(3) img { object-position: 36% center; }
+body.guide-page[data-page="3"] .guide-gallery--mosaic figure:nth-child(6) img { object-position: 54% 58%; }
 
 body.guide-page .guide-gallery--before-after {
   --guide-split-offset: 13.4svh;
@@ -355,6 +360,7 @@ body.guide-page .guide-scene.scene-enter { animation: scene-in .45s cubic-bezier
   body.guide-page .guide-gallery--map figure:nth-child(n + 2) { grid-column: auto; grid-row: auto; clip-path: none; }
   body.guide-page .guide-gallery--map .guide-image--map img { object-fit: contain; background: #1b5360; }
   body.guide-page .guide-gallery--map .guide-image--map img { transform: scaleY(1.02); }
+  body.guide-page[data-page="1"] .guide-gallery--map figure:nth-child(3) img { object-position: 70% center; }
   body.guide-page .guide-gallery--map ~ figcaption { top: 7%; right: auto; bottom: auto; left: 5%; max-width: 68%; }
   body.guide-page .guide-art {
     inset: 0 0 auto;
@@ -368,6 +374,9 @@ body.guide-page .guide-scene.scene-enter { animation: scene-in .45s cubic-bezier
   body.guide-page .guide-gallery--triptych figure:nth-child(1) { left: -6.666667%; }
   body.guide-page .guide-gallery--triptych figure:nth-child(2) { left: calc(20% + 5px); }
   body.guide-page .guide-gallery--triptych figure:nth-child(3) { left: calc(46.666667% + 10px); }
+  body.guide-page .guide-gallery--triptych figure:nth-child(1) img { object-position: 50% center; }
+  body.guide-page .guide-gallery--triptych figure:nth-child(2) img { object-position: 52% center; }
+  body.guide-page .guide-gallery--triptych figure:nth-child(3) img { object-position: 48% center; }
   body.guide-page .guide-gallery--mosaic { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(3, minmax(0, 1fr)); }
   body.guide-page .guide-gallery--mosaic figure:nth-child(1) { grid-column: 1 / 3; grid-row: 1 / 3; }
   body.guide-page .guide-gallery--mosaic figure:nth-child(2) { grid-column: 3; grid-row: 1; }
@@ -375,6 +384,9 @@ body.guide-page .guide-scene.scene-enter { animation: scene-in .45s cubic-bezier
   body.guide-page .guide-gallery--mosaic figure:nth-child(4) { grid-column: 1; grid-row: 3; }
   body.guide-page .guide-gallery--mosaic figure:nth-child(5) { grid-column: 2; grid-row: 3; }
   body.guide-page .guide-gallery--mosaic figure:nth-child(6) { grid-column: 3; grid-row: 3; }
+  body.guide-page[data-page="3"] .guide-gallery--mosaic figure:nth-child(1) img { object-position: 44% center; }
+  body.guide-page[data-page="3"] .guide-gallery--mosaic figure:nth-child(3) img { object-position: 36% center; }
+  body.guide-page[data-page="3"] .guide-gallery--mosaic figure:nth-child(6) img { object-position: 54% 58%; }
   body.guide-page .guide-gallery--before-after { right: 0; --guide-split-offset: 3.35svh; }
   body.guide-page .guide-gallery--before-after figure figcaption { bottom: 4px; padding: 3px 4px; font-size: 15px; }
   body.guide-page .guide-gallery--before-after figure:nth-child(1) figcaption { left: 4px; }

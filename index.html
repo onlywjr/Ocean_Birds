@@ -1,1 +1,68 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=main-page.html"><meta name="viewport" content="width=device-width, initial-scale=1"><title>在海邊躍動的精靈</title></head><body><a href="main-page.html">進入在海邊躍動的精靈</a></body></html>
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="1; url=main-page.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#10282d" />
+    <title>載入中｜在海邊躍動的精靈</title>
+    <style>
+      * { box-sizing: border-box; }
+      body {
+        display: grid;
+        min-height: 100vh;
+        min-height: 100svh;
+        margin: 0;
+        place-items: center;
+        overflow: hidden;
+        color: #f7f3e9;
+        background:
+          radial-gradient(ellipse at 72% 28%, rgb(91 139 129 / 34%), transparent 38%),
+          radial-gradient(ellipse at 18% 84%, rgb(41 103 103 / 26%), transparent 42%),
+          linear-gradient(135deg, #10282d 0%, #18383b 48%, #112a31 100%);
+        font-family: "Noto Serif TC", "PMingLiU", serif;
+      }
+      main {
+        padding: 2rem;
+        text-align: center;
+        animation: arrive 1.2s ease-out both;
+      }
+      h1 {
+        margin: 0;
+        color: #f4ead7;
+        font-size: clamp(3rem, 10vw, 7rem);
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-shadow: 0 8px 36px rgb(0 0 0 / 24%);
+      }
+      .rule {
+        width: clamp(5rem, 14vw, 9rem);
+        height: 2px;
+        margin: 1.4rem auto 0;
+        background: linear-gradient(90deg, transparent, #c9955c, transparent);
+      }
+      a {
+        display: inline-block;
+        margin-top: 1.5rem;
+        color: rgb(247 243 233 / 72%);
+        font-size: 0.95rem;
+        text-decoration-color: rgb(247 243 233 / 35%);
+        text-underline-offset: 0.25em;
+      }
+      @keyframes arrive {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        main { animation: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1 role="status">載入中......</h1>
+      <div class="rule" aria-hidden="true"></div>
+      <a href="main-page.html">若未自動前往，請點此進入</a>
+    </main>
+  </body>
+</html>

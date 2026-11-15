@@ -483,7 +483,7 @@ body.region-page .region-overview-main {
   clip-path: polygon(0 0, calc(100% - var(--gallery-shear) - var(--gallery-seam)) 0, calc(100% - var(--gallery-seam)) 100%, 0 100%);
 }
 body.region-page .region-overview-main { background: #fff; }
-body.region-page .region-overview-main img { object-fit: contain; object-position: center 68%; transform: scale(1.5); }
+body.region-page .region-overview-main img { object-fit: cover; object-position: center; transform: none; }
 
 body.region-page .region-overview-tile {
   position: absolute !important;

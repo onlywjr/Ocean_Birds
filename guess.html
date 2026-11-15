@@ -24,6 +24,7 @@
     <section class="guess-status" aria-label="遊戲進度">
       <div><span>觀察等級</span><strong id="rank">鳥類初學者</strong></div>
       <div class="status-progress"><span>配對進度</span><strong><output id="matches">0</output><i>/</i><output id="total">4</output></strong></div>
+      <div><span>剩餘生命</span><strong id="lives" aria-label="剩餘 5 條命"></strong></div>
       <div><span>累積分數</span><strong><output id="score">0</output><small>分</small></strong></div>
     </section>
 
@@ -44,6 +45,8 @@
       </div>
       <div class="board-footer"><p id="message" role="status" aria-live="polite">將鳥類照片拖進正確的鳥名框。</p><div class="board-actions"><button class="quiet-button" id="reshuffle" type="button">重新排列 ↻</button><button class="primary-button next-round" id="next-round" type="button" hidden>下一輪 →</button></div></div>
     </section>
+
+    <div class="photo-preview" id="photo-preview" aria-hidden="true"><img alt=""></div>
 
     <section class="guess-overlay" id="welcome" aria-labelledby="welcome-title">
       <div class="guess-dialog">

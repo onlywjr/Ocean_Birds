@@ -35,7 +35,7 @@ body.pair-page { color: #173438; font-family: var(--font, "LXGW WenKai Mono TC",
 .card-back::after { position: relative; display: grid; width: 42px; aspect-ratio: 1; place-items: center; border: 1px solid #a3764a; border-radius: 50%; background: #f8f1df; color: #976d42; content: "✦"; font-size: 1.35rem; box-shadow: 0 0 0 7px #ffffff57; transition: transform .25s; }
 .bird-card:hover:not(:disabled) .card-back::after { transform: rotate(45deg) scale(1.1); }
 .card-front { transform: rotateY(180deg); background: #f7f5ee; }
-.card-front img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; border-radius: inherit; background: #e8efeb; }
+.card-front img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; transform: scale(1.16); border-radius: inherit; background: #e8efeb; }
 .card-name { position: absolute; z-index: 1; inset: auto 0 0; max-height: 0; overflow: hidden; padding: 0 5px; background: linear-gradient(transparent, #102d37db); opacity: 0; color: #fffefa; text-align: center; text-shadow: 0 1px 3px #102d37; font: 700 .82rem/1.45 var(--font-bold, "Noto Serif TC", serif); transition: max-height .2s, opacity .2s, padding .2s; }
 .bird-card.is-matched .card-name { max-height: 2rem; padding: 6px 5px 4px; opacity: 1; }
 .bird-card.is-matched .card-front { border-color: #c9aa70; background: #f5efdc; box-shadow: 0 0 0 2px #e3b77975, 0 9px 24px #09262b25; }

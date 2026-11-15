@@ -38,6 +38,7 @@ body:has(.full-screen-page) .deck-controls{right:max(24px,calc((100vw - 1320px)/
 .home-content.deck>.hero{display:block;position:relative;background:#f7f5ee}
 .home-content.deck .hero-image{position:absolute;inset:0 auto 0 0;width:74%;height:100%;clip-path:polygon(0 0,100% 0,90.5% 100%,0 100%);overflow:hidden}
 .home-content.deck .hero-image img{width:100%;height:100%;max-height:none;border-radius:0;object-fit:cover;transform:translateX(3%) scale(1.12) scaleX(-1)}
+.home-content.deck .hero-image .random-carousel{position:absolute;inset:0;width:100%;height:100%;border-radius:0;box-shadow:none;animation:none}
 .home-content.deck .hero-copy{position:absolute;z-index:2;top:50%;right:5%;width:25%;max-width:420px;transform:translateY(-50%)}
 .home-content.deck .hero h1{white-space:normal;color:#17221f;font-size:clamp(2.5rem,4vw,4.3rem)}
 .home-content.deck .hero-copy>p:not(.eyebrow){color:#45534f;font-size:clamp(1rem,1.2vw,1.2rem);line-height:1.8}

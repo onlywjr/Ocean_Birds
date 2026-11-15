@@ -17,13 +17,16 @@
   const matchesOutput = document.querySelector('#matches');
   const totalOutput = document.querySelector('#total');
   const scoreOutput = document.querySelector('#score');
+  const livesOutput = document.querySelector('#lives');
   const message = document.querySelector('#message');
   const nextRound = document.querySelector('#next-round');
+  const photoPreview = document.querySelector('#photo-preview');
   let level = 0;
   let round = [];
   let matched = new Set();
   let selectedPhoto = null;
   let score = 0;
+  let lives = 5;
   let locked = false;
 
   const shuffle = values => [...values].sort(() => Math.random() - .5);
@@ -31,6 +34,44 @@
   function setMessage(text, isError = false) {
     message.textContent = text;
     message.classList.toggle('is-error', isError);
+  }
+
+  function renderLives() {
+    livesOutput.replaceChildren(...Array.from({ length: 5 }, (_, index) => {
+      const heart = document.createElement('span');
+      heart.className = `life-heart${index >= lives ? ' is-lost' : ''}`;
+      heart.textContent = '♥';
+      heart.setAttribute('aria-hidden', 'true');
+      return heart;
+    }));
+    livesOutput.setAttribute('aria-label', `剩餘 ${lives} 條命`);
+  }
+
+  function showPhotoPreview(photo, pointerEvent) {
+    const image = photo.querySelector('img');
+    if (!image) return;
+    const bounds = photo.getBoundingClientRect();
+    const width = Math.min(380, window.innerWidth - 28);
+    const height = width / 1.5 + 16;
+    const pointerX = pointerEvent?.clientX ?? bounds.left + bounds.width / 2;
+    const pointerY = pointerEvent?.clientY ?? bounds.top + bounds.height / 2;
+    const placeLeft = pointerX + 22 + width > window.innerWidth - 14;
+    const left = placeLeft ? Math.max(14, pointerX - width - 22) : pointerX + 22;
+    const top = Math.min(Math.max(14, pointerY - height / 2), window.innerHeight - height - 14);
+    const previewImage = photoPreview.querySelector('img');
+    if (previewImage.src !== image.src) {
+      previewImage.src = image.src;
+      previewImage.alt = image.alt;
+    }
+    photoPreview.style.setProperty('--preview-width', `${width}px`);
+    photoPreview.style.left = `${left}px`;
+    photoPreview.style.top = `${top}px`;
+    photoPreview.classList.toggle('points-right', placeLeft);
+    photoPreview.classList.add('is-visible');
+  }
+
+  function hidePhotoPreview() {
+    photoPreview.classList.remove('is-visible');
   }
 
   function makeQuestion(bird) {
@@ -77,6 +118,15 @@
     image.draggable = false;
     image.loading = 'lazy';
     photo.append(image);
+    photo.addEventListener('pointerenter', event => {
+      if (event.pointerType === 'mouse' && !photo.disabled) showPhotoPreview(photo, event);
+    });
+    photo.addEventListener('pointermove', event => {
+      if (event.pointerType === 'mouse' && !photo.disabled) showPhotoPreview(photo, event);
+    });
+    photo.addEventListener('pointerleave', hidePhotoPreview);
+    photo.addEventListener('focus', () => showPhotoPreview(photo));
+    photo.addEventListener('blur', hidePhotoPreview);
     photo.addEventListener('click', () => {
       if (locked || photo.disabled) return;
       photoTray.querySelectorAll('.bird-photo').forEach(item => item.classList.remove('is-selected'));
@@ -128,6 +178,7 @@
     statusRank.textContent = ranks[level];
     matchesOutput.textContent = '0';
     totalOutput.textContent = String(round.length);
+    renderLives();
     document.querySelector('#round-kicker').textContent = `ROUND ${String(level + 1).padStart(2, '0')}`;
     document.querySelector('#round-title').textContent = level === 0 ? '認識海岸鳥類' : `${ranks[level]}挑戰`;
     nextRound.hidden = true;
@@ -161,23 +212,32 @@
     }
 
     locked = true;
+    lives = Math.max(0, lives - 1);
+    renderLives();
     score = Math.max(0, score - 2);
     scoreOutput.textContent = String(score);
     photo.classList.add('is-mismatch');
     slot.classList.add('is-mismatch');
-    setMessage('名字不相符，再仔細看看鳥的特徵。', true);
+    setMessage(lives === 0 ? '生命值用完了，這趟辨認旅程結束。' : `名字不相符，失去一條命，還剩 ${lives} 條。`, true);
     window.setTimeout(() => {
       photo.classList.remove('is-mismatch');
       slot.classList.remove('is-mismatch');
+      if (lives === 0) {
+        finish(false);
+        return;
+      }
       locked = false;
       setMessage('將鳥類照片拖進正確的鳥名框。');
     }, 650);
   }
 
-  function finish() {
+  function finish(won = true) {
     board.hidden = true;
     complete.hidden = false;
-    const summary = score >= 360 ? '鳥類辨識高手，海岸的鳥兒都難不倒你！' : score >= 220 ? '觀察得很仔細，再多走幾趟海岸就能認識更多鳥朋友。' : '每一張照片都是新的線索，再挑戰一次，認識更多海岸鳥朋友吧。';
+    document.querySelector('#complete-title').textContent = won ? '海岸鳥類專家' : '生命值用完了';
+    const summary = won
+      ? (score >= 360 ? '鳥類辨識高手，海岸的鳥兒都難不倒你！' : score >= 220 ? '觀察得很仔細，再多走幾趟海岸就能認識更多鳥朋友。' : '每一張照片都是新的線索，再挑戰一次，認識更多海岸鳥朋友吧。')
+      : `五條命都用完了，最後一輪答對 ${matched.size} 題。重新開始，再試試看吧！`;
     document.querySelector('#final-score').textContent = String(score);
     document.querySelector('#complete-copy').textContent = summary;
   }
@@ -185,6 +245,8 @@
   document.querySelector('#begin').addEventListener('click', () => {
     level = 0;
     score = 0;
+    lives = 5;
+    renderLives();
     scoreOutput.textContent = '0';
     welcome.hidden = true;
     complete.hidden = true;
@@ -205,6 +267,8 @@
     board.hidden = false;
     level = 0;
     score = 0;
+    lives = 5;
+    renderLives();
     scoreOutput.textContent = '0';
     beginRound();
   });
