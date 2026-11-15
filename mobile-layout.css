@@ -2770,7 +2770,7 @@
 }
 @media (max-width: 760px) {
   body.home-page .site-nav {
-    background: linear-gradient(145deg, #f0e8d9e8, #e8deccdb);
+    background: linear-gradient(145deg, #fbfafad1, #ffffff8c);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
   }
