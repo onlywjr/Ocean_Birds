@@ -1,6 +1,10 @@
 const birds = {};
 const gallery=document.querySelector('#family-grid'), list=document.querySelector('#species-list'), detail=document.querySelector('#detail-view'), catalog=document.querySelector('#catalog-view'), image=document.querySelector('#species-image'), copy=document.querySelector('#species-copy'), auto=document.querySelector('#auto-play'), voiceReplay=document.querySelector('#voice-replay');
 const narration=new Audio();narration.preload='auto';
+narration.addEventListener('play',()=>window.setBackgroundMusicDucked?.(true));
+narration.addEventListener('pause',()=>window.setBackgroundMusicDucked?.(false));
+narration.addEventListener('ended',()=>window.setBackgroundMusicDucked?.(false));
+narration.addEventListener('error',()=>window.setBackgroundMusicDucked?.(false));
 let options=[],current=0,currentSlide=0,timer=null,advanceTimer=null,allBirds=[];
 async function loadBirdData(){
  const index=await fetch('assets/bird-catalog/index.json').then(response=>{if(!response.ok)throw new Error('無法讀取鳥類目錄');return response.json()});
